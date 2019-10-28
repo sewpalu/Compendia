@@ -15,3 +15,6 @@ SW-Engineering Projekt
 - Commitnachrichten auf Englisch, im Imperativ
 - Ein Commit pro in sich vollständiger Änderung
 - Nicht auf master committen
+
+### D (Server)
+Siehe https://dlang.org/dstyle.html
