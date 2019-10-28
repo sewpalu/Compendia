@@ -1,5 +1,7 @@
 # Lastenheft Compendia
 
+[TOC]
+
 ## 1 Zielbestimmung
 - App, mit der Kalendereinträge und Anderes erstellt und verwaltet werden können.
 
@@ -7,24 +9,24 @@
 - Plattformen: iOS, Android, Windows 10, Linux (Manjaro Juhraya)
 - Life-Tracking
 
-## Produktfunktionen
+## 3 Produktfunktionen
 - Synchronisation zwischen mehreren Geräten
 - Client soll offlinefähig sein
 
-## Produktdaten
+## 4 Produktdaten
 - Langfristige Datenspeicherung auf externen Servern; Lokales Datencaching
 - Text und Bilder
 
-## Produktleistungen
+## 5 Produktleistungen
 - Konstante Zugriffszeiten
 - Zuverlässige Erreichbarkeit
 
-## Qualitätsanforderungen
+## 6 Qualitätsanforderungen
 - Datenkohärenz
 - Verschlüsselung
 - Zugriff auf Daten nur durch Besitzer
 
-## Terminplan & Kostenrahmen
+## 7 Terminplan & Kostenrahmen
 - 120 MT
 - 15€ / 10 GB / Monat
 
