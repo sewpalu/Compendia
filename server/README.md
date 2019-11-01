@@ -1,6 +1,10 @@
-# Server demo
-Requires rdmd to be installed and accessible via PATH.
+# Server prototype
+Requires dub to be installed and accessible via PATH.
 
-In a command prompt run with: `./server.d` (Linux) / `rdmd server.d` (Windows; haven't tested this)
+How to run:
+- Open command line
+- Navigate to `Compendia/server/src`
+- run `dub run`
 
-Once running, the command prompt should show `listening on 127.0.0.1:8000`. Every communication made with the displayed address and port will be printed out on the command line. Additionally, when accessing the address with a web browser a "Hello World" page should come up.
+Once running connect to localhost:8000 via a webbrowser. A page containing demo links to json files should show up.
+
