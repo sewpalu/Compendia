@@ -1,2 +1,17 @@
 
 server/src/.vscode/
+server/src/src
+server/src/docs/
+__dummy.html
+docs.json
+.dub
+src.so
+src.dylib
+src.dll
+src.a
+src.lib
+src-test-*
+*.exe
+*.o
+*.obj
+*.lst

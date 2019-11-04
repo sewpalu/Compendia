@@ -6,7 +6,7 @@
 - App, mit der Kalendereinträge und Anderes erstellt und verwaltet werden können.
 
 ## 2 Produkteinsatz
-- Plattformen: iOS, Android, Windows 10, Linux (Manjaro Juhraya)
+- Plattformen: iOS, Android, Windows 10, Linux (ausgewählte Distributionen)
 - Life-Tracking
 
 ## 3 Produktfunktionen
