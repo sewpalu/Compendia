@@ -1,0 +1,21 @@
+ARM-Architektur
+ARM: Acorn RISC Machine, später Advanced RISC Machine
+
+ - Stellt keine ICs her, sondern verkaufen die Lizenzen (2-25$)
+ - Vorteile: Geringer Energiebedarf -> meist genutzte Architektur im Embedded Bereich (fast alle Smartphones und Tablets haben ARM Prozessoren)
+ 
+ https://de.wikipedia.org/wiki/ARM-Architektur -> Tabelle mit Eigenschaften 
+ 
+ - Ist RISC Architektur -> 3 Befehlskategorien (Speicherzugriff (Load & Store), Arithmetisch & Logische Befehle, Sprünge & Unterprogrammaufrufe)
+ - Alle Befehlen können 3-Adress-Code Befehlssatz (Ziel- und zwei Operandenregister)
+ - Ist Little und Big Endian kompatibel (Standardmäßig Little Endian)
+ - Hat 13 Universalregister
+ - Gibt Stackpointer, Linkregister und Programmzähler -> sind die 3 Zusatzregister
+ - Ist eine Registermaschine mit Stack
+ - Befehlsbreite: 32bit
+ - Ist Mix aus von Neumann und Harvard Architektur
+ - Unterstützt Jazelle und Thumb Befehlssatz
+ - Normale Befehlssätze sind 64bit und 32bit (wird auch von 64bit unterstützt)
+ - The earlier cores such as the ARM7 used a Von Neumann architecture whereas some of the newer cores, 
+   the cortex range at least, use a Harvard architecture, 
+   they did this to try to improve overall efficiency and performance without bumping up the clock speed.
