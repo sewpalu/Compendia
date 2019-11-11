@@ -20,7 +20,7 @@
 | 15  | Lisa, Oliver, Patrick | 1.0     | Sign In                                           |
 | 16  | Lisa, Oliver, Patrick | 1.0     | Graphisches Userinterface                         |
 | 17  | Lisa, Oliver, Patrick | 1.0     | App                                               |
-| 18  | Lisa, Oliver, Patrick | 1.0     | Benachrichtigung bei Unverfügbarkkeit des Servers |
+| 18  | Lisa, Oliver, Patrick | 1.0     | Benachrichtigung bei Unverfügbarkeit des Servers  |
 | 19  | Lisa, Oliver, Patrick | 1.0     | Übersichtliche Darstellung                        |
 | 20  | Lisa, Oliver, Patrick | 1.0     | Log Out                                           |
 
