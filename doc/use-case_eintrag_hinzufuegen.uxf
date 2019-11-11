@@ -4,7 +4,7 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>336</x>
+      <x>12</x>
       <y>492</y>
       <w>72</w>
       <h>132</h>
@@ -15,7 +15,7 @@
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>324</x>
+      <x>0</x>
       <y>216</y>
       <w>144</w>
       <h>60</h>
@@ -28,7 +28,7 @@ Antippen
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>384</x>
+      <x>60</x>
       <y>300</y>
       <w>168</w>
       <h>72</h>
@@ -41,7 +41,7 @@ Eintrag hinzufügen
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
+      <x>12</x>
       <y>264</y>
       <w>60</w>
       <h>228</h>
@@ -52,7 +52,7 @@ Eintrag hinzufügen
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>372</x>
+      <x>48</x>
       <y>384</y>
       <w>72</w>
       <h>108</h>
@@ -63,7 +63,7 @@ Eintrag hinzufügen
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>600</x>
+      <x>276</x>
       <y>216</y>
       <w>156</w>
       <h>72</h>
@@ -76,7 +76,7 @@ hinzufügen
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>480</x>
+      <x>156</x>
       <y>216</y>
       <w>132</w>
       <h>48</h>
@@ -87,7 +87,7 @@ hinzufügen
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>552</x>
+      <x>228</x>
       <y>264</y>
       <w>72</w>
       <h>84</h>
@@ -98,7 +98,7 @@ hinzufügen
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>828</x>
+      <x>504</x>
       <y>108</y>
       <w>144</w>
       <h>48</h>
@@ -109,7 +109,7 @@ hinzufügen
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>828</x>
+      <x>504</x>
       <y>180</y>
       <w>144</w>
       <h>48</h>
@@ -120,7 +120,7 @@ hinzufügen
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>840</x>
+      <x>516</x>
       <y>264</y>
       <w>144</w>
       <h>48</h>
@@ -131,7 +131,7 @@ hinzufügen
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>840</x>
+      <x>516</x>
       <y>348</y>
       <w>144</w>
       <h>48</h>
@@ -142,7 +142,7 @@ hinzufügen
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>828</x>
+      <x>504</x>
       <y>36</y>
       <w>144</w>
       <h>48</h>
@@ -153,7 +153,7 @@ hinzufügen
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>756</x>
+      <x>432</x>
       <y>144</y>
       <w>84</w>
       <h>120</h>
@@ -164,7 +164,7 @@ hinzufügen
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>756</x>
+      <x>432</x>
       <y>204</y>
       <w>96</w>
       <h>72</h>
@@ -175,7 +175,7 @@ hinzufügen
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>840</x>
+      <x>516</x>
       <y>504</y>
       <w>144</w>
       <h>48</h>
@@ -186,7 +186,7 @@ hinzufügen
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>756</x>
+      <x>432</x>
       <y>252</y>
       <w>96</w>
       <h>60</h>
@@ -197,7 +197,7 @@ hinzufügen
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>756</x>
+      <x>432</x>
       <y>252</y>
       <w>96</w>
       <h>132</h>
@@ -208,7 +208,7 @@ hinzufügen
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>756</x>
+      <x>432</x>
       <y>252</y>
       <w>96</w>
       <h>204</h>
@@ -219,7 +219,7 @@ hinzufügen
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>756</x>
+      <x>432</x>
       <y>252</y>
       <w>96</w>
       <h>300</h>
@@ -230,7 +230,7 @@ hinzufügen
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>840</x>
+      <x>516</x>
       <y>420</y>
       <w>144</w>
       <h>48</h>
@@ -241,18 +241,7 @@ hinzufügen
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>1620</x>
-      <y>0</y>
-      <w>144</w>
-      <h>48</h>
-    </coordinates>
-    <panel_attributes>Use case 1</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>1104</x>
+      <x>780</x>
       <y>504</y>
       <w>144</w>
       <h>48</h>
@@ -263,7 +252,7 @@ hinzufügen
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>984</x>
+      <x>660</x>
       <y>504</y>
       <w>132</w>
       <h>48</h>

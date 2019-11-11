@@ -42,5 +42,5 @@
 
 ## Use-Case
 
-![use-case_eintrag_hinzufuegen.svg](Diagramm: Eintrag hinzufügen)
+![Diagramm: Use-Case Eintrag hinzufügen](use-case_eintrag_hinzufuegen.svg)
 
