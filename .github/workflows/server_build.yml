@@ -1,0 +1,20 @@
+name: server_build
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: D Compiler Installation
+      uses: mihails-strasuns/setup-dlang@v0.1.0
+    - name: Run a multi-line script
+      run: |
+        cd server/src,
+        dub build.
