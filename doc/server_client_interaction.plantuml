@@ -1,0 +1,17 @@
+@startuml
+Client -> Server: Request ressource
+activate Client
+
+Server -> Client: Request authentification
+activate Server
+Client --> Server: Send authentification details
+deactivate Server
+
+alt auth_valid
+	Server --> Client: Send ressource
+else auth_invalid
+	Server -> Client: Authentification failure
+end
+
+deactivate Client
+@enduml
