@@ -13,5 +13,7 @@ else auth_invalid
 	Server -> Client: Authentification failure
 end
 
+'TODO: Add Database access description
+
 deactivate Client
 @enduml
