@@ -2,12 +2,16 @@
 SW-Engineering Projekt
 
 ## Frontend
+Lisa
+Niggo
 
 ## Backend
 
 ### Server
+Patrick
 
 ### Datenbank
+Oliver
 
 ## Richtlinien
 

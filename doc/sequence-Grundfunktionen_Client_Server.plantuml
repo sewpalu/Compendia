@@ -1,0 +1,16 @@
+== New user ==
+Client -> Server ++ : User data
+Server -> Database: Insert ... into UserDb
+Server -> Database: Add Database <username>Db
+return Success / Failure
+
+== Add entry ==
+Client -> Server ++ : Entry data
+Server -> Database: Insert ... into <username>Db
+return Success / Failure
+
+== Get Entries ==
+Client -> Server ++ : Entry type
+Server -> Database ++ : Select ... from <username>Db
+return Entries
+return Entries

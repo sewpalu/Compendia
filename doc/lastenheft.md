@@ -3,7 +3,9 @@
 [TOC]
 
 ## 1 Zielbestimmung
-- App, mit der Kalendereinträge und Anderes erstellt und verwaltet werden können.
+- Erstellen einer Plattform, mit der Eintragsmasken und dazugehörige Einträge erstellt und verwaltet werden können.
+- Als Eintrag ist ein generelles Datenhalteobjekt definiert, welches nicht restriktiv als Datencontainer genutzt werden kann.
+- Aus diesen Einträgen sollen dann automatisierte, dem Nutzer hilfreiche Statistiken erstellt werden. Die Erstellung der Statistik ist eriegnisbasiert und soll nach dem Erstellen eines Eintrags gestartet werden. 
 
 ## 2 Produkteinsatz
 - Plattformen: iOS, Android, Windows 10, Linux (ausgewählte Distributionen)
