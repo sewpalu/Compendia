@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\nikol\.nuget\packages\xamarin.forms\4.0.0.425677\build\MonoAndroid10" t="Include">
+      <e p="proguard.cfg" t="Include" />
+    </e>
+    <e p="C:\Users\nikol\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\nikol\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Compendia.807187308.00" t="ExcludeRecursive" />
+    <e p="C:\Users\nikol\AppData\local\Android\Sdk\platforms\android-28\data\res" t="IncludeRecursive" />
+    <e p="C:\Users\nikol\AppData\local\Android\Sdk\sources\android-28" t="IncludeRecursive" />
+    <e p="C:\Users\nikol\ProgProject\Compendia\client\Compendia" t="IncludeFlat">
+      <e p="Compendia\Compendia" t="IncludeRecursive">
+        <e p="App.xaml" t="Include" />
+        <e p="App.xaml.cs" t="Include" />
+        <e p="AssemblyInfo.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Compendia.csproj" t="IncludeRecursive" />
+        <e p="MainPage.xaml" t="Include" />
+        <e p="MainPage.xaml.cs" t="Include" />
+        <e p="Model" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="App.xaml.g.cs" t="Include" />
+              <e p="Compendia.AssemblyInfo.cs" t="Include" />
+              <e p="MainPage.xaml.g.cs" t="Include" />
+              <e p="Views" t="Include">
+                <e p="EditEntryView.xaml.g.cs" t="Include" />
+                <e p="EntryCreationView.xaml.g.cs" t="Include" />
+                <e p="EntrymaskCreationView.xaml.g.cs" t="Include" />
+                <e p="LogInView.xaml.g.cs" t="Include" />
+                <e p="MainView.xaml.g.cs" t="Include" />
+                <e p="SettingsView.xaml.g.cs" t="Include" />
+                <e p="ShowEntryView.xaml.g.cs" t="Include" />
+                <e p="StatisticView.xaml.g.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="ViewModel" t="Include">
+          <e p="Base" t="Include">
+            <e p="BaseViewModel.cs" t="Include" />
+          </e>
+          <e p="EditEntryViewModel.cs" t="Include" />
+          <e p="EntryCreationViewModel.cs" t="Include" />
+          <e p="EntrymaskCreationViewModel.cs" t="Include" />
+          <e p="LogInViewModel.cs" t="Include" />
+          <e p="MainViewModel.cs" t="Include" />
+          <e p="SettingsViewModel.cs" t="Include" />
+          <e p="ShowEntryViewModel.cs" t="Include" />
+          <e p="StatisticViewModel.cs" t="Include" />
+        </e>
+        <e p="Views" t="Include">
+          <e p="EditEntryView.xaml" t="Include" />
+          <e p="EditEntryView.xaml.cs" t="Include" />
+          <e p="EntryCreationView.xaml" t="Include" />
+          <e p="EntryCreationView.xaml.cs" t="Include" />
+          <e p="EntrymaskCreationView.xaml" t="Include" />
+          <e p="EntrymaskCreationView.xaml.cs" t="Include" />
+          <e p="LogInView.xaml" t="Include" />
+          <e p="LogInView.xaml.cs" t="Include" />
+          <e p="MainView.xaml" t="Include" />
+          <e p="MainView.xaml.cs" t="Include" />
+          <e p="SettingsView.xaml" t="Include" />
+          <e p="SettingsView.xaml.cs" t="Include" />
+          <e p="ShowEntryView.xaml" t="Include" />
+          <e p="ShowEntryView.xaml.cs" t="Include" />
+          <e p="StatisticView.xaml" t="Include" />
+          <e p="StatisticView.xaml.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Compendia\Compendia.Android" t="IncludeRecursive">
+        <e p="Assets" t="Include">
+          <e p="AboutAssets.txt" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Compendia.Android.csproj" t="IncludeRecursive" />
+        <e p="MainActivity.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="90" t="Include">
+              <e p="designtime" t="Include">
+                <e p="Resource.designer.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AndroidManifest.xml" t="Include" />
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="AboutResources.txt" t="Include" />
+          <e p="drawable" t="Include" />
+          <e p="drawable-hdpi" t="Include" />
+          <e p="drawable-xhdpi" t="Include" />
+          <e p="drawable-xxhdpi" t="Include" />
+          <e p="drawable-xxxhdpi" t="Include" />
+          <e p="layout" t="Include">
+            <e p="Tabbar.axml" t="Include" />
+            <e p="Toolbar.axml" t="Include" />
+          </e>
+          <e p="mipmap-anydpi-v26" t="Include">
+            <e p="icon.xml" t="Include" />
+            <e p="icon_round.xml" t="Include" />
+          </e>
+          <e p="mipmap-hdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="mipmap-mdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="mipmap-xhdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="mipmap-xxhdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="mipmap-xxxhdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="values" t="Include">
+            <e p="colors.xml" t="Include" />
+            <e p="styles.xml" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Compendia\Compendia.iOS" t="IncludeRecursive">
+        <e p="AppDelegate.cs" t="Include" />
+        <e p="Assets.xcassets" t="Include">
+          <e p="AppIcon.appiconset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Icon1024.png" t="Include" />
+            <e p="Icon120.png" t="Include" />
+            <e p="Icon152.png" t="Include" />
+            <e p="Icon167.png" t="Include" />
+            <e p="Icon180.png" t="Include" />
+            <e p="Icon20.png" t="Include" />
+            <e p="Icon29.png" t="Include" />
+            <e p="Icon40.png" t="Include" />
+            <e p="Icon58.png" t="Include" />
+            <e p="Icon60.png" t="Include" />
+            <e p="Icon76.png" t="Include" />
+            <e p="Icon80.png" t="Include" />
+            <e p="Icon87.png" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Compendia.iOS.csproj" t="IncludeRecursive" />
+        <e p="Entitlements.plist" t="Include" />
+        <e p="Info.plist" t="Include" />
+        <e p="Main.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="LaunchScreen.storyboard" t="Include" />
+        </e>
+      </e>
+      <e p="Compendia\Compendia.UWP" t="IncludeRecursive">
+        <e p="App.xaml" t="Include" />
+        <e p="App.xaml.cs" t="Include" />
+        <e p="Assets" t="Include">
+          <e p="LargeTile.scale-100.png" t="Include" />
+          <e p="LargeTile.scale-200.png" t="Include" />
+          <e p="LargeTile.scale-400.png" t="Include" />
+          <e p="SmallTile.scale-100.png" t="Include" />
+          <e p="SmallTile.scale-200.png" t="Include" />
+          <e p="SmallTile.scale-400.png" t="Include" />
+          <e p="SplashScreen.scale-100.png" t="Include" />
+          <e p="SplashScreen.scale-200.png" t="Include" />
+          <e p="SplashScreen.scale-400.png" t="Include" />
+          <e p="Square150x150Logo.scale-100.png" t="Include" />
+          <e p="Square150x150Logo.scale-200.png" t="Include" />
+          <e p="Square150x150Logo.scale-400.png" t="Include" />
+          <e p="Square44x44Logo.altform-unplated_targetsize-16.png" t="Include" />
+          <e p="Square44x44Logo.altform-unplated_targetsize-256.png" t="Include" />
+          <e p="Square44x44Logo.altform-unplated_targetsize-48.png" t="Include" />
+          <e p="Square44x44Logo.scale-100.png" t="Include" />
+          <e p="Square44x44Logo.scale-200.png" t="Include" />
+          <e p="Square44x44Logo.scale-400.png" t="Include" />
+          <e p="Square44x44Logo.targetsize-16.png" t="Include" />
+          <e p="Square44x44Logo.targetsize-256.png" t="Include" />
+          <e p="Square44x44Logo.targetsize-48.png" t="Include" />
+          <e p="StoreLogo.scale-100.png" t="Include" />
+          <e p="StoreLogo.scale-200.png" t="Include" />
+          <e p="StoreLogo.scale-400.png" t="Include" />
+          <e p="Wide310x150Logo.scale-100.png" t="Include" />
+          <e p="Wide310x150Logo.scale-200.png" t="Include" />
+          <e p="Wide310x150Logo.scale-400.png" t="Include" />
+        </e>
+        <e p="Compendia.UWP.csproj" t="IncludeRecursive" />
+        <e p="MainPage.xaml" t="Include" />
+        <e p="MainPage.xaml.cs" t="Include" />
+        <e p="Package.appxmanifest" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Default.rd.xml" t="Include" />
+        </e>
+      </e>
+      <e p="Compendia.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
