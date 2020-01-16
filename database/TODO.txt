@@ -1,0 +1,19 @@
+ - creation script for user tables 
+	- initally creating the tables -DONE
+	- fill in default values
+		- templates -DONE
+		- create tables for each template type
+ - triggers to auto delete
+	- templates
+	- whole entries
+	- users
+ - triggers to auto insert
+	- public templates
+	- own templates
+	- new public templates into user db's
+ - view to select entries by
+	- name
+	- id
+	- user
+	- date
+ - actually testing this thing
