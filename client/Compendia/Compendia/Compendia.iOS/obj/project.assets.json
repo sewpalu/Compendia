@@ -1012,11 +1012,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\debinkli\\source\\repos\\Compendia\\Compendia\\Compendia.iOS\\Compendia.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.iOS\\Compendia.iOS.csproj",
       "projectName": "Compendia.iOS",
-      "projectPath": "C:\\Users\\debinkli\\source\\repos\\Compendia\\Compendia\\Compendia.iOS\\Compendia.iOS.csproj",
+      "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.iOS\\Compendia.iOS.csproj",
       "packagesPath": "C:\\Users\\debinkli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\debinkli\\source\\repos\\Compendia\\Compendia\\Compendia.iOS\\obj\\",
+      "outputPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1039,8 +1039,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\debinkli\\source\\repos\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
-              "projectPath": "C:\\Users\\debinkli\\source\\repos\\Compendia\\Compendia\\Compendia\\Compendia.csproj"
+            "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
+              "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj"
             }
           }
         }

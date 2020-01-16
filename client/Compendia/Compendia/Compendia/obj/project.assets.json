@@ -563,11 +563,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\debinkli\\source\\repos\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
+      "projectUniqueName": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
       "projectName": "Compendia",
-      "projectPath": "C:\\Users\\debinkli\\source\\repos\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
+      "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
       "packagesPath": "C:\\Users\\debinkli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\debinkli\\source\\repos\\Compendia\\Compendia\\Compendia\\obj\\",
+      "outputPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -2007,11 +2007,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\debinkli\\source\\repos\\Compendia\\Compendia\\Compendia.Android\\Compendia.Android.csproj",
+      "projectUniqueName": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.Android\\Compendia.Android.csproj",
       "projectName": "Compendia.Android",
-      "projectPath": "C:\\Users\\debinkli\\source\\repos\\Compendia\\Compendia\\Compendia.Android\\Compendia.Android.csproj",
+      "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.Android\\Compendia.Android.csproj",
       "packagesPath": "C:\\Users\\debinkli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\debinkli\\source\\repos\\Compendia\\Compendia\\Compendia.Android\\obj\\",
+      "outputPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2034,8 +2034,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\debinkli\\source\\repos\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
-              "projectPath": "C:\\Users\\debinkli\\source\\repos\\Compendia\\Compendia\\Compendia\\Compendia.csproj"
+            "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
+              "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj"
             }
           }
         }

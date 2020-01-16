@@ -8003,11 +8003,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\debinkli\\source\\repos\\Compendia\\Compendia\\Compendia.UWP\\Compendia.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.UWP\\Compendia.UWP.csproj",
       "projectName": "Compendia.UWP",
-      "projectPath": "C:\\Users\\debinkli\\source\\repos\\Compendia\\Compendia\\Compendia.UWP\\Compendia.UWP.csproj",
+      "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.UWP\\Compendia.UWP.csproj",
       "packagesPath": "C:\\Users\\debinkli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\debinkli\\source\\repos\\Compendia\\Compendia\\Compendia.UWP\\obj\\",
+      "outputPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -8031,8 +8031,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\debinkli\\source\\repos\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
-              "projectPath": "C:\\Users\\debinkli\\source\\repos\\Compendia\\Compendia\\Compendia\\Compendia.csproj"
+            "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
+              "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj"
             }
           }
         }
