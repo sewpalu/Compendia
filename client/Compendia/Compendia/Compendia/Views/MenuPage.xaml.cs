@@ -28,7 +28,7 @@ namespace Compendia.Views
                 new HomeMenuItem {Id = MenuItemType.EntrymaskCreation, Title ="Eintragsmaske erstellen"},
                 new HomeMenuItem {Id = MenuItemType.EntryCreation, Title="Eintrag erstellen" },
                 new HomeMenuItem {Id = MenuItemType.ShowEntry, Title="Eintrag ansehen" },
-                new HomeMenuItem {Id = MenuItemType.Settings, Title ="Optionen"}
+                new HomeMenuItem {Id = MenuItemType.Settings, Title ="Einstellungen"}
 
             };
 

@@ -1,5 +1,7 @@
 package mono;
 
+//NOTE: we can't use import, see Generator.GetMonoInitSource
+
 public class MonoRuntimeProvider
 	extends android.content.ContentProvider
 {
@@ -17,35 +19,20 @@ public class MonoRuntimeProvider
 	public void attachInfo (android.content.Context context, android.content.pm.ProviderInfo info)
 	{
 		// Mono Runtime Initialization {{{
-		android.content.pm.ApplicationInfo apiInfo = null;
-
-		String platformPackage	= mono.MonoPackageManager.getApiPackageName ();
-		if (platformPackage != null) {
-			Throwable t = null;
-			try {
-				apiInfo = context.getPackageManager ().getApplicationInfo (platformPackage, 0);
-			} catch (android.content.pm.PackageManager.NameNotFoundException e) {
-				// ignore
+		android.content.pm.ApplicationInfo applicationInfo = context.getApplicationInfo ();
+		String[] apks = null;
+		if (android.os.Build.VERSION.SDK_INT >= 21) {
+			String[] splitApks = applicationInfo.splitPublicSourceDirs;
+			if (splitApks != null && splitApks.length > 0) {
+				apks = new String[splitApks.length + 1];
+				apks [0] = applicationInfo.sourceDir;
+				System.arraycopy (splitApks, 0, apks, 1, splitApks.length);
 			}
-			if (apiInfo == null) {
-				try {
-					apiInfo = context.getPackageManager ().getApplicationInfo ("Xamarin.Android.Platform", 0);
-				} catch (android.content.pm.PackageManager.NameNotFoundException e) {
-					t = e;
-				}
-			}
-			if (apiInfo == null)
-				throw new RuntimeException ("Unable to find application " + platformPackage + " or Xamarin.Android.Platform!", t);
 		}
-		try {
-			android.content.pm.ApplicationInfo runtimeInfo = context.getPackageManager ().getApplicationInfo ("Mono.Android.DebugRuntime", 0);
-			mono.MonoPackageManager.LoadApplication (context, runtimeInfo,
-					apiInfo != null
-					? new String[]{runtimeInfo.sourceDir, apiInfo.sourceDir, context.getApplicationInfo ().sourceDir}
-					: new String[]{runtimeInfo.sourceDir, context.getApplicationInfo ().sourceDir});
-		} catch (android.content.pm.PackageManager.NameNotFoundException e) {
-			throw new RuntimeException ("Unable to find application Mono.Android.DebugRuntime!", e);
+		if (apks == null) {
+			apks = new String[] { applicationInfo.sourceDir };
 		}
+		mono.MonoPackageManager.LoadApplication (context, applicationInfo, apks);
 		// }}}
 		super.attachInfo (context, info);
 	}
