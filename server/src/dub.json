@@ -4,9 +4,9 @@
 	],
 	"copyright": "Copyright © 2019, Patrick Sewell",
 	"dependencies": {
-		"vibe-d": "~>0.8.6"
+		"lighttp": "~>0.5.3"
 	},
 	"description": "Server for Compendia",
 	"license": "none",
-	"name": "compendidata"
+	"name": "src"
 }
