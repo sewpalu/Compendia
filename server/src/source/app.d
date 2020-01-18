@@ -1,6 +1,19 @@
 import vibe.vibe;
 
+// import app_router;
+
 void main()
+{
+  auto router = new URLRouter;
+  // router.registerWebInterface(new AppRouter);
+  router.get("/", &parseReq);
+  router.post("/", &parseReq);
+
+  auto listener = listenHTTP(initSettings(), router);
+  runApplication();
+}
+
+HTTPServerSettings initSettings()
 {
   auto settings = new HTTPServerSettings;
   settings.port = 8080;
@@ -11,29 +24,17 @@ void main()
   readOption("bind-address|bind", &settings.bindAddresses[0],
       "Sets the address used for serving HTTP");
 
-  auto listener = listenHTTP(settings, &parseReq);
-  runApplication();
+  return settings;
 }
 
 void parseReq(HTTPServerRequest req, HTTPServerResponse res)
 {
-  res.writeBody("Hey there, I'm using Dlang!");
+  struct Response
+  {
+    string message;
+    Json originalRequest;
+  }
+
+  res.writeJsonBody(Response("Hey there, I'm using Dlang!", req.json));
 }
-
-/*
-import std.stdio;
-
-import lighttp;
-
-import source.router;
-
-void main()
-{
-	auto server = new Server;
-	server.host("127.0.0.1", 8080);
-	server.router.add(new Router);
-	server.router.add(Get("hi"), new Resource("text/html", "<h1>Hello World! - 3</h1>"));
-	server.run();
-}
-*/
 

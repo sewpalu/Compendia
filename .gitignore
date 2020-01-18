@@ -15,3 +15,5 @@ src-test-*
 *.o
 *.obj
 *.lst
+
+server/src/compendidata
