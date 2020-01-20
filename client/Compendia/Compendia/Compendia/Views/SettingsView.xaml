@@ -12,9 +12,16 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label x:Name="Label"
+                Text="Einstellungen"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="Rotate!"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    Clicked="OnButtonClicked" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -16,5 +16,10 @@ namespace Compendia.Views
         {
             InitializeComponent();
         }
+        private async void OnButtonClicked(object sender, EventArgs args)
+        {
+            await Label.RelRotateTo(360, 1000);
+        }
+
     }
 }
