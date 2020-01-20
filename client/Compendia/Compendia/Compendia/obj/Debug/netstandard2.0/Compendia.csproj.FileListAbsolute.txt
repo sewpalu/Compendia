@@ -20,3 +20,4 @@ C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Comp
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia\bin\Debug\netstandard2.0\ref\Compendia.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia\bin\Debug\netstandard2.0\Compendia.pdb
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia\obj\Debug\netstandard2.0\Compendia.csprojAssemblyReference.cache
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia\obj\Debug\netstandard2.0\XamlC.stamp

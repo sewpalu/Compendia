@@ -13,6 +13,7 @@ namespace Compendia.Database
         //public static ObjectRepository _ObjectRepository { get; private set; }
         //public static KategorieRepository _KategorieRepository { get; private set; }
         //public static ObjectKategorieRepository _ObjectKategorieRepository { get; private set; }
+        public static LogInRepository _LogInRepository { get; private set; }
 
         static DatabaseService()
         {

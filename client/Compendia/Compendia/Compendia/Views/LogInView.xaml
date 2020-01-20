@@ -31,15 +31,9 @@
         </StackLayout>
         <Button 
                 Text="OK"
-                Command="{Binding LoginCommand}"/>
+                Command="{Binding LogInCommand}"/>
             
-            <Button
-                Text="Next"
-                HorizontalOptions="Center"
-                VerticalOptions="End"
-                Command="{Binding NextClickedCommand}">
-                
-            </Button>
+            
         </StackLayout>
         
         

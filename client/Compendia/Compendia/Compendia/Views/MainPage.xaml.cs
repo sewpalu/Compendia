@@ -53,6 +53,7 @@ namespace Compendia
                         MenuPages.Add(id, new NavigationPage(new ShowEntryView()));
                         break;
                     case (int)MenuItemType.LogOut:
+                        //Sachen aus Datenbank noch rauslöschen
                         MenuPages.Add(id, new NavigationPage(new LogInView()));
                         break;
 
