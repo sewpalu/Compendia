@@ -1,0 +1,8 @@
+NOTES:
+	- Einträge werden in Textform (vermutlich als JSON welches als "keys" die komponentenbezeichner des Template XML's/JSON hat)
+	  in der Haupttabelle der DB des Nutzers gespeichert, macht es uns einfacher Sachen ein oder auszulesen
+	- Für Eintragssuchen nach Namen: Index "entryTitleIndex" verwenden
+	- Templates aktualisieren: Ich glaube manuell ist das am besten, also einfach ein Button "Aktualisieren", 
+	  dieser führt dann in der DB den Merge aus, anschließend werden Client und SErver DB synchronisiert
+	- User nach Namen suchen: Index "userNameIndex" verwenden
+	- Template nach Namen suchen: Index "templateName" verwenden (in User DB)

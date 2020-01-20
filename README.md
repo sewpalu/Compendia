@@ -1,17 +1,6 @@
-# Compendia
-SW-Engineering Projekt
+Database used: mysql (XAMPP didnt like the existing MäriaDB installation...)
 
-## Frontend
+User: root
+Password: ?
 
-## Backend
-
-### Server
-
-### Datenbank
-
-## Richtlinien
-
-### Git
-- Commitnachrichten auf Englisch, im Imperativ
-- Ein Commit pro in sich vollständiger Änderung
-- Nicht auf master committen
+Database main: compendia
