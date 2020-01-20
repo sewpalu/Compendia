@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Compendia.Views.MainPage.xaml", "Views/MainPage.xaml", typeof(global::Compendia.Views.MainPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Compendia.Views.MainPage.xaml", "Views/MainPage.xaml", typeof(global::Compendia.MainPage))]
 
-namespace Compendia.Views {
+namespace Compendia {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\MainPage.xaml")]

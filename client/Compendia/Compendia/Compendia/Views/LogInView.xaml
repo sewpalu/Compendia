@@ -18,6 +18,21 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
+            <StackLayout>
+            <Label Text="Benutzername"/>
+            <Entry  
+                    Text="{Binding EntryUser}"/>
+        </StackLayout>
+        <StackLayout>
+            <Label Text="Passwort"/>
+            <Entry  
+                    IsPassword="True"
+                    Text="{Binding EntryPassword}"/>
+        </StackLayout>
+        <Button 
+                Text="OK"
+                Command="{Binding LoginCommand}"/>
+            
             <Button
                 Text="Next"
                 HorizontalOptions="Center"

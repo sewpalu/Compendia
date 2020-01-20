@@ -23,6 +23,9 @@ namespace Compendia
             MasterBehavior = MasterBehavior.Popover;
 
             MenuPages.Add((int)MenuItemType.Main, (NavigationPage)Detail);
+
+            
+
         }
 
         public async Task NavigateFromMenu(int id)
@@ -49,6 +52,10 @@ namespace Compendia
                     case (int)MenuItemType.ShowEntry:
                         MenuPages.Add(id, new NavigationPage(new ShowEntryView()));
                         break;
+                    case (int)MenuItemType.LogOut:
+                        MenuPages.Add(id, new NavigationPage(new LogInView()));
+                        break;
+
                 }
             }
 

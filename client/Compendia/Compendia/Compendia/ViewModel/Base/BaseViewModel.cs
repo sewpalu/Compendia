@@ -15,12 +15,12 @@ namespace Compendia.ViewModel.Base
             await Application.Current.MainPage.Navigation.PushAsync(p);
         }
 
-        public async Task PopAsybc()
+        public async Task PopAsync()
         {
             await Application.Current.MainPage.Navigation.PopAsync();
         }
 
-        public async Task PoModalAsynsc()
+        public async Task PopModalAsync()
         {
             await Application.Current.MainPage.Navigation.PopModalAsync();
         }

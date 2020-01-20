@@ -14,6 +14,7 @@ namespace Compendia
 
             //MainPage = new NavigationPage(new LogInView());
             MainPage = new MainPage();
+
         }
 
         protected override void OnStart()

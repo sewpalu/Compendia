@@ -25,7 +25,7 @@ namespace Compendia.ViewModel
 
                 return new Command(async() =>
                 {
-                    await PushAsync(new MainView());
+                    await PopAsync();
 
                 });
 

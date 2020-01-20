@@ -11,7 +11,8 @@ namespace Compendia.Model
         EntrymaskCreation,
         EntryCreation,
         ShowEntry,
-        Settings
+        Settings,
+        LogOut
     }
     public class HomeMenuItem
     {
