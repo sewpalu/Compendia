@@ -29,12 +29,64 @@ HTTPServerSettings initSettings()
 
 void parseReq(HTTPServerRequest req, HTTPServerResponse res)
 {
-  struct Response
+  import std.json;
+
+  JSONValue outMessage = ["sender": "server"];
+
+  try
   {
-    string message;
-    Json originalRequest;
+    auto inMessage = cast(JSONValue) req.json;
+
+    auto command = inMessage["command"].str;
+    outMessage.object["command"] = JSONValue(command);
+    switch (command)
+    {
+      case "addEntry":
+      {
+        auto userId = inMessage["userId"].integer;
+        auto templateId = inMessage["templateId"].integer;
+        auto entry = inMessage["entry"].toString;
+
+        outMessage.object["entryId"] = JSONValue(dbAddEntry(userId, templateId, entry));
+      }
+      break;
+
+      case "addUser":
+      {
+        auto userName = inMessage["userName"].toString;
+
+        outMessage.object["userId"] = JSONValue(dbAddUser(userName));
+      }
+      break;
+
+      case "getEntries":
+      {
+      }
+      break;
+
+      default:
+      break;
+    }
+
+    outMessage.object["success"] = true;
+  }
+  catch (JSONException e)
+  {
+    logInfo(e.msg);
+    outMessage.object["success"] = JSONValue(false);
+    outMessage.object["error"] = JSONValue(e.msg);
   }
 
-  res.writeJsonBody(Response("Hey there, I'm using Dlang!", req.json));
+  res.writeJsonBody(outMessage);
+}
+
+int dbAddEntry(long userId, long templateId, string entry)
+{
+  return 0;
+}
+
+int dbAddUser(string userName)
+{
+  return 0;
 }
 
