@@ -63,11 +63,11 @@ namespace Compendia.ViewModel
                         //User und Passwort überprüfen von großer Datenbank
 
                         //Falls richtig: Userdaten in lokale Datenbank schreiben
-                        await DatabaseService._LogInRepository.AddObjectAsync(new DbLogIn(user, password));
+                        var result = await DatabaseService._LogInRepository.AddObjectAsync(new DbLogIn(user, password));
 
 
-                        //LogInView vom Stack nehmen
-                        await PopAsync();
+                        //Auf MainView wechseln
+                        await PushAsync(new MainView());
                     }   
                    
 

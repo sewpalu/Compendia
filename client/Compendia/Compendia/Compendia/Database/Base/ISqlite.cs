@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Compendia.Database.Base
+namespace Compendia.Database
 {
     public interface ISqlite
     {

@@ -317,10 +317,7 @@ C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Comp
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Core\AppxManifest.xml
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Core\Compendia.UWP.exe
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Compendia.UWP.build.appxrecipe
-C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.Bcl.HashCode.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.Data.Sqlite.dll
-C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.EntityFrameworkCore.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.EntityFrameworkCore.Design.dll
@@ -333,7 +330,6 @@ C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Comp
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.Extensions.Configuration.Binder.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.Extensions.DependencyModel.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.Extensions.Logging.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.Extensions.Options.dll
@@ -507,8 +503,6 @@ C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Comp
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\System.Diagnostics.DiagnosticSource.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\System.Memory.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\System.Text.Encodings.Web.dll
-C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\System.Text.Json.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.Graphics.Canvas.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.Graphics.Canvas.winmd
@@ -540,7 +534,6 @@ C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Comp
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\Compendia.UWP.exe
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\Compendia.UWP.pdb
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\ResourceHandlingTask.state
-C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\FxResources.Microsoft.Bcl.HashCode.SR.resw
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\Microsoft.Data.Sqlite\en-US\Microsoft.Data.Sqlite.Properties.Resources.resw
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\Microsoft.EntityFrameworkCore\en-US\Microsoft.EntityFrameworkCore.Properties.CoreStrings.resw
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\Microsoft.EntityFrameworkCore.Abstractions\en-US\Microsoft.EntityFrameworkCore.Properties.AbstractionsStrings.resw
@@ -640,9 +633,7 @@ C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Comp
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\FxResources.System.Transactions.Local.SR.resw
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\FxResources.System.ValueTuple.SR.resw
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\FxResources.System.Collections.Immutable.SR.resw
-C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\FxResources.System.Diagnostics.DiagnosticSource.SR.resw
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\FxResources.System.Memory.SR.resw
-C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\FxResources.System.Text.Json.SR.resw
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\priconfig.xml
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\priconfig.xml.intermediate
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\unfiltered.layout.resfiles
@@ -662,3 +653,6 @@ C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Comp
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\Xamarin.Forms.Platform.UAP.pri.xml
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_636160679180000000.json
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Remotion.Linq.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\System.Interactive.Async.dll

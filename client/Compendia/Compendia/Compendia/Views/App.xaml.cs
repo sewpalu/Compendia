@@ -12,7 +12,6 @@ namespace Compendia
         {
             InitializeComponent();
 
-            //MainPage = new NavigationPage(new LogInView());
             MainPage = new MainPage();
 
         }

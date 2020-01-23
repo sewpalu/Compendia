@@ -120,8 +120,11 @@
   <data name="MultipleAnnotationConflict" xml:space="preserve">
     <value>The annotation '{annotationName}' was specified twice with potentially different values. Specifying the same annotation multiple times for different providers is no longer supported. Review the generated Migration to ensure it is correct and, if necessary, edit the Migration to fix any issues.</value>
   </data>
+  <data name="MissingPrimaryKey" xml:space="preserve">
+    <value>Unable to identify the primary key for table '{tableName}'.</value>
+  </data>
   <data name="NoParameterlessConstructor" xml:space="preserve">
-    <value>Unable to create an object of type '{contextType}'. For the different patterns supported at design time, see https://go.microsoft.com/fwlink/?linkid=851728</value>
+    <value>Unable to create an object of type '{contextType}'. Add an implementation of 'IDesignTimeDbContextFactory&lt;{contextType}&gt;' to the project, or see https://go.microsoft.com/fwlink/?linkid=851728 for additional patterns supported at design time.</value>
   </data>
   <data name="ReusingSnapshotName" xml:space="preserve">
     <value>Reusing model snapshot name '{name}'.</value>
@@ -144,14 +147,8 @@
   <data name="ForeignMigrations" xml:space="preserve">
     <value>The namespace '{migrationsNamespace}' contains migrations for a different DbContext. This can result in conflicting migration names. It's recommend to put migrations for different DbContext classes into different namespaces.</value>
   </data>
-  <data name="MalformedCreateHostBuilder" xml:space="preserve">
-    <value>An unexpected return type was encountered while accessing the Microsoft.Extensions.Hosting services. Method 'CreateHostBuilder(string[])' should return an object of type 'IHostBuilder'. Continuing without the application service provider.</value>
-  </data>
   <data name="RemovingSnapshot" xml:space="preserve">
     <value>Removing model snapshot.</value>
-  </data>
-  <data name="NoCreateHostBuilder" xml:space="preserve">
-    <value>No static method 'CreateHostBuilder(string[])' was found on class 'Program'.</value>
   </data>
   <data name="NoLanguageService" xml:space="preserve">
     <value>The project language '{language}' isn't supported by the built-in {service} service. You can try looking for an additional NuGet package which supports this language; moving your DbContext type to a C# class library referenced by this project; or manually implementing and registering the design-time service for programming language.</value>
@@ -179,9 +176,6 @@ Change your target project to the migrations project by using the Package Manage
   <data name="RevertingMigration" xml:space="preserve">
     <value>Reverting migration '{name}'.</value>
   </data>
-  <data name="UsingHostingServices" xml:space="preserve">
-    <value>Using application service provider from Microsoft.Extensions.Hosting.</value>
-  </data>
   <data name="NoMigrationMetadataFile" xml:space="preserve">
     <value>No file named '{file}' was found.</value>
   </data>
@@ -206,8 +200,8 @@ Change your target project to the migrations project by using the Package Manage
   <data name="UseContext" xml:space="preserve">
     <value>Using context '{name}'.</value>
   </data>
-  <data name="LiteralExpressionNotSupported" xml:space="preserve">
-    <value>The literal expression '{expression}' for '{type}' cannot be parsed. Only simple constructor calls and factory methods are supported.</value>
+  <data name="UsingBuildWebHost" xml:space="preserve">
+    <value>Using application service provider from IWebHost accessor on '{programClass}'.</value>
   </data>
   <data name="NonRelationalProvider" xml:space="preserve">
     <value>{provider} is not a Relational provider and therefore cannot be use with Migrations.</value>
@@ -230,9 +224,6 @@ Change your target project to the migrations project by using the Package Manage
   <data name="SequencesRequireName" xml:space="preserve">
     <value>Sequence name cannot be null or empty. Entity Framework cannot model a sequence that does not have a name.</value>
   </data>
-  <data name="FindingHostingServices" xml:space="preserve">
-    <value>Finding Microsoft.Extensions.Hosting service provider...</value>
-  </data>
   <data name="FindingContextFactories" xml:space="preserve">
     <value>Finding IDesignTimeDbContextFactory implementations...</value>
   </data>
@@ -253,6 +244,9 @@ Change your target project to the migrations project by using the Package Manage
   </data>
   <data name="VersionMismatch" xml:space="preserve">
     <value>The EF Core tools version '{toolsVersion}' is older than that of the runtime '{runtimeVersion}'. Update the tools for the latest features and bug fixes.</value>
+  </data>
+  <data name="NoBuildWebHost" xml:space="preserve">
+    <value>No CreateWebHostBuilder(string[]) method was found on type '{programClass}'.</value>
   </data>
   <data name="RemovingMigration" xml:space="preserve">
     <value>Removing migration '{name}'.</value>
@@ -275,6 +269,9 @@ Change your target project to the migrations project by using the Package Manage
   <data name="MultipleContextsWithName" xml:space="preserve">
     <value>More than one DbContext named '{name}' was found. Specify which one to use by providing its fully qualified name.</value>
   </data>
+  <data name="FindingBuildWebHost" xml:space="preserve">
+    <value>Finding IWebHost accessor...</value>
+  </data>
   <data name="FindingProviderServices" xml:space="preserve">
     <value>Finding design-time services for provider '{provider}'...</value>
   </data>
@@ -283,6 +280,9 @@ Change your target project to the migrations project by using the Package Manage
   </data>
   <data name="FoundDbContext" xml:space="preserve">
     <value>Found DbContext '{contextType}'.</value>
+  </data>
+  <data name="InvokeBuildWebHostFailed" xml:space="preserve">
+    <value>An error occurred while accessing the IWebHost on class '{startupClass}'. Continuing without the application service provider. Error: {error}</value>
   </data>
   <data name="FindingContexts" xml:space="preserve">
     <value>Finding DbContext classes...</value>
@@ -320,14 +320,14 @@ Change your target project to the migrations project by using the Package Manage
   <data name="FindingDesignTimeServices" xml:space="preserve">
     <value>Finding IDesignTimeServices implementations in assembly '{startupAssembly}'...</value>
   </data>
+  <data name="NoEntryPoint" xml:space="preserve">
+    <value>No entry point was found for assembly '{startupAssembly}'.</value>
+  </data>
   <data name="ForceRemoveMigration" xml:space="preserve">
     <value>Unable to check if the migration '{name}' has been applied to the database. If it has, you will need to manually reverse the changes it made. Error encountered while checking: {error}</value>
   </data>
   <data name="SensitiveInformationWarning" xml:space="preserve">
     <value>To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.</value>
-  </data>
-  <data name="InvokeCreateHostBuilderFailed" xml:space="preserve">
-    <value>An error occurred while accessing the Microsoft.Extensions.Hosting services. Continuing without the application service provider. Error: {error}</value>
   </data>
   <data name="UsingProviderServices" xml:space="preserve">
     <value>Using design-time services from provider '{provider}'.</value>
