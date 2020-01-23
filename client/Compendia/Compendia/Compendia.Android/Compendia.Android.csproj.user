@@ -3,5 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>HUAWEI BLN-L21</SelectedDevice>
     <DefaultDevice>my_device</DefaultDevice>
+    <AndroidDesignerPreferredTheme>Theme.DeviceDefault.Light.NoActionBar.Fullscreen</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>

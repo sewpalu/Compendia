@@ -11,12 +11,13 @@
     <ContentPage.BindingContext>
         <pagemodels:LogInViewModel/>
     </ContentPage.BindingContext>
+    
 
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Log In "
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
 
             <StackLayout>
             <Label Text="Benutzername"/>
