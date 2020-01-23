@@ -77,8 +77,8 @@ Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 netstandard
-System.Threading.Tasks.Extensions
 System.ComponentModel.Annotations
+System.Threading.Tasks.Extensions
 System.Resources.ResourceManager
 System.Collections.Concurrent
 System.Collections

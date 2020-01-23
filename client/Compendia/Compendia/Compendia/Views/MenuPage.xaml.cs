@@ -29,7 +29,7 @@ namespace Compendia.Views
                 new HomeMenuItem {Id = MenuItemType.EntryCreation, Title="Eintrag erstellen" },
                 new HomeMenuItem {Id = MenuItemType.ShowEntry, Title="Eintrag ansehen" },
                 new HomeMenuItem {Id = MenuItemType.Settings, Title ="Optionen"},
-                new HomeMenuItem {Id = MenuItemType.Settings, Title = "Log Out"}
+                new HomeMenuItem {Id = MenuItemType.LogOut, Title = "Log Out"}
 
             };
 

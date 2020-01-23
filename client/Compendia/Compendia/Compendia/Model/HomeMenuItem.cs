@@ -6,6 +6,7 @@ namespace Compendia.Model
 {
     public enum MenuItemType
     {
+        
         Main,
         Statistics,
         EntrymaskCreation,

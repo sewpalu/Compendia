@@ -1,8 +1,10 @@
-﻿using Compendia.Model;
+﻿using Compendia.Database;
+using Compendia.Model;
 using Compendia.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -21,9 +23,30 @@ namespace Compendia
             InitializeComponent();
 
             MasterBehavior = MasterBehavior.Popover;
-
             MenuPages.Add((int)MenuItemType.Main, (NavigationPage)Detail);
 
+
+            DbLogIn userdata;
+            try
+            {
+                userdata = DatabaseService._LogInRepository.GetLastObject();
+
+            }catch(Exception e)
+            {
+                userdata = null;
+                Debug.WriteLine(e, ToString());
+            }
+            
+            if (userdata == null)
+            {
+                _ = NavigateFromMenu((int)MenuItemType.LogOut);
+            }
+            else
+            {
+                //mit Datenbank verbinden
+            }
+               
+            
             
 
         }
@@ -54,6 +77,7 @@ namespace Compendia
                         break;
                     case (int)MenuItemType.LogOut:
                         //Sachen aus Datenbank noch rauslöschen
+                        logOut();
                         MenuPages.Add(id, new NavigationPage(new LogInView()));
                         break;
 
@@ -72,6 +96,18 @@ namespace Compendia
                 IsPresented = false;
             }
 
+        }
+                
+        private async void logOut()
+        {
+            try
+            {
+                await DatabaseService._LogInRepository.DeleteObjectAsync(DatabaseService._LogInRepository.GetLastObjectAsync().Id);
+
+            }catch(Exception e)
+            {
+                Debug.WriteLine(e.ToString());
+            }
         }
     }
 }
