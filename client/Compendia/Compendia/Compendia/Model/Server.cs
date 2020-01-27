@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -15,18 +16,19 @@ namespace Compendia.Model
         {
             connected = false;
             ConnectToServer();
+            Communication();
         }
 
         private async static void ConnectToServer()
         {
             if (connected == false)
             {
-                string host = "compendidata.herokuapp.com";  // Uri
+                string host = "compendidata.herokuapp.com";  // URI
                 
                 IPHostEntry hostEntry = Dns.GetHostEntry(host);
 
                 int port = 8080;
-                IPAddress[] ipAddresses = hostEntry.AddressList;
+                IPAddress[] ipAddresses = hostEntry.AddressList; //Get IP-Adress from URI
                 ClientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
                 IPEndPoint end = new IPEndPoint(IPAddress.Parse(ipAddresses[0].ToString()), port);
@@ -37,9 +39,7 @@ namespace Compendia.Model
 
                     if (ClientSocket.Connected)
                     {
-                       
-                        //AddLabelList(servertext, 2);//
-
+                      
                         connected = true;
 
                     }
@@ -53,6 +53,33 @@ namespace Compendia.Model
 
             }
         }
+
+        private static void Communication()
+        {
+            try
+            {
+                var text = "{\"sender\": \"client\",\"command\": \"addUser\",\"userName\": \"Max Mustermann\"}";
+                var message = new byte[text.Length];
+                message = Encoding.UTF8.GetBytes(text);
+
+                //Länge des Datenpacketes
+                //message wird gesendet
+                ClientSocket.Send(message);
+
+
+                var received = new byte[100];   
+                var size =  ClientSocket.Receive(received);
+
+            }catch(Exception e)
+            {
+                Debug.WriteLine(e.ToString());
+            }
+
+        }
+
+
+
+
 
     }
 }

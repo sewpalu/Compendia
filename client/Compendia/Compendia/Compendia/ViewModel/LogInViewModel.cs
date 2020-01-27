@@ -17,6 +17,8 @@ namespace Compendia.ViewModel
         private string password;
         public LogInViewModel()
         {
+            user = "User";
+            password = "Password";
 
         }
 
