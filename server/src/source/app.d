@@ -31,14 +31,14 @@ void parseReq(HTTPServerRequest req, HTTPServerResponse res)
 {
   import std.json;
 
-  JSONValue outMessage = ["sender": "server"];
+  JSONValue outMessage = void;
 
   try
   {
     auto inMessage = cast(JSONValue) req.json;
 
     auto command = inMessage["command"].str;
-    outMessage.object["command"] = JSONValue(command);
+    outMessage = ["command": command];
     switch (command)
     {
       case "addEntry":
@@ -72,8 +72,7 @@ void parseReq(HTTPServerRequest req, HTTPServerResponse res)
   }
   catch (JSONException e)
   {
-    logInfo(e.msg);
-    outMessage.object["success"] = JSONValue(false);
+    outMessage = ["success": false];
     outMessage.object["error"] = JSONValue(e.msg);
   }
 
