@@ -1,4 +1,11 @@
-
+*.class
+*.apk
+*.cache
+*.dex
+*.java
+*.jar
+*.txt
+*.stamp
 server/src/.vscode/
 server/src/src
 server/src/docs/

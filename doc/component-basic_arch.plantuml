@@ -1,0 +1,5 @@
+[Client] <-> JSON
+JSON - [Server]
+[Server] -> SQL
+SQL - [Database]
+[Database] -> [Server]: response
