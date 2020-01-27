@@ -141,6 +141,9 @@
   <data name="LogPrincipalColumnNotFound" xml:space="preserve">
     <value>For foreign key with identity {id} on table {tableName}, unable to find the column called {principalColumnName} on the foreign key's principal table, {principaltableName}. Skipping foreign key.</value>
   </data>
+  <data name="ComputedColumnsNotSupported" xml:space="preserve">
+    <value>SQLite doesn't support computed columns. For more information, see http://go.microsoft.com/fwlink/?LinkId=723262.</value>
+  </data>
   <data name="MigrationScriptGenerationNotSupported" xml:space="preserve">
     <value>Generating idempotent scripts for migration is not currently supported by SQLite. For more information, see http://go.microsoft.com/fwlink/?LinkId=723262.</value>
   </data>
@@ -152,6 +155,9 @@
   </data>
   <data name="LogUsingSchemaSelectionsWarning" xml:space="preserve">
     <value>SQLite doesn't support schemas. The specified schema selection arguments will be ignored.</value>
+  </data>
+  <data name="OrderByNotSupported" xml:space="preserve">
+    <value>SQLite cannot order by expressions of type '{type}'. Convert the values to a supported type or use LINQ to Objects to order the results.</value>
   </data>
   <data name="LogFoundPrimaryKey" xml:space="preserve">
     <value>Found primary key with name: {primaryKeyName}, table: {tableName}.</value>

@@ -1134,3 +1134,17 @@ C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Comp
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.Android\obj\Debug\90\android\assets\System.Text.Encodings.Web.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.Android\obj\Debug\90\android\assets\System.Text.Json.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.Android\obj\Debug\90\android\assets\System.Threading.Tasks.Extensions.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.Android\obj\Debug\90\linksrc\XamForms.Controls.Calendar.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.Android\obj\Debug\90\linksrc\XamForms.Controls.Calendar.Droid.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.Android\obj\Debug\90\linksrc\System.ObjectModel.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.Android\obj\Debug\90\linksrc\System.Threading.Tasks.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.Android\obj\Debug\90\linksrc\System.Globalization.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.Android\obj\Debug\90\linksrc\System.Linq.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.Android\obj\Debug\90\android\assets\System.Globalization.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.Android\obj\Debug\90\android\assets\System.Linq.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.Android\obj\Debug\90\android\assets\System.ObjectModel.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.Android\obj\Debug\90\android\assets\System.Threading.Tasks.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.Android\obj\Debug\90\android\assets\XamForms.Controls.Calendar.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.Android\obj\Debug\90\android\assets\XamForms.Controls.Calendar.Droid.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.Android\obj\Debug\90\android\src\md5f112b719ffc0b0223f20593de7c69b79\CalendarButtonRenderer.java
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.Android\obj\Debug\90\android\src\md5f112b719ffc0b0223f20593de7c69b79\TextDrawable.java

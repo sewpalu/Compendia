@@ -23,13 +23,13 @@ namespace Compendia
             InitializeComponent();
 
             MasterBehavior = MasterBehavior.Popover;
-            MenuPages.Add((int)MenuItemType.Main, (NavigationPage)Detail);
 
 
-            DbLogIn userdata;
+
+            List<DbLogIn> userdata;
             try
             {
-                userdata = DatabaseService._LogInRepository.GetLastObject();
+                userdata = DatabaseService._LogInRepository.GetObjects();
 
             }catch(Exception e)
             {
@@ -37,17 +37,18 @@ namespace Compendia
                 Debug.WriteLine(e, ToString());
             }
             
-            if (userdata == null)
+            if (userdata == null || userdata.Count == 0)
             {
                 _ = NavigateFromMenu((int)MenuItemType.LogOut);
+               
             }
             else
             {
                 //mit Datenbank verbinden
             }
-               
-            
-            
+
+            MenuPages.Add((int)MenuItemType.Main, (NavigationPage)Detail);
+
 
         }
 

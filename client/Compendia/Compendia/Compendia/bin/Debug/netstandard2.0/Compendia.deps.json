@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "e9730671c8a34d90fc6e012d6beaf8ae06f5ff65"
+    "signature": "8789564e2eb22062474b63265ae744dbfaf721fc"
   },
   "compilationOptions": {},
   "targets": {
@@ -14,6 +14,7 @@
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.1",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.1",
           "NETStandard.Library": "2.0.3",
+          "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.0.0.425677"
         },
@@ -454,6 +455,17 @@
             "fileVersion": "2.0.0.0"
           }
         }
+      },
+      "XamForms.Controls.Calendar/1.1.1": {
+        "dependencies": {
+          "Xamarin.Forms": "4.0.0.425677"
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/XamForms.Controls.Calendar.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -763,6 +775,13 @@
       "sha512": "sha512-drwO/MimaMUnmvkULASYjU5MRciVIJyiLxD3ihFq8P+DWynQZ2NLNej0Vrs3k2L7UdmqvcgCxEJdfT7uFl2KVg==",
       "path": "xamarin.forms/4.0.0.425677",
       "hashPath": "xamarin.forms.4.0.0.425677.nupkg.sha512"
+    },
+    "XamForms.Controls.Calendar/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GCydwm9HO+8V4iGVsGJZtnHJaqIpjas40BSRU+T7lIM7E4nZ7pOn2Ifzu0Y6MLrZJuqCHFeroOWjJSfOjZIyyw==",
+      "path": "xamforms.controls.calendar/1.1.1",
+      "hashPath": "xamforms.controls.calendar.1.1.1.nupkg.sha512"
     }
   }
 }

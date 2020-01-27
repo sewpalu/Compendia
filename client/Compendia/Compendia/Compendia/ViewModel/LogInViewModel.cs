@@ -12,6 +12,7 @@ namespace Compendia.ViewModel
 {
     public class LogInViewModel : BaseViewModel
     {
+        
         private string user;
         private string password;
         public LogInViewModel()
@@ -65,9 +66,10 @@ namespace Compendia.ViewModel
                         //Falls richtig: Userdaten in lokale Datenbank schreiben
                         var result = await DatabaseService._LogInRepository.AddObjectAsync(new DbLogIn(user, password));
 
+                        //await PushAsync(new MainPage());
+                        await PopAsync();
 
-                        //Auf MainView wechseln
-                        await PushAsync(new MainView());
+
                     }   
                    
 
@@ -81,8 +83,9 @@ namespace Compendia.ViewModel
             }
         }
 
-
-
-
+        private Page MainPage()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

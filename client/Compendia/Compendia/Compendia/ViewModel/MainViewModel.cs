@@ -3,40 +3,73 @@ using Compendia.ViewModel.Base;
 using Compendia.Views;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Text;
+using Xamarin.Forms;
 
 namespace Compendia.ViewModel
 {
     public class MainViewModel : BaseViewModel
     {
+        private DateTime? _date = DateTime.Today;
+        private ObservableCollection<XamForms.Controls.SpecialDate> attendances;
         public MainViewModel()
         {
             //connectUser();
 
         }
 
-
-        /*private async void connectUser()
+        public DateTime? Date
         {
-            //connect with Database 
-
-            
-            try
-            {   //Benutzername und Passwort aus Datenbank holen
-                var userdata = await DatabaseService._LogInRepository.GetLastObjectAsync();
-                //Userdaten überprüfen
-
-            }
-            catch (Exception e)
+            get
             {
-                //await PushAsync(new LogInView());
-                Debug.WriteLine(e.ToString());
+                return _date;
+            }
+            set
+            {
+                _date = value;
+                ChosenDate = value.ToString();
+                OnPropertyChanged(nameof(Date));
+            }
+        }
+        public ObservableCollection<XamForms.Controls.SpecialDate> Attendances
+        {
+            get
+            {
+                return attendances;
+            }
+            set
+            {
+                attendances = value;
+                OnPropertyChanged(nameof(Attendances));
+            }
+        }
+
+        public Command DateChosen
+        {
+            get
+            {
+                return new Command((obj) =>
+                {
+                    System.Diagnostics.Debug.WriteLine(obj as DateTime?);
+                });
+            }
+        }
+
+        public string ChosenDate
+        {
+            get
+            {
+                return _date.ToString();   
+            }
+            set
+            {
+                _date = DateTime.Parse(value);
+                OnPropertyChanged();
 
             }
+        }
 
-            //Falls Leer: LogInView, Nur in die Datenbank schreiben, wenn die Daten korrekt sind
-
-        }*/
     }
 }

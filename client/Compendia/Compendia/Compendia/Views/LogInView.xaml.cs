@@ -15,6 +15,7 @@ namespace Compendia.Views
         public LogInView()
         {
             InitializeComponent();
+            
         }
     }
 }

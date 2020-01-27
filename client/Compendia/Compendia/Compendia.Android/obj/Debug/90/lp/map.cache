@@ -76,6 +76,8 @@ Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
+XamForms.Controls.Calendar
+XamForms.Controls.Calendar.Droid
 netstandard
 System.ComponentModel.Annotations
 System.Threading.Tasks.Extensions

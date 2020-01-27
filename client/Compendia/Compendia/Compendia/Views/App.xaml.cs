@@ -1,5 +1,8 @@
-﻿using Compendia.Views;
+﻿using Compendia.Database;
+using Compendia.Model;
+using Compendia.Views;
 using System;
+using System.Diagnostics;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,9 +15,27 @@ namespace Compendia
         {
             InitializeComponent();
 
+            //var log = DatabaseService.Name;
+
+            //var data = getConnectionAsync();
+
+
             MainPage = new MainPage();
 
         }
+
+       /* private bool getConnectionAsync()
+        {
+            var userdata =  DatabaseService._LogInRepository.GetLastObject();
+            if (userdata != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }*/
 
         protected override void OnStart()
         {
