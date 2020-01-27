@@ -23,3 +23,6 @@ src-test-*
 *.jar
 *.txt
 *.stamp
+.idea
+client\Compendia\Compendia\Compendia.Android\obj\Debug
+client\Compendia\Compendia\Compendia.Android\obj\Release
