@@ -1,7 +1,5 @@
 import vibe.vibe;
 
-// import app_router;
-
 void main()
 {
   auto router = new URLRouter;
