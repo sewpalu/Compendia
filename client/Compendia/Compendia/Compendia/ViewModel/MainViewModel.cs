@@ -1,4 +1,5 @@
 ﻿using Compendia.Database;
+using Compendia.Model;
 using Compendia.ViewModel.Base;
 using Compendia.Views;
 using System;
@@ -17,7 +18,7 @@ namespace Compendia.ViewModel
         public MainViewModel()
         {
             //connectUser();
-
+           // var tmp = Server.connected;
         }
 
         public DateTime? Date
