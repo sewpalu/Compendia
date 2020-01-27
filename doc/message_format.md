@@ -28,7 +28,6 @@ The JSON object shall consist of
 #### Request
 ```json
 {
-	"sender": "client",
 	"command": "addUser",
 	"userName": "Max Mustermann"
 }
@@ -39,7 +38,6 @@ The JSON object shall consist of
 {
   "command": "addUser",
   "success": true,
-  "sender": "server",
   "userId": 0
 }
 ```
