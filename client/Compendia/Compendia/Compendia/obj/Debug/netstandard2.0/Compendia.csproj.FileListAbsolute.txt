@@ -43,3 +43,4 @@ C:\Users\nikol\ProgProject\Compendia\client\Compendia\Compendia\Compendia\obj\De
 C:\Users\nikol\ProgProject\Compendia\client\Compendia\Compendia\Compendia\obj\Debug\netstandard2.0\Compendia.dll
 C:\Users\nikol\ProgProject\Compendia\client\Compendia\Compendia\Compendia\obj\Debug\netstandard2.0\ref\Compendia.dll
 C:\Users\nikol\ProgProject\Compendia\client\Compendia\Compendia\Compendia\obj\Debug\netstandard2.0\Compendia.pdb
+C:\Users\nikol\ProgProject\Compendia\client\Compendia\Compendia\Compendia\obj\Debug\netstandard2.0\Views\SignUpView.xaml.g.cs

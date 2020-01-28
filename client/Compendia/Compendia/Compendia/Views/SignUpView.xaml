@@ -19,33 +19,60 @@
                    FontSize="40"
                    FontAttributes="Bold"/>
             
-            <Label AbsoluteLayout.LayoutBounds=".5,.25,205,13" AbsoluteLayout.LayoutFlags="PositionProportional"
-                   Text="Hallo! Bitte logge dich in deinen Account ein."
+            <Label AbsoluteLayout.LayoutBounds=".5,.25,176,13" AbsoluteLayout.LayoutFlags="PositionProportional"
+                   Text="Hallo! Erstelle dir einen neuen Account."
                    FontSize="10"
                    TextColor="{StaticResource Slate}"/>
             
+            
+            <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds=".5,.3,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional">
+                   <Entry HorizontalOptions="StartAndExpand"
+                          WidthRequest="160"
+                          Text="{Binding EntryName}"
+                          Placeholder="Vorname"/>
+                   
+                   <Entry HorizontalOptions="End"
+                          WidthRequest="160"
+                          Text="{Binding EntrySurname}"
+                          Placeholder="Nachname"/>
+            </StackLayout>
             <Entry AbsoluteLayout.LayoutBounds=".5,.4,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
-                   Text="{Binding EntryUser}"
+                   Text="{Binding EntryUsername}"
                    Placeholder="Username"/>
             
-            <Entry AbsoluteLayout.LayoutBounds=".5,.525,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+            <Entry AbsoluteLayout.LayoutBounds=".5,.5,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                   Text="{Binding EntryEmail}"
+                   Placeholder="E-Mail"/>
+            
+            <Entry AbsoluteLayout.LayoutBounds=".5,.6,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                    IsPassword="True"
                    Placeholder="Password"
                    Text="{Binding EntryPassword}"/>
             
-            <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds=".5,.75,.8,50" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional">
-                 <Button HorizontalOptions="StartAndExpand"
-                    Text="Login"
-                    WidthRequest="125"
-                    Style="{StaticResource BlueButtonStyle}"
-                    Command="{Binding LogInCommand}"/>
+            <Entry AbsoluteLayout.LayoutBounds=".5,.7,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                   IsPassword="True"
+                   Placeholder="Confirm Password"
+                   Text="{Binding EntryConfirmPassword}"/>
             
-                <Button HorizontalOptions="End"
-                    Text="Sign up"
-                    WidthRequest="125"
-                    Style="{StaticResource GreyButtonStyle}"
+            <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds=".5,.85,.8,50" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional">
+                 <Button HorizontalOptions="CenterAndExpand"
+                    Text="Account erstellen"
+                    WidthRequest="200"
+                    Style="{StaticResource BlueButtonStyle}"
                     Command="{Binding SignUpCommand}"/>
             </StackLayout>
+            
+            <Label AbsoluteLayout.LayoutBounds=".5,.9,166,13" AbsoluteLayout.LayoutFlags="PositionProportional"
+                   Text="Du hast schon einen Account? Login."
+                   TextDecorations="Underline"
+                   FontSize="10"
+                   TextColor="{StaticResource Onyx}">
+                   <Label.GestureRecognizers>
+                          <TapGestureRecognizer
+                                 Command="{Binding LabelCommand}"
+                          />
+                   </Label.GestureRecognizers>
+            </Label>
         </AbsoluteLayout>
         
     </ContentPage.Content>

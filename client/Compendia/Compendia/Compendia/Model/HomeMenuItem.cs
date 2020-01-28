@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace Compendia.Model
 {
     public enum MenuItemType
@@ -13,7 +10,8 @@ namespace Compendia.Model
         EntryCreation,
         ShowEntry,
         Settings,
-        LogOut
+        LogOut,
+        SignUp
     }
     public class HomeMenuItem
     {

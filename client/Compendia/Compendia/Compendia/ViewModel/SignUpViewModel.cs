@@ -17,8 +17,6 @@ namespace Compendia.ViewModel
         private string password;
         public SignUpViewModel()
         {
-            user = "User";
-            password = "Password";
 
         }
 
@@ -52,7 +50,7 @@ namespace Compendia.ViewModel
 
 
 
-        //Ok Button wurde geklicket
+        //Sign Up Button wurde geklicket
         public ICommand LogInCommand
         {
 
@@ -61,23 +59,28 @@ namespace Compendia.ViewModel
 
                 return new Command(async () =>
                 {
-                    if(user != null && password != null)
-                    {
-                        //User und Passwort überprüfen von großer Datenbank
-
-                        //Falls richtig: Userdaten in lokale Datenbank schreiben
-                        var result = await DatabaseService._LogInRepository.AddObjectAsync(new DbLogIn(user, password));
-
-                        //await PushAsync(new MainPage());
-                        await PopAsync();
-
-
-                    }   
-                   
+                    await PushAsync(new SignUpView());
 
                 });
+            }
+            set
+            {
 
+            }
+        }
+        
+        //Label to Login wurde geklicket
+        public ICommand LabelCommand
+        {
 
+            get
+            {
+
+                return new Command(async () =>
+                {
+                    //do something
+
+                });
             }
             set
             {

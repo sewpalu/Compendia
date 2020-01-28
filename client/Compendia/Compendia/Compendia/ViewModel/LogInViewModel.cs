@@ -52,7 +52,7 @@ namespace Compendia.ViewModel
 
 
 
-        //Ok Button wurde geklicket
+        //Login Button wurde geklicket
         public ICommand LogInCommand
         {
 
@@ -89,5 +89,8 @@ namespace Compendia.ViewModel
         {
             throw new NotImplementedException();
         }
+        
+        //Login Button wurde geklicket
+        public ICommand SignUpCommand { get; }
     }
 }

@@ -81,6 +81,9 @@ namespace Compendia
                         logOut();
                         MenuPages.Add(id, new NavigationPage(new LogInView()));
                         break;
+                    case (int)MenuItemType.SignUp:
+                        MenuPages.Add(id, new NavigationPage(new SignUpView()));
+                        break;
 
                 }
             }
