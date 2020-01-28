@@ -13,29 +13,26 @@
         <e p="AssemblyInfo.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Compendia.csproj" t="IncludeRecursive" />
-        <e p="Model" t="Include">
-          <e p="HomeMenuItem.cs" t="Include" />
-        </e>
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netstandard2.0" t="Include">
-              <e p="Compendia.AssemblyInfo.cs" t="Include" />
-              <e p="Views" t="Include">
-                <e p="App.xaml.g.cs" t="Include" />
-                <e p="EditEntryView.xaml.g.cs" t="Include" />
-                <e p="EntryCreationView.xaml.g.cs" t="Include" />
-                <e p="EntrymaskCreationView.xaml.g.cs" t="Include" />
-                <e p="LogInView.xaml.g.cs" t="Include" />
-                <e p="MainPage.xaml.g.cs" t="Include" />
-                <e p="MainView.xaml.g.cs" t="Include" />
-                <e p="MenuPage.xaml.g.cs" t="Include" />
-                <e p="SettingsView.xaml.g.cs" t="Include" />
-                <e p="ShowEntryView.xaml.g.cs" t="Include" />
-                <e p="StatisticView.xaml.g.cs" t="Include" />
-              </e>
-            </e>
+        <e p="Database" t="Include">
+          <e p="Base" t="Include">
+            <e p="BaseRepository.cs" t="Include" />
+            <e p="ISqlite.cs" t="Include" />
+            <e p="TableRepository.cs" t="Include" />
           </e>
+          <e p="DatabaseContext.cs" t="Include" />
+          <e p="DatabaseService.cs" t="Include" />
+          <e p="LogInRepository.cs" t="Include" />
         </e>
+        <e p="Model" t="Include">
+          <e p="Base" t="Include">
+            <e p="BaseModel.cs" t="Include" />
+            <e p="TableModel.cs" t="Include" />
+          </e>
+          <e p="DbLogIn.cs" t="Include" />
+          <e p="HomeMenuItem.cs" t="Include" />
+          <e p="Server.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
         <e p="ViewModel" t="Include">
           <e p="Base" t="Include">
             <e p="BaseViewModel.cs" t="Include" />
@@ -80,16 +77,11 @@
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Compendia.Android.csproj" t="IncludeRecursive" />
-        <e p="MainActivity.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="90" t="Include">
-              <e p="designtime" t="Include">
-                <e p="Resource.designer.cs" t="Include" />
-              </e>
-            </e>
-          </e>
+        <e p="Database" t="Include">
+          <e p="Sqlite.cs" t="Include" />
         </e>
+        <e p="MainActivity.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
         <e p="Properties" t="Include">
           <e p="AndroidManifest.xml" t="Include" />
           <e p="AssemblyInfo.cs" t="Include" />
@@ -201,6 +193,9 @@
           <e p="Wide310x150Logo.scale-400.png" t="Include" />
         </e>
         <e p="Compendia.UWP.csproj" t="IncludeRecursive" />
+        <e p="Database" t="Include">
+          <e p="Sqlite.cs" t="Include" />
+        </e>
         <e p="MainPage.xaml" t="Include" />
         <e p="MainPage.xaml.cs" t="Include" />
         <e p="Package.appxmanifest" t="Include" />

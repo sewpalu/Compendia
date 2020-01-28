@@ -54,5 +54,18 @@
     <EmbeddedResource Update="Views\StatisticView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Remove="obj\Debug\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="obj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="obj\Debug\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="obj\Debug\**" />
   </ItemGroup>
 </Project>
