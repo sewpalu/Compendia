@@ -44,6 +44,7 @@
           <e p="MainViewModel.cs" t="Include" />
           <e p="SettingsViewModel.cs" t="Include" />
           <e p="ShowEntryViewModel.cs" t="Include" />
+          <e p="SignUpViewModel.cs" t="Include" />
           <e p="StatisticViewModel.cs" t="Include" />
         </e>
         <e p="Views" t="Include">
@@ -67,6 +68,8 @@
           <e p="SettingsView.xaml.cs" t="Include" />
           <e p="ShowEntryView.xaml" t="Include" />
           <e p="ShowEntryView.xaml.cs" t="Include" />
+          <e p="SignUpView.xaml" t="Include" />
+          <e p="SignUpView.xaml.cs" t="Include" />
           <e p="StatisticView.xaml" t="Include" />
           <e p="StatisticView.xaml.cs" t="Include" />
         </e>

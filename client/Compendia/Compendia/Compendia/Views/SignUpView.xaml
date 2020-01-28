@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:pagemodels="clr-namespace:Compendia.ViewModel"
+             x:Class="Compendia.Views.SignUpView">
+
+
+    <ContentPage.BindingContext>
+        <pagemodels:SignUpViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Label AbsoluteLayout.LayoutBounds=".5, .15, 233, 43" AbsoluteLayout.LayoutFlags="PositionProportional"
+                   Text="COMPENDIA"
+                   FontSize="40"
+                   FontAttributes="Bold"/>
+            
+            <Label AbsoluteLayout.LayoutBounds=".5,.25,205,13" AbsoluteLayout.LayoutFlags="PositionProportional"
+                   Text="Hallo! Bitte logge dich in deinen Account ein."
+                   FontSize="10"
+                   TextColor="{StaticResource Slate}"/>
+            
+            <Entry AbsoluteLayout.LayoutBounds=".5,.4,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                   Text="{Binding EntryUser}"
+                   Placeholder="Username"/>
+            
+            <Entry AbsoluteLayout.LayoutBounds=".5,.525,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                   IsPassword="True"
+                   Placeholder="Password"
+                   Text="{Binding EntryPassword}"/>
+            
+            <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds=".5,.75,.8,50" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional">
+                 <Button HorizontalOptions="StartAndExpand"
+                    Text="Login"
+                    WidthRequest="125"
+                    Style="{StaticResource BlueButtonStyle}"
+                    Command="{Binding LogInCommand}"/>
+            
+                <Button HorizontalOptions="End"
+                    Text="Sign up"
+                    WidthRequest="125"
+                    Style="{StaticResource GreyButtonStyle}"
+                    Command="{Binding SignUpCommand}"/>
+            </StackLayout>
+        </AbsoluteLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
