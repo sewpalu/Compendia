@@ -26,11 +26,11 @@
             
             <Entry AbsoluteLayout.LayoutBounds=".5,.4,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                    Text="{Binding EntryUser}"
-                   Placeholder="Username"/>
+                   Placeholder="Benutzername"/>
             
             <Entry AbsoluteLayout.LayoutBounds=".5,.525,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                    IsPassword="True"
-                   Placeholder="Password"
+                   Placeholder="Passwort"
                    Text="{Binding EntryPassword}"/>
             
             <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds=".5,.75,.8,50" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional">

@@ -38,7 +38,7 @@
             </StackLayout>
             <Entry AbsoluteLayout.LayoutBounds=".5,.4,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                    Text="{Binding EntryUsername}"
-                   Placeholder="Username"/>
+                   Placeholder="Benutzername"/>
             
             <Entry AbsoluteLayout.LayoutBounds=".5,.5,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                    Text="{Binding EntryEmail}"
@@ -46,12 +46,12 @@
             
             <Entry AbsoluteLayout.LayoutBounds=".5,.6,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                    IsPassword="True"
-                   Placeholder="Password"
+                   Placeholder="Passwort"
                    Text="{Binding EntryPassword}"/>
             
             <Entry AbsoluteLayout.LayoutBounds=".5,.7,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                    IsPassword="True"
-                   Placeholder="Confirm Password"
+                   Placeholder="Passwort wiederholen"
                    Text="{Binding EntryConfirmPassword}"/>
             
             <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds=".5,.85,.8,50" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional">
