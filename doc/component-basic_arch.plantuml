@@ -1,5 +1,30 @@
-[Client] <-> JSON
-JSON - [Server]
-[Server] -> SQL
-SQL - [Database]
-[Database] -> [Server]: response
+@startuml "Componentdiagram Basic Architecture"
+
+node "Client Device" {
+    package "Xamarin App" as ClientApp {
+        [UI] <- [Logic] : Communication
+        [Logic] .> [Webclient] : use
+        [Local DB] <.. [Logic] : use
+    }
+}
+
+node "Server" {
+    package "Server Application" as ServerApp {
+        HTTP -- [Webserver]
+        [Webclient] <--> HTTP : Communication
+        note right of HTTP : Content-type: application/json
+        JSON - [Executor]
+        [Webserver] <-> JSON
+    }
+
+    database "Database Application" as DatabaseApp {
+        SQL - [Database]
+    }
+
+    [Executor] <--> SQL : Communication
+    DatabaseApp <. ServerApp : use
+}
+
+ClientApp ..> ServerApp : use
+
+@enduml

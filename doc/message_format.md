@@ -5,7 +5,6 @@ This document specifies the expected format of the JSON files used by Compendia
 ## Client - Server communication
 
 The JSON object shall consist of
-- A property "sender", specifying the author of the message. Either "client" or "server".
 - A property "command", specifying the action performed by the server either as a request from the client or in response from the server specifying what operation it is responding to. On of "addUser", "addEntry" or "getEntries"
 - If sent from the client:
   - If "command" is set to "addUser":
