@@ -18,7 +18,7 @@ namespace Compendia.ViewModel
         public MainViewModel()
         {
             //connectUser();
-           //var tmp = Server.connected;
+           var tmp = Server.connected;
         }
 
         public DateTime? Date

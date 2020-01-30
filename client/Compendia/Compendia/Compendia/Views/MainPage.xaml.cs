@@ -39,7 +39,7 @@ namespace Compendia
             
             if (userdata == null || userdata.Count == 0)
             {
-                _ = NavigateFromMenu((int)MenuItemType.LogOut);
+                //_ = NavigateFromMenu((int)MenuItemType.LogOut);
                
             }
             else
