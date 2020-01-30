@@ -18,7 +18,13 @@ namespace Compendia.ViewModel
         public MainViewModel()
         {
             //connectUser();
-           var tmp = Server.connected;
+            ServerConnection();
+        }
+
+        private async void ServerConnection()
+        {
+            var status = await Server.GetHTTPResquestAsync();
+            var tmp = await Server.PostHTTPRequestAsync("{\"sender\": \"client\",\"command\": \"addUser\",\"userName\": \"Max Mustermann\"}");
         }
 
         public DateTime? Date
