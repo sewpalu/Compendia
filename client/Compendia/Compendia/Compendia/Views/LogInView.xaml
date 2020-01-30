@@ -13,7 +13,7 @@
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
-        <AbsoluteLayout>
+        <AbsoluteLayout Padding="40">
             <Label AbsoluteLayout.LayoutBounds=".5, .15, 233, 43" AbsoluteLayout.LayoutFlags="PositionProportional"
                    Text="COMPENDIA"
                    FontSize="40"
@@ -24,28 +24,28 @@
                    FontSize="10"
                    TextColor="{StaticResource Slate}"/>
             
-            <Entry AbsoluteLayout.LayoutBounds=".5,.4,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+            <Entry AbsoluteLayout.LayoutBounds=".5,.4,1,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                    Text="{Binding EntryUser}"
                    Placeholder="Benutzername"/>
             
-            <Entry AbsoluteLayout.LayoutBounds=".5,.525,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+            <Entry AbsoluteLayout.LayoutBounds=".5,.525,1,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                    IsPassword="True"
                    Placeholder="Passwort"
                    Text="{Binding EntryPassword}"/>
             
-            <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds=".5,.75,.8,50" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional">
-                 <Button HorizontalOptions="StartAndExpand"
+            <Button AbsoluteLayout.LayoutBounds="0,.75,.4,45" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="CenterAndExpand"
                     Text="Login"
-                    WidthRequest="125"
                     Style="{StaticResource BlueButtonStyle}"
                     Command="{Binding LogInCommand}"/>
             
-                <Button HorizontalOptions="End"
+            <Button AbsoluteLayout.LayoutBounds="1,.75,.4,45" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="CenterAndExpand"
                     Text="Sign up"
-                    WidthRequest="125"
                     Style="{StaticResource GreyButtonStyle}"
                     Command="{Binding SignUpCommand}"/>
-            </StackLayout>
         </AbsoluteLayout>
         
     </ContentPage.Content>

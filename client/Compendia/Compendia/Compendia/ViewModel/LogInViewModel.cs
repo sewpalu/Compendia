@@ -91,6 +91,16 @@ namespace Compendia.ViewModel
         }
         
         //Login Button wurde geklicket
-        public ICommand SignUpCommand { get; }
+        public ICommand SignUpCommand
+        {
+            get
+            {
+
+                return new Command(async () =>
+                {
+                    await PushAsync(new NavigationPage(new SignUpView()));
+                });
+            }
+        }
     }
 }

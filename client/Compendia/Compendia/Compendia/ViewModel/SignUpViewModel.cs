@@ -76,11 +76,7 @@ namespace Compendia.ViewModel
             get
             {
 
-                return new Command(async () =>
-                {
-                    //do something
-
-                });
+                return new Command(async () => { await PopAsync(); });
             }
             set
             {

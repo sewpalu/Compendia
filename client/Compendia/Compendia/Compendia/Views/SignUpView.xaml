@@ -13,7 +13,7 @@
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
-        <AbsoluteLayout>
+        <AbsoluteLayout Padding="40">
             <Label AbsoluteLayout.LayoutBounds=".5, .15, 233, 43" AbsoluteLayout.LayoutFlags="PositionProportional"
                    Text="COMPENDIA"
                    FontSize="40"
@@ -24,45 +24,39 @@
                    FontSize="10"
                    TextColor="{StaticResource Slate}"/>
             
-            
-            <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds=".5,.3,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional">
-                   <Entry HorizontalOptions="StartAndExpand"
-                          WidthRequest="160"
-                          Text="{Binding EntryName}"
-                          Placeholder="Vorname"/>
+            <Entry AbsoluteLayout.LayoutBounds="0,.36,.5,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   Text="{Binding EntryName}"
+                   Placeholder="Vorname"/>
                    
-                   <Entry HorizontalOptions="End"
-                          WidthRequest="160"
-                          Text="{Binding EntrySurname}"
-                          Placeholder="Nachname"/>
-            </StackLayout>
-            <Entry AbsoluteLayout.LayoutBounds=".5,.4,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+            <Entry AbsoluteLayout.LayoutBounds="1,.36,.5,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   Text="{Binding EntrySurname}"
+                   Placeholder="Nachname"/>
+              
+            <Entry AbsoluteLayout.LayoutBounds=".5,.46,1,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                    Text="{Binding EntryUsername}"
                    Placeholder="Benutzername"/>
             
-            <Entry AbsoluteLayout.LayoutBounds=".5,.5,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
-                   Text="{Binding EntryEmail}"
-                   Placeholder="E-Mail"/>
-            
-            <Entry AbsoluteLayout.LayoutBounds=".5,.6,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+            <Entry AbsoluteLayout.LayoutBounds=".5,.56,1,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                    IsPassword="True"
                    Placeholder="Passwort"
                    Text="{Binding EntryPassword}"/>
             
-            <Entry AbsoluteLayout.LayoutBounds=".5,.7,.8,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+            <Entry AbsoluteLayout.LayoutBounds=".5,.66,1,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                    IsPassword="True"
                    Placeholder="Passwort wiederholen"
                    Text="{Binding EntryConfirmPassword}"/>
             
-            <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds=".5,.85,.8,50" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional">
-                 <Button HorizontalOptions="CenterAndExpand"
+            <Button AbsoluteLayout.LayoutBounds=".5,.825,.6,45" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                    VerticalOptions="Center"
                     Text="Account erstellen"
-                    WidthRequest="200"
                     Style="{StaticResource BlueButtonStyle}"
                     Command="{Binding SignUpCommand}"/>
-            </StackLayout>
             
-            <Label AbsoluteLayout.LayoutBounds=".5,.9,166,13" AbsoluteLayout.LayoutFlags="PositionProportional"
+            <Label AbsoluteLayout.LayoutBounds=".5,.875,166,13" AbsoluteLayout.LayoutFlags="PositionProportional"
                    Text="Du hast schon einen Account? Login."
                    TextDecorations="Underline"
                    FontSize="10"
