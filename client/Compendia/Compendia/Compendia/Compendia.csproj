@@ -55,17 +55,16 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Remove="obj\Debug\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="obj" />
+    <EmbeddedResource Remove="obj\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="obj\Debug\**" />
+    <Compile Remove="obj\**" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="obj\Debug\**" />
+    <None Remove="obj\**" />
   </ItemGroup>
 </Project>
