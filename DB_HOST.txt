@@ -1,0 +1,5 @@
+1) Daheim ausprobieren ob No-IP funktioniert (bei Lisa und Olli)
+
+2) Herrn Judt fragen, ob er da was weiß (in Sachen Hosting oder Anbieter...)
+
+3) Linux Server mieten (Ionos hat da nen ganz gutes Angebot oder Hostinger)
