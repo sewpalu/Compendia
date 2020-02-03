@@ -14,7 +14,6 @@ namespace Compendia.ViewModel
     public class MainViewModel : BaseViewModel
     {
         private DateTime? _date = DateTime.Today;
-        private ObservableCollection<XamForms.Controls.SpecialDate> attendances;
         public MainViewModel()
         {
             //connectUser();
@@ -40,18 +39,7 @@ namespace Compendia.ViewModel
                 OnPropertyChanged(nameof(Date));
             }
         }
-        public ObservableCollection<XamForms.Controls.SpecialDate> Attendances
-        {
-            get
-            {
-                return attendances;
-            }
-            set
-            {
-                attendances = value;
-                OnPropertyChanged(nameof(Attendances));
-            }
-        }
+
 
         public Command DateChosen
         {

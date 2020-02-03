@@ -16,20 +16,6 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <controls:Calendar Padding="10,10,10,0"   
-                   SelectedBorderWidth="3" 
-                   BorderWidth="2"
-                   BorderColor="#E8E9EC"
-                   DisabledBorderColor="Black"  
-                   ShowNumberOfWeek="false"  
-                   StartDay="Monday"  
-                   TitleLabelTextColor="#3B86FF"  
-                   TitleLeftArrowTextColor="DarkGray" 
-                   TitleRightArrowTextColor="DarkGray"
-                   SelectedBorderColor="#3B86FF"
-                   SelectedDate="{Binding Date}"  
-                   SpecialDates="{Binding Attendances}"  
-                   DateCommand="{Binding DateChosen}"/>
             <Label Text="{Binding ChosenDate}"/>
         </StackLayout>
     </ContentPage.Content>
