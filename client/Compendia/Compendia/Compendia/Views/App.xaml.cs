@@ -5,6 +5,7 @@ using System;
 using System.Diagnostics;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+//using Syncfusion.SfCalendar.XForms;
 
 
 namespace Compendia
@@ -13,6 +14,8 @@ namespace Compendia
     {
         public App()
         {
+            
+            //Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjA1NDU3QDMxMzcyZTM0MmUzMEY1eW9qVHEyK1JxOVgyTmRuejNhanFvLzVDM05pSStlQjI1MHN3UUJwRUk9");
             InitializeComponent();
 
             //var log = DatabaseService.Name;

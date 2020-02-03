@@ -1,12 +1,6 @@
-﻿using Compendia.Database;
+﻿using System;
 using Compendia.Model;
 using Compendia.ViewModel.Base;
-using Compendia.Views;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.Text;
 using Xamarin.Forms;
 
 namespace Compendia.ViewModel
@@ -54,10 +48,7 @@ namespace Compendia.ViewModel
 
         public string ChosenDate
         {
-            get
-            {
-                return _date.ToString();   
-            }
+            get { return _date.ToString(); }
             set
             {
                 _date = DateTime.Parse(value);
@@ -65,6 +56,5 @@ namespace Compendia.ViewModel
 
             }
         }
-
     }
 }
