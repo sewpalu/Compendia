@@ -625,12 +625,6 @@
     <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\xamarin.forms\4.0.0.425677\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\xamforms.controls.calendar\1.1.1\lib\UAP10\XamForms.Controls.Calendar.UWP.dll">
-      <PackagePath>XamForms.Controls.Calendar.UWP.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\xamforms.controls.calendar\1.1.1\lib\UAP10\XamForms.Controls.Calendar.dll">
-      <PackagePath>XamForms.Controls.Calendar.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia\bin\Debug\netstandard2.0\Compendia.dll">
       <PackagePath>Compendia.dll</PackagePath>
     </AppxPackagedFile>

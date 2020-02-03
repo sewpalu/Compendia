@@ -25,6 +25,9 @@ namespace Compendia
 
             MasterBehavior = MasterBehavior.Popover;
 
+            //ViewService.GetMainPage(this);
+            //ViewService.setDetail((NavigationPage)Detail);
+            MenuPages.Add((int)MenuItemType.Main, (NavigationPage)Detail);
 
             List<DbLogIn> userdata;
             try
@@ -39,7 +42,7 @@ namespace Compendia
             
             if (userdata == null || userdata.Count == 0)
             {
-                //_ = NavigateFromMenu((int)MenuItemType.LogOut);
+                _ = ViewService.NavigateFromMenu((int)MenuItemType.LogOut);
                
             }
             else
@@ -47,11 +50,15 @@ namespace Compendia
                 //mit Datenbank verbinden
             }
 
-            MenuPages.Add((int)MenuItemType.Main, (NavigationPage)Detail);
-
+           
 
         }
 
+        public void setPresented(bool presented)
+        {
+            IsPresented = false;
+
+        }
         public async Task NavigateFromMenu(int id)
         {
             if (!MenuPages.ContainsKey(id))

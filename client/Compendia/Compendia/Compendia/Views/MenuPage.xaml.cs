@@ -43,7 +43,7 @@ namespace Compendia.Views
                     return;
 
                 var id = (int)((HomeMenuItem)e.SelectedItem).Id;
-                await RootPage.NavigateFromMenu(id);
+                await ViewService.NavigateFromMenu(id);
             };
         }
     }

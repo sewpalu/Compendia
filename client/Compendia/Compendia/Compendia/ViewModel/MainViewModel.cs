@@ -17,7 +17,7 @@ namespace Compendia.ViewModel
         public MainViewModel()
         {
             //connectUser();
-            //ServerConnection();
+            ServerConnection();
         }
 
         private async void ServerConnection()

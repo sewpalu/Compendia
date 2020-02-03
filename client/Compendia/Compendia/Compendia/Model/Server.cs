@@ -13,13 +13,6 @@ namespace Compendia.Model
 {
     public static class Server
     {
-        private static Socket ClientSocket;
-        //private static bool connected = false;
-        public static bool connected { get; set; }
-        private static ManualResetEvent connectDone;
-        private static ManualResetEvent sendDone;
-        private static ManualResetEvent receiveDone;
-        private static String response = String.Empty;
         private static string uri;
         private static HttpClient client;
 
@@ -44,9 +37,12 @@ namespace Compendia.Model
 
         public static async Task<string> PostHTTPRequestAsync(string request)
         {
+           
             var data = new StringContent(request, Encoding.UTF8, "application/json");
+            //Anfrage an den Server wird versendet
             var response = await client.PostAsync(uri, data);
 
+            //antwort des Servers 
             string result = response.Content.ReadAsStringAsync().Result;
             Debug.WriteLine(result);
             return result;

@@ -19,6 +19,7 @@ namespace Compendia.ViewModel
         {
             user = "User";
             password = "Password";
+            
 
         }
 
@@ -68,8 +69,10 @@ namespace Compendia.ViewModel
                         //Falls richtig: Userdaten in lokale Datenbank schreiben
                         var result = await DatabaseService._LogInRepository.AddObjectAsync(new DbLogIn(user, password));
 
-                        //await PushAsync(new MainPage());
-                        await PopAsync();
+                        // await PushAsync(new NavigationPage(MainView()));
+                        //await PopAsync();
+                        
+                       // _ = ViewService.NavigateFromMenu((int)MenuItemType.Main);
 
 
                     }   
@@ -85,10 +88,7 @@ namespace Compendia.ViewModel
             }
         }
 
-        private Page MainPage()
-        {
-            throw new NotImplementedException();
-        }
+       
         
         //Login Button wurde geklicket
         public ICommand SignUpCommand
