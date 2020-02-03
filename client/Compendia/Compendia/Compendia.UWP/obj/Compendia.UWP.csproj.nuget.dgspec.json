@@ -67,9 +67,9 @@
               "target": "Package",
               "version": "[6.1.9, )"
             },
-            "XamForms.Controls.Calendar": {
+            "Syncfusion.Xamarin.SfCalendar": {
               "target": "Package",
-              "version": "[1.1.1, )"
+              "version": "[17.4.0.46, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -176,9 +176,9 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
-            "XamForms.Controls.Calendar": {
+            "Syncfusion.Xamarin.SfCalendar": {
               "target": "Package",
-              "version": "[1.1.1, )"
+              "version": "[17.4.0.46, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
