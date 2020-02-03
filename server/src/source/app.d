@@ -1,3 +1,6 @@
+import std.json;
+import std.datetime.date;
+
 import vibe.vibe;
 
 void main()
@@ -27,57 +30,71 @@ HTTPServerSettings initSettings()
 
 void parseReq(HTTPServerRequest req, HTTPServerResponse res)
 {
-  import std.json;
+  immutable commands = [
+    "addEntry": &onAddEntry,
+    "addUser": &onAddUser,
+    "getEntries": &onGetEntries
+  ];
 
   JSONValue outMessage = void;
 
   try
   {
     auto inMessage = cast(JSONValue) req.json;
-
     auto command = inMessage["command"].str;
     outMessage = ["command": command];
-    switch (command)
-    {
-      case "addEntry":
-      {
-        auto userId = inMessage["userId"].integer;
-        auto templateId = inMessage["templateId"].integer;
-        auto entry = inMessage["entry"].toString;
-
-        outMessage.object["entryId"] = JSONValue(dbAddEntry(userId, templateId, entry));
-      }
-      break;
-
-      case "addUser":
-      {
-        auto userName = inMessage["userName"].toString;
-
-        outMessage.object["userId"] = JSONValue(dbAddUser(userName));
-      }
-      break;
-
-      case "getEntries":
-      {
-      }
-      break;
-
-      default:
-      break;
-    }
-
+    
+    immutable(JSONValue function(JSONValue))* commandPtr = command in commands;
+    if (commandPtr ! is null)
+      outMessage.object["result"] = (*commandPtr)(inMessage["parameters"]);
+    
     outMessage.object["success"] = true;
   }
   catch (JSONException e)
   {
     outMessage = ["success": false];
-    outMessage.object["error"] = JSONValue(e.msg);
+    outMessage.object["error"] = "JSONException: " ~ e.msg;
+  }
+  catch (TimeException e)
+  {
+    outMessage = ["success": false];
+    outMessage.object["error"] = "TimeException: " ~ e.msg;
   }
 
   res.writeJsonBody(outMessage);
 }
 
-int dbAddEntry(long userId, long templateId, string entry)
+JSONValue onAddEntry(JSONValue json)
+{
+  auto userId = json["userId"].integer;
+  auto templateId = json["templateId"].integer;
+  auto entry = json["entry"];
+  return JSONValue(["entryId": dbAddEntry(userId, templateId, entry)]);
+}
+
+JSONValue onAddUser(JSONValue json)
+{
+  auto userName = json["userName"].str;
+  return JSONValue(["userId": dbAddUser(userName)]);
+}
+
+JSONValue onGetEntries(JSONValue json)
+{
+  import std.algorithm;
+  auto userId = json["userId"].integer;
+  auto templateId = json["templateId"].integer;
+  auto sinceTime = DateTime.fromSimpleString(json["since"].str);
+
+  import std.range;
+  auto entries = dbGetEntries(userId, templateId, sinceTime);
+  JSONValue[] jsonEntries;
+  auto transformedEntries = entries.byKeyValue.map!(entry => JSONValue(["id": JSONValue(entry.key), "data": JSONValue(entry.value)]));
+  foreach (entry; transformedEntries)
+    jsonEntries ~= entry; // TODO Optimize this
+  return JSONValue(["entries": jsonEntries]);
+}
+
+int dbAddEntry(long userId, long templateId, JSONValue entry)
 {
   return 0;
 }
@@ -85,5 +102,10 @@ int dbAddEntry(long userId, long templateId, string entry)
 int dbAddUser(string userName)
 {
   return 0;
+}
+
+JSONValue[int] dbGetEntries(long userId, long templateId, DateTime since)
+{
+  return [0 : JSONValue()];
 }
 
