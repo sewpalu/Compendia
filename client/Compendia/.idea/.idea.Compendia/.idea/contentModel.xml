@@ -32,7 +32,27 @@
           <e p="HomeMenuItem.cs" t="Include" />
           <e p="Server.cs" t="Include" />
         </e>
-        <e p="obj" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="Compendia.AssemblyInfo.cs" t="Include" />
+              <e p="Views" t="Include">
+                <e p="App.xaml.g.cs" t="Include" />
+                <e p="EditEntryView.xaml.g.cs" t="Include" />
+                <e p="EntryCreationView.xaml.g.cs" t="Include" />
+                <e p="EntrymaskCreationView.xaml.g.cs" t="Include" />
+                <e p="LogInView.xaml.g.cs" t="Include" />
+                <e p="MainPage.xaml.g.cs" t="Include" />
+                <e p="MainView.xaml.g.cs" t="Include" />
+                <e p="MenuPage.xaml.g.cs" t="Include" />
+                <e p="SettingsView.xaml.g.cs" t="Include" />
+                <e p="ShowEntryView.xaml.g.cs" t="Include" />
+                <e p="SignUpView.xaml.g.cs" t="Include" />
+                <e p="StatisticView.xaml.g.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="ViewModel" t="Include">
           <e p="Base" t="Include">
             <e p="BaseViewModel.cs" t="Include" />
@@ -84,7 +104,15 @@
           <e p="Sqlite.cs" t="Include" />
         </e>
         <e p="MainActivity.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="90" t="Include">
+              <e p="designtime" t="Include">
+                <e p="Resource.designer.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Properties" t="Include">
           <e p="AndroidManifest.xml" t="Include" />
           <e p="AssemblyInfo.cs" t="Include" />

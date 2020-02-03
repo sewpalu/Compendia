@@ -1,7 +1,9 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
+
     "signature": "e9730671c8a34d90fc6e012d6beaf8ae06f5ff65"
+
   },
   "compilationOptions": {},
   "targets": {
@@ -14,6 +16,7 @@
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.1",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.1",
           "NETStandard.Library": "2.0.3",
+
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.0.0.425677"
         },
@@ -454,6 +457,7 @@
             "fileVersion": "2.0.0.0"
           }
         }
+
       }
     }
   },
@@ -763,6 +767,7 @@
       "sha512": "sha512-drwO/MimaMUnmvkULASYjU5MRciVIJyiLxD3ihFq8P+DWynQZ2NLNej0Vrs3k2L7UdmqvcgCxEJdfT7uFl2KVg==",
       "path": "xamarin.forms/4.0.0.425677",
       "hashPath": "xamarin.forms.4.0.0.425677.nupkg.sha512"
+
     }
   }
 }

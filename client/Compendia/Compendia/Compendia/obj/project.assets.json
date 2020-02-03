@@ -426,6 +426,7 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
+
       "Syncfusion.Licensing/17.4.0.46": {
         "type": "package",
         "compile": {
@@ -461,6 +462,7 @@
           "lib/netstandard2.0/Syncfusion.SfCalendar.XForms.dll": {}
         }
       },
+
       "System.Buffers/4.5.0": {
         "type": "package",
         "compile": {
@@ -605,6 +607,7 @@
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
         }
+
       }
     }
   },
@@ -1105,6 +1108,7 @@
       "path": "netstandard.library/2.0.3",
       "files": [
         ".nupkg.metadata",
+
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -1300,6 +1304,7 @@
         "sqlitepclraw.provider.e_sqlite3.nuspec"
       ]
     },
+
     "Syncfusion.Licensing/17.4.0.46": {
       "sha512": "yD7S3JRFlcpUT+k/KrJ0/fPhyrELuRXzwkbFE7MpbL5SsuuwtnqLkp8rAR6vJDMcOijc1QP4Ocks/0A1ugVNUw==",
       "type": "package",
@@ -1383,6 +1388,7 @@
         "syncfusion.xamarin.sfcalendar.nuspec"
       ]
     },
+
     "System.Buffers/4.5.0": {
       "sha512": "pL2ChpaRRWI/p4LXyy4RgeWlYF2sgfj/pnVMvBqwNFr5cXg7CXNnWZWxrOONLg8VGdFB8oB+EG2Qw4MLgTOe+A==",
       "type": "package",
@@ -1739,7 +1745,9 @@
         "lib/monoandroid80/Xamarin.Essentials.pdb",
         "lib/monoandroid80/Xamarin.Essentials.xml",
         "lib/monoandroid81/Xamarin.Essentials.dll",
+
         "lib/monoandroid81/Xamarin.Essentials.dll.mdb",
+
         "lib/monoandroid81/Xamarin.Essentials.pdb",
         "lib/monoandroid81/Xamarin.Essentials.xml",
         "lib/monoandroid90/Xamarin.Essentials.dll",
@@ -2008,7 +2016,10 @@
         "xamarin.forms.4.0.0.425677.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
-    }
+
+    },
+
+    
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
@@ -2017,19 +2028,24 @@
       "Microsoft.EntityFrameworkCore.Sqlite.Core >= 3.1.1",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.1",
       "NETStandard.Library >= 2.0.3",
+
       "Syncfusion.Xamarin.SfCalendar >= 17.4.0.46",
+
       "Xamarin.Essentials >= 1.1.0",
       "Xamarin.Forms >= 4.0.0.425677"
     ]
   },
   "packageFolders": {
+
     "C:\\Users\\debinkli\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+
       "projectUniqueName": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
       "projectName": "Compendia",
       "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
@@ -2044,12 +2060,15 @@
         "C:\\Users\\debinkli\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
+
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2092,9 +2111,11 @@
             "version": "[2.0.3, )",
             "autoReferenced": true
           },
+
           "Syncfusion.Xamarin.SfCalendar": {
             "target": "Package",
             "version": "[17.4.0.46, )"
+
           },
           "Xamarin.Essentials": {
             "target": "Package",
@@ -2113,4 +2134,5 @@
       }
     }
   }
+
 }
