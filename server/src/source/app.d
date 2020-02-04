@@ -36,28 +36,33 @@ void parseReq(HTTPServerRequest req, HTTPServerResponse res)
     "getEntries": &onGetEntries
   ];
 
-  JSONValue outMessage = void;
+  JSONValue[string] dummy;
+  JSONValue outMessage = dummy; // TODO Is there a better way to construct an empty JSONValue object?
 
   try
   {
     auto inMessage = cast(JSONValue) req.json;
     auto command = inMessage["command"].str;
-    outMessage = ["command": command];
+    outMessage.object["command"] = command;
+    auto parameters = inMessage["parameters"];
+    outMessage.object["parameters"] = parameters;
     
     immutable(JSONValue function(JSONValue))* commandPtr = command in commands;
     if (commandPtr ! is null)
       outMessage.object["result"] = (*commandPtr)(inMessage["parameters"]);
+    else
+      throw new JSONException("Invalid command \"" ~ command ~ "\"");
     
     outMessage.object["success"] = true;
   }
   catch (JSONException e)
   {
-    outMessage = ["success": false];
+    outMessage.object["success"] = false;
     outMessage.object["error"] = "JSONException: " ~ e.msg;
   }
   catch (TimeException e)
   {
-    outMessage = ["success": false];
+    outMessage.object["success"] = false;
     outMessage.object["error"] = "TimeException: " ~ e.msg;
   }
 
@@ -85,10 +90,9 @@ JSONValue onGetEntries(JSONValue json)
   auto templateId = json["templateId"].integer;
   auto sinceTime = DateTime.fromSimpleString(json["since"].str);
 
-  import std.range;
   auto entries = dbGetEntries(userId, templateId, sinceTime);
   JSONValue[] jsonEntries;
-  auto transformedEntries = entries.byKeyValue.map!(entry => JSONValue(["id": JSONValue(entry.key), "data": JSONValue(entry.value)]));
+  auto transformedEntries = entries.byKeyValue.map!(entry => JSONValue(["entryId": JSONValue(entry.key), "entry": JSONValue(entry.value)]));
   foreach (entry; transformedEntries)
     jsonEntries ~= entry; // TODO Optimize this
   return JSONValue(["entries": jsonEntries]);

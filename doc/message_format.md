@@ -5,31 +5,32 @@ This document specifies the expected format of the JSON files used by Compendia
 ## Client - Server communication
 
 The JSON object shall consist of
-- A property "sender", specifying the author of the message. Either "client" or "server".
-- A property "command", specifying the action performed by the server either as a request from the client or in response from the server specifying what operation it is responding to. On of "addUser", "addEntry" or "getEntries"
-- If sent from the client:
-  - If "command" is set to "addUser":
-    - A property "userName", specifying the username.
-  - If "command" is set to "addEntry":
-    - A property "userId", specifying the ID of the user for whomst the entry shall be added.
-    - A property "templateId", specifying the template to which the entry belongs.
-    - A property "entry", containing the entry data as specified below.
-  - If "command" is set to "getEntries":
-    - TODO: Specify the required fields for "getEntries"
-- If sent as a response from the server:
-  - A property "success", specifying if the operation could be performed successfuly. Either true or false.
-  - If "success" is set to false
-    - A property "error", containing further information as to why the operation failed.
-  - If "command" is set to "getEntries"
-    - A property "entries", containing an array of entry data as specified below.
+- A property "command" (string). One of "addUser", "addEntry" or "getEntries".
+- A property "parameters" (object). It shall consist of
+  - A property "userName" (string), if "command" is "addUser"
+  - A property "userId" (integer), if "command" is "addEntry" or "getEntries"
+  - A property "templateId" (integer), if "command" is "addEntry" or "getEntries"
+  - A property "since" (string; Format: "YYYY-Mon-DD HH:MM:SS"), if "command" is "getEntries"
+  - A property "entry" (object; As defined below), if "command" is "addEntry"
+- The response shall additionally include
+  - A property "success" (boolean).
+  - A object "result", if "success" is true. It shall consist of
+    - A property "userId" (integer), if "command" is "addUser"
+    - A property "entryId" (integer), if "command" is "addEntry"
+    - A property "entries" (array), if "command" is "getEntries". It shall contain objects that consist of
+      - A property "entryId" (integer)
+      - A property "entry" (object; As defined below)
+  - A property "error" (string), if "success" is false
 
 ### Example: addUser
 
 #### Request
 ```json
 {
-	"command": "addUser",
-	"userName": "Max Mustermann"
+  "command": "addUser",
+  "parameters": {
+    "userName": "Max Mustermann"
+  }
 }
 ```
 
@@ -38,10 +39,79 @@ The JSON object shall consist of
 {
   "command": "addUser",
   "success": true,
-  "userId": 0
+  "parameters": {
+    "userName": "Max Mustermann"
+  },
+  "result": {
+    "userId": 0
+  }
 }
 ```
 
+### Example: addEntry
+
+#### Request
+```json
+{
+  "command": "addEntry",
+  "parameters": {
+    "userId": 0,
+    "templateId": 0,
+    "entry": null
+  }
+}
+```
+
+#### Response
+```json
+{
+  "command": "addEntry",
+  "success": true,
+  "parameters": {
+    "userId": 0,
+    "templateId": 0,
+    "entry": null
+  },
+  "result": {
+    "entryId": 0
+  }
+}
+```
+
+### Example: getEntries
+
+#### Request
+```json
+{
+  "command": "getEntries",
+  "parameters": {
+    "userId": 0,
+    "templateId": 0,
+    "since": "2020-Feb-02 12:34:56"
+  }
+}
+```
+
+#### Response
+```json
+{
+  "command": "getEntries",
+  "success": true,
+  "parameters": {
+    "since": "2020-Feb-02 12:34:56",
+    "userId": 0,
+    "templateId": 0
+  },
+  "result": {
+    "entries": [
+      {
+        "entryId": 0,
+        "entry": null
+      }
+    ]
+  }
+}
+```
 
 ## Template definitions
 
