@@ -25,17 +25,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `tblentrytemplaterelation`
---
-
-CREATE TABLE `tblentrytemplaterelation` (
-  `mainEntryID` int(11) NOT NULL,
-  `templateEntryID` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
 -- Tabellenstruktur für Tabelle `tblmain`
 --
 
@@ -71,12 +60,6 @@ CREATE TABLE `tbltemplates` (
 --
 -- Indizes der exportierten Tabellen
 --
-
---
--- Indizes für die Tabelle `tblentrytemplaterelation`
---
-ALTER TABLE `tblentrytemplaterelation`
-  ADD PRIMARY KEY (`mainEntryID`,`templateEntryID`);
 
 --
 -- Indizes für die Tabelle `tblmain`

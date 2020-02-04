@@ -2,7 +2,6 @@
 	- initally creating the tables -DONE
 	- fill in default values
 		- templates -DONE
-		- create tables for each template type
  - triggers to auto delete
 	- templates
 	- whole entries
