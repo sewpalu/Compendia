@@ -662,3 +662,13 @@ C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Comp
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\FxResources.Microsoft.Bcl.HashCode.SR.resw
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\FxResources.System.Diagnostics.DiagnosticSource.SR.resw
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\FxResources.System.Text.Json.SR.resw
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Syncfusion.Licensing.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Syncfusion.SfInput.UWP.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Syncfusion.SfShared.UWP.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Syncfusion.Core.XForms.UWP.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Syncfusion.Core.XForms.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Syncfusion.SfCalendar.XForms.UWP.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Syncfusion.SfCalendar.XForms.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\Syncfusion.SfInput.UWP.pri.xml
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\Syncfusion.SfShared.UWP.pri.xml
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\obj\x86\Debug\Syncfusion.Core.XForms.UWP.pri.xml

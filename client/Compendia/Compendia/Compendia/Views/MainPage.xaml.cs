@@ -23,11 +23,14 @@ namespace Compendia
         {
             InitializeComponent();
 
+
             MasterBehavior = MasterBehavior.Popover;
 
+            //Tests
             //ViewService.GetMainPage(this);
             //ViewService.setDetail((NavigationPage)Detail);
             MenuPages.Add((int)MenuItemType.Main, (NavigationPage)Detail);
+
 
             List<DbLogIn> userdata;
             try

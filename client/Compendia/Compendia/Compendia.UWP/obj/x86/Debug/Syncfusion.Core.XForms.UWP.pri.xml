@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.Core.XForms.UWP" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.Core.XForms.UWP">
+				<NamedResource name="Syncfusion.Core.XForms.UWP.xr.xml" uri="ms-resource://Syncfusion.Core.XForms.UWP/Files/Syncfusion.Core.XForms.UWP/Syncfusion.Core.XForms.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="TILRenderer">
+					<ResourceMapSubtree name="ToggleIcons">
+						<NamedResource name="DropDownIcon.xaml" uri="ms-resource://Syncfusion.Core.XForms.UWP/Files/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/DropDownIcon.xaml">
+							<Candidate type="Path">
+								<Value>Syncfusion.Core.XForms.UWP\TILRenderer\ToggleIcons\DropDownIcon.xaml</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="DropDownIcon.xbf" uri="ms-resource://Syncfusion.Core.XForms.UWP/Files/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/DropDownIcon.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ToggleCollapsedIcon.xaml" uri="ms-resource://Syncfusion.Core.XForms.UWP/Files/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleCollapsedIcon.xaml">
+							<Candidate type="Path">
+								<Value>Syncfusion.Core.XForms.UWP\TILRenderer\ToggleIcons\ToggleCollapsedIcon.xaml</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ToggleCollapsedIcon.xbf" uri="ms-resource://Syncfusion.Core.XForms.UWP/Files/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleCollapsedIcon.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ToggleVisibleIcon.xaml" uri="ms-resource://Syncfusion.Core.XForms.UWP/Files/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml">
+							<Candidate type="Path">
+								<Value>Syncfusion.Core.XForms.UWP\TILRenderer\ToggleIcons\ToggleVisibleIcon.xaml</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ToggleVisibleIcon.xbf" uri="ms-resource://Syncfusion.Core.XForms.UWP/Files/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

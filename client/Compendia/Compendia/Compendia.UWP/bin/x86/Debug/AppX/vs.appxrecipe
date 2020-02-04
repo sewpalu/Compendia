@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-03T11:50:04.979</Modified>
+      <Modified>2020-02-04T11:05:24.634</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Compendia.UWP.exe">
       <PackagePath>entrypoint\Compendia.UWP.exe</PackagePath>
-      <Modified>2020-02-03T11:50:04.054</Modified>
+      <Modified>2020-02-04T11:05:22.246</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\microsoft.bcl.asyncinterfaces\1.1.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
       <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
@@ -782,6 +782,34 @@
       <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
       <Modified>2019-11-01T16:23:38.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\syncfusion.licensing\17.4.0.46\lib\uap10.0\Syncfusion.Licensing.dll">
+      <PackagePath>Syncfusion.Licensing.dll</PackagePath>
+      <Modified>2020-01-27T22:53:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\syncfusion.sfinput.uwp\17.4.0.46\lib\uap10.0\Syncfusion.SfInput.UWP.dll">
+      <PackagePath>Syncfusion.SfInput.UWP.dll</PackagePath>
+      <Modified>2020-01-27T23:21:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\syncfusion.sfshared.uwp\17.4.0.46\lib\uap10.0\Syncfusion.SfShared.UWP.dll">
+      <PackagePath>Syncfusion.SfShared.UWP.dll</PackagePath>
+      <Modified>2020-01-27T23:17:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\syncfusion.xamarin.core\17.4.0.46\lib\uap10.0\Syncfusion.Core.XForms.UWP.dll">
+      <PackagePath>Syncfusion.Core.XForms.UWP.dll</PackagePath>
+      <Modified>2020-01-27T23:50:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\syncfusion.xamarin.core\17.4.0.46\lib\uap10.0\Syncfusion.Core.XForms.dll">
+      <PackagePath>Syncfusion.Core.XForms.dll</PackagePath>
+      <Modified>2020-01-27T23:49:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\syncfusion.xamarin.sfcalendar\17.4.0.46\lib\uap10.0\Syncfusion.SfCalendar.XForms.UWP.dll">
+      <PackagePath>Syncfusion.SfCalendar.XForms.UWP.dll</PackagePath>
+      <Modified>2020-01-28T00:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\syncfusion.xamarin.sfcalendar\17.4.0.46\lib\uap10.0\Syncfusion.SfCalendar.XForms.dll">
+      <PackagePath>Syncfusion.SfCalendar.XForms.dll</PackagePath>
+      <Modified>2020-01-28T00:00:30.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\system.collections.immutable\1.7.0\lib\netstandard2.0\System.Collections.Immutable.dll">
       <PackagePath>System.Collections.Immutable.dll</PackagePath>
       <Modified>2019-11-15T07:37:08.000</Modified>
@@ -836,7 +864,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia\bin\Debug\netstandard2.0\Compendia.dll">
       <PackagePath>Compendia.dll</PackagePath>
-      <Modified>2020-02-03T11:52:47.490</Modified>
+      <Modified>2020-02-04T11:05:07.210</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -987,15 +1015,35 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-02-03T11:50:00.315</Modified>
+      <Modified>2020-02-04T11:05:18.038</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-02-03T11:50:00.315</Modified>
+      <Modified>2020-02-04T11:05:18.038</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-09-28T15:28:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\syncfusion.sfinput.uwp\17.4.0.46\lib\uap10.0\Syncfusion.SfInput.UWP\Syncfusion.SfInput.UWP.xr.xml">
+      <PackagePath>Syncfusion.SfInput.UWP\Syncfusion.SfInput.UWP.xr.xml</PackagePath>
+      <Modified>2020-01-27T23:21:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\syncfusion.sfinput.uwp\17.4.0.46\lib\uap10.0\Syncfusion.SfInput.UWP\Properties\Syncfusion.SfInput.UWP.rd.xml">
+      <PackagePath>Syncfusion.SfInput.UWP\Properties\Syncfusion.SfInput.UWP.rd.xml</PackagePath>
+      <Modified>2020-01-27T22:15:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\syncfusion.sfshared.uwp\17.4.0.46\lib\uap10.0\Syncfusion.SfShared.UWP\Syncfusion.SfShared.UWP.xr.xml">
+      <PackagePath>Syncfusion.SfShared.UWP\Syncfusion.SfShared.UWP.xr.xml</PackagePath>
+      <Modified>2020-01-27T23:17:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\syncfusion.sfshared.uwp\17.4.0.46\lib\uap10.0\Syncfusion.SfShared.UWP\Properties\Syncfusion.SfShared.UWP.rd.xml">
+      <PackagePath>Syncfusion.SfShared.UWP\Properties\Syncfusion.SfShared.UWP.rd.xml</PackagePath>
+      <Modified>2020-01-27T22:14:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\syncfusion.xamarin.core\17.4.0.46\lib\uap10.0\Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml">
+      <PackagePath>Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml</PackagePath>
+      <Modified>2020-01-27T23:50:40.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\xamarin.forms\4.0.0.425677\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
@@ -1003,11 +1051,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-02-03T11:44:36.309</Modified>
+      <Modified>2020-02-04T11:05:23.600</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Core\Compendia.UWP.exe">
       <PackagePath>Compendia.UWP.exe</PackagePath>
-      <Modified>2020-02-03T11:50:04.960</Modified>
+      <Modified>2020-02-04T11:05:24.612</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
