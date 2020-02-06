@@ -59,7 +59,7 @@ namespace Compendia.ViewModel
 
                 return new Command(async () =>
                 {
-                    await PushAsync(new SignUpView());
+                    await PushModalAsync(new SignUpView());
 
                 });
             }
@@ -76,7 +76,7 @@ namespace Compendia.ViewModel
             get
             {
 
-                return new Command(async () => { await PopAsync(); });
+                return new Command(async () => { await PopModalAsync(); });
             }
             set
             {
@@ -84,9 +84,6 @@ namespace Compendia.ViewModel
             }
         }
 
-        private Page MainPage()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

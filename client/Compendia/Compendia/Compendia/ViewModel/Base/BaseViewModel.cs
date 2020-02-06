@@ -10,15 +10,6 @@ namespace Compendia.ViewModel.Base
 {
     public abstract class BaseViewModel : INotifyPropertyChanged
     {
-        public async Task PushAsync(Page p)
-        {
-            await Application.Current.MainPage.Navigation.PushAsync(p);
-        }
-
-        public async Task PopAsync()
-        {
-            await Application.Current.MainPage.Navigation.PopAsync();
-        }
 
         public async Task PopModalAsync()
         {
