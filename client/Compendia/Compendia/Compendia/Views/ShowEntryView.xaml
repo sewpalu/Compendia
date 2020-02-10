@@ -8,7 +8,7 @@
              x:Class="Compendia.Views.ShowEntryView">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Eintrag ansehen"
+            <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

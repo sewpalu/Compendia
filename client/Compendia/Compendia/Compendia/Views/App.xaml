@@ -9,41 +9,10 @@
     <Application.Resources>
         <ResourceDictionary>
             <!--Global Styles-->
-            <Color x:Key="NavigationPrimary">#3B86FF</Color>
-            <!-- Bubble Colors -->
-            <Color x:Key="Heaven">#3B86FF</Color>
-            <Color x:Key="Fossil">#C8D1D3</Color>
-            <Color x:Key="Sun">#FBE870</Color>
-            <Color x:Key="Grass">#079B21</Color>
-            <Color x:Key="Strawberry">#EA899A</Color>
-            <Color x:Key="Cherry">#6C0000</Color>
-            <!-- Typography Colors -->
-            <Color x:Key="Onyx">#1B1C20</Color>
-            <Color x:Key="Slate">#6E8CA0</Color>
-            <Color x:Key="Snow">#FFFFFF</Color>
-            
+            <Color x:Key="NavigationPrimary">#2196F3</Color>
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
                 <Setter Property="BarTextColor" Value="White" />
-            </Style>
-            
-            <Style x:Key="BlueButtonStyle" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="{StaticResource Heaven}"/>
-                <Setter Property="TextColor" Value="{StaticResource Snow}"/>
-            </Style>
-            
-            <Style x:Key="GreyButtonStyle" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="{StaticResource Snow}"/>
-                <Setter Property="BorderColor" Value="{StaticResource Fossil}"/>
-                <Setter Property="BorderWidth" Value="1"/>
-                <Setter Property="TextColor" Value="{StaticResource Onyx}"/>
-            </Style>
-            
-            <Style TargetType="Label">
-                 <Setter Property="TextColor" Value="{StaticResource Onyx}"/>
-            </Style>
-            <Style TargetType="Entry">
-                <Setter Property="TextColor" Value="{StaticResource Onyx}" />
             </Style>
         </ResourceDictionary>
     </Application.Resources>

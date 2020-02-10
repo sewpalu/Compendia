@@ -8,19 +8,19 @@
           "System.Threading.Tasks.Extensions": "4.5.2"
         },
         "compile": {
-          "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+          "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Microsoft.Bcl.HashCode/1.1.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/Microsoft.Bcl.HashCode.dll": {}
+          "ref/netstandard2.0/Microsoft.Bcl.HashCode.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Bcl.HashCode.dll": {}
+          "lib/netstandard2.0/Microsoft.Bcl.HashCode.dll": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -226,13 +226,14 @@
       "Microsoft.Extensions.DependencyInjection/3.1.1": {
         "type": "package",
         "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.1"
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.1": {
@@ -357,6 +358,45 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.internal.dll": {}
         }
       },
+      "Syncfusion.Licensing/17.4.0.47": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Core/17.4.0.47": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.4.0.47",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfCalendar/17.4.0.47": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.47",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
+        }
+      },
       "System.Buffers/4.5.0": {
         "type": "package",
         "compile": {
@@ -426,11 +466,14 @@
       },
       "System.Text.Encodings.Web/4.7.0": {
         "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
         "compile": {
-          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         }
       },
       "System.Text.Json/4.7.0": {
@@ -595,27 +638,13 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "XamForms.Controls.Calendar/1.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "2.3.4.231"
-        },
-        "compile": {
-          "lib/Xamarin.iOS10/XamForms.Controls.Calendar.dll": {},
-          "lib/Xamarin.iOS10/XamForms.Controls.Calendar.iOS.dll": {}
-        },
-        "runtime": {
-          "lib/Xamarin.iOS10/XamForms.Controls.Calendar.dll": {},
-          "lib/Xamarin.iOS10/XamForms.Controls.Calendar.iOS.dll": {}
-        }
-      },
       "Compendia/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.1",
-          "XamForms.Controls.Calendar": "1.1.1",
+          "Syncfusion.Xamarin.SfCalendar": "17.4.0.47",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.0.0.425677"
         },
@@ -634,19 +663,19 @@
           "System.Threading.Tasks.Extensions": "4.5.2"
         },
         "compile": {
-          "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+          "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Microsoft.Bcl.HashCode/1.1.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/Microsoft.Bcl.HashCode.dll": {}
+          "ref/netstandard2.0/Microsoft.Bcl.HashCode.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Bcl.HashCode.dll": {}
+          "lib/netstandard2.0/Microsoft.Bcl.HashCode.dll": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -852,13 +881,14 @@
       "Microsoft.Extensions.DependencyInjection/3.1.1": {
         "type": "package",
         "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.1"
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.1": {
@@ -983,6 +1013,45 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.internal.dll": {}
         }
       },
+      "Syncfusion.Licensing/17.4.0.47": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Core/17.4.0.47": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.4.0.47",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfCalendar/17.4.0.47": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.47",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
+        }
+      },
       "System.Buffers/4.5.0": {
         "type": "package",
         "compile": {
@@ -1052,11 +1121,14 @@
       },
       "System.Text.Encodings.Web/4.7.0": {
         "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
         "compile": {
-          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         }
       },
       "System.Text.Json/4.7.0": {
@@ -1221,27 +1293,13 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "XamForms.Controls.Calendar/1.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "2.3.4.231"
-        },
-        "compile": {
-          "lib/Xamarin.iOS10/XamForms.Controls.Calendar.dll": {},
-          "lib/Xamarin.iOS10/XamForms.Controls.Calendar.iOS.dll": {}
-        },
-        "runtime": {
-          "lib/Xamarin.iOS10/XamForms.Controls.Calendar.dll": {},
-          "lib/Xamarin.iOS10/XamForms.Controls.Calendar.iOS.dll": {}
-        }
-      },
       "Compendia/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.1",
-          "XamForms.Controls.Calendar": "1.1.1",
+          "Syncfusion.Xamarin.SfCalendar": "17.4.0.47",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.0.0.425677"
         },
@@ -1260,19 +1318,19 @@
           "System.Threading.Tasks.Extensions": "4.5.2"
         },
         "compile": {
-          "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+          "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Microsoft.Bcl.HashCode/1.1.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/Microsoft.Bcl.HashCode.dll": {}
+          "ref/netstandard2.0/Microsoft.Bcl.HashCode.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Bcl.HashCode.dll": {}
+          "lib/netstandard2.0/Microsoft.Bcl.HashCode.dll": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -1478,13 +1536,14 @@
       "Microsoft.Extensions.DependencyInjection/3.1.1": {
         "type": "package",
         "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.1"
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.1": {
@@ -1609,6 +1668,45 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.internal.dll": {}
         }
       },
+      "Syncfusion.Licensing/17.4.0.47": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Core/17.4.0.47": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.4.0.47",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfCalendar/17.4.0.47": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.47",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
+        }
+      },
       "System.Buffers/4.5.0": {
         "type": "package",
         "compile": {
@@ -1678,11 +1776,14 @@
       },
       "System.Text.Encodings.Web/4.7.0": {
         "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
         "compile": {
-          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         }
       },
       "System.Text.Json/4.7.0": {
@@ -1847,27 +1948,13 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "XamForms.Controls.Calendar/1.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "2.3.4.231"
-        },
-        "compile": {
-          "lib/Xamarin.iOS10/XamForms.Controls.Calendar.dll": {},
-          "lib/Xamarin.iOS10/XamForms.Controls.Calendar.iOS.dll": {}
-        },
-        "runtime": {
-          "lib/Xamarin.iOS10/XamForms.Controls.Calendar.dll": {},
-          "lib/Xamarin.iOS10/XamForms.Controls.Calendar.iOS.dll": {}
-        }
-      },
       "Compendia/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.1",
-          "XamForms.Controls.Calendar": "1.1.1",
+          "Syncfusion.Xamarin.SfCalendar": "17.4.0.47",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.0.0.425677"
         },
@@ -1886,19 +1973,19 @@
           "System.Threading.Tasks.Extensions": "4.5.2"
         },
         "compile": {
-          "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+          "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Microsoft.Bcl.HashCode/1.1.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/Microsoft.Bcl.HashCode.dll": {}
+          "ref/netstandard2.0/Microsoft.Bcl.HashCode.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Bcl.HashCode.dll": {}
+          "lib/netstandard2.0/Microsoft.Bcl.HashCode.dll": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -2104,13 +2191,14 @@
       "Microsoft.Extensions.DependencyInjection/3.1.1": {
         "type": "package",
         "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.1"
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.1": {
@@ -2235,6 +2323,45 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.internal.dll": {}
         }
       },
+      "Syncfusion.Licensing/17.4.0.47": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Core/17.4.0.47": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.4.0.47",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfCalendar/17.4.0.47": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.47",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
+        }
+      },
       "System.Buffers/4.5.0": {
         "type": "package",
         "compile": {
@@ -2304,11 +2431,14 @@
       },
       "System.Text.Encodings.Web/4.7.0": {
         "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
         "compile": {
-          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         }
       },
       "System.Text.Json/4.7.0": {
@@ -2473,27 +2603,13 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "XamForms.Controls.Calendar/1.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "2.3.4.231"
-        },
-        "compile": {
-          "lib/Xamarin.iOS10/XamForms.Controls.Calendar.dll": {},
-          "lib/Xamarin.iOS10/XamForms.Controls.Calendar.iOS.dll": {}
-        },
-        "runtime": {
-          "lib/Xamarin.iOS10/XamForms.Controls.Calendar.dll": {},
-          "lib/Xamarin.iOS10/XamForms.Controls.Calendar.iOS.dll": {}
-        }
-      },
       "Compendia/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.1",
-          "XamForms.Controls.Calendar": "1.1.1",
+          "Syncfusion.Xamarin.SfCalendar": "17.4.0.47",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.0.0.425677"
         },
@@ -3034,6 +3150,89 @@
         "lib/netstandard2.0/SQLitePCLRaw.provider.internal.dll",
         "sqlitepclraw.provider.internal.2.0.2.nupkg.sha512",
         "sqlitepclraw.provider.internal.nuspec"
+      ]
+    },
+    "Syncfusion.Licensing/17.4.0.47": {
+      "sha512": "g7hG+OLlwM4lWyWZaEfzjZAUz69zsN0+bM9wg7nKW6dMEBVl953qGQCd6TI4TFND9FhV0/tvaW7y9KyTzPSvqw==",
+      "type": "package",
+      "path": "syncfusion.licensing/17.4.0.47",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net20/Syncfusion.Licensing.dll",
+        "lib/net35/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/netcoreapp3.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.2/Syncfusion.Licensing.dll",
+        "lib/netstandard1.4/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.17.4.0.47.nupkg.sha512",
+        "syncfusion.licensing.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.Core/17.4.0.47": {
+      "sha512": "ijkFaAi/hRaPHFXLdzprMoWYK/VLqIo9uNoW/PNwweiA3zRfULau7aNdNMKsdUjcTSvuvrodc8w4OSxUqTpfzQ==",
+      "type": "package",
+      "path": "syncfusion.xamarin.core/17.4.0.47",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.Core.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.Core.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.Core.XForms.xml",
+        "lib/Xamarin.Mac/Syncfusion.Core.XForms.dll",
+        "lib/Xamarin.Mac/Syncfusion.Core.XForms.macOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.Core.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.Core.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Core.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Core.XForms.xml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/Syncfusion.Core.XForms.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/DropDownIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleCollapsedIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.dll",
+        "lib/uap10.0/Syncfusion.Core.XForms.xml",
+        "syncfusion.xamarin.core.17.4.0.47.nupkg.sha512",
+        "syncfusion.xamarin.core.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfCalendar/17.4.0.47": {
+      "sha512": "GtDPwBIqLm7BTrJ9KYLcDJbzjvjD4U8YA905sYFun5SPqhekIf1lVBA6mVMnxBo/Lehn8GYCm77286Yh/0Uq4w==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfcalendar/17.4.0.47",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.SfCalendar.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfCalendar.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.SfCalendar.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.SfCalendar.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfCalendar.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfCalendar.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfCalendar.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfCalendar.XForms.xml",
+        "syncfusion.xamarin.sfcalendar.17.4.0.47.nupkg.sha512",
+        "syncfusion.xamarin.sfcalendar.nuspec"
       ]
     },
     "System.Buffers/4.5.0": {
@@ -3662,30 +3861,6 @@
         "xamarin.forms.nuspec"
       ]
     },
-    "XamForms.Controls.Calendar/1.1.1": {
-      "sha512": "GCydwm9HO+8V4iGVsGJZtnHJaqIpjas40BSRU+T7lIM7E4nZ7pOn2Ifzu0Y6MLrZJuqCHFeroOWjJSfOjZIyyw==",
-      "type": "package",
-      "path": "xamforms.controls.calendar/1.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/MonoAndroid10/XamForms.Controls.Calendar.Droid.dll",
-        "lib/MonoAndroid10/XamForms.Controls.Calendar.dll",
-        "lib/MonoTouch10/XamForms.Controls.Calendar.dll",
-        "lib/MonoTouch10/XamForms.Controls.Calendar.iOS.dll",
-        "lib/UAP10/XamForms.Controls.Calendar.UWP.dll",
-        "lib/UAP10/XamForms.Controls.Calendar.dll",
-        "lib/Xamarin.iOS10/XamForms.Controls.Calendar.dll",
-        "lib/Xamarin.iOS10/XamForms.Controls.Calendar.iOS.dll",
-        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/XamForms.Controls.Calendar.dll",
-        "lib/win81/XamForms.Controls.Calendar.Windows.dll",
-        "lib/win81/XamForms.Controls.Calendar.dll",
-        "lib/wpa81/XamForms.Controls.Calendar.WinPhone.dll",
-        "lib/wpa81/XamForms.Controls.Calendar.dll",
-        "xamforms.controls.calendar.1.1.1.nupkg.sha512",
-        "xamforms.controls.calendar.nuspec"
-      ]
-    },
     "Compendia/1.0.0": {
       "type": "project",
       "path": "../Compendia/Compendia.csproj",
@@ -3699,38 +3874,45 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.1",
       "Microsoft.EntityFrameworkCore.Sqlite.Core >= 3.1.1",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.1",
-      "XamForms.Controls.Calendar >= 1.1.1",
+      "Syncfusion.Xamarin.SfCalendar >= 17.4.0.47",
       "Xamarin.Essentials >= 1.1.0",
       "Xamarin.Forms >= 4.0.0.425677"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nikol\\.nuget\\packages\\": {}
+    "C:\\Users\\debinkli\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia.iOS\\Compendia.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia.iOS\\Compendia.iOS.csproj",
       "projectName": "Compendia.iOS",
-      "projectPath": "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia.iOS\\Compendia.iOS.csproj",
-      "packagesPath": "C:\\Users\\nikol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia.iOS\\obj\\",
+      "projectPath": "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia.iOS\\Compendia.iOS.csproj",
+      "packagesPath": "C:\\Users\\debinkli\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\nikol\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\debinkli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
-              "projectPath": "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj"
+            "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
+              "projectPath": "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia\\Compendia.csproj"
             }
           }
         }
@@ -3759,9 +3941,9 @@
             "target": "Package",
             "version": "[3.1.1, )"
           },
-          "XamForms.Controls.Calendar": {
+          "Syncfusion.Xamarin.SfCalendar": {
             "target": "Package",
-            "version": "[1.1.1, )"
+            "version": "[17.4.0.47, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",

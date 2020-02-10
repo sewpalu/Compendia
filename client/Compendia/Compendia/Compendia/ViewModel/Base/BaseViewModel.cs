@@ -10,7 +10,6 @@ namespace Compendia.ViewModel.Base
 {
     public abstract class BaseViewModel : INotifyPropertyChanged
     {
-
         public async Task PopModalAsync()
         {
             await Application.Current.MainPage.Navigation.PopModalAsync();
@@ -20,6 +19,11 @@ namespace Compendia.ViewModel.Base
         public async Task PushModalAsync(Page p)
         {
             await Application.Current.MainPage.Navigation.PushModalAsync(p);
+        }
+
+        public void InsertPageBefor(Page page, Page befor)
+        {
+            Application.Current.MainPage.Navigation.InsertPageBefore(page, befor);
         }
 
 

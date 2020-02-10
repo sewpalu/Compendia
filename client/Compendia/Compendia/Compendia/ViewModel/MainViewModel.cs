@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using Compendia.Database;
 using Compendia.Model;
 using Compendia.ViewModel.Base;
+using Compendia.Views;
 using Xamarin.Forms;
 
 namespace Compendia.ViewModel
@@ -10,8 +14,34 @@ namespace Compendia.ViewModel
         private DateTime? _date = DateTime.Today;
         public MainViewModel()
         {
-            //connectUser();
-            ServerConnection();
+            _ = connectUserAsync();
+            //ServerConnection();
+        }
+
+        private async System.Threading.Tasks.Task connectUserAsync()
+        {
+            List<DbLogIn> userdata;
+            try
+            {
+                userdata = DatabaseService._LogInRepository.GetObjects();
+
+            }
+            catch (Exception e)
+            {
+                userdata = null;
+                Debug.WriteLine(e, ToString());
+            }
+
+            if (userdata == null || userdata.Count == 0)
+            {
+                await PushModalAsync(new LogInView());
+
+            }
+            else
+            {
+                //mit Datenbank verbinden
+            }
+
         }
 
         private async void ServerConnection()
@@ -56,5 +86,5 @@ namespace Compendia.ViewModel
 
             }
         }
+
     }
-}

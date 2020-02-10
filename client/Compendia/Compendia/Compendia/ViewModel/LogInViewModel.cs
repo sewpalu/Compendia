@@ -12,7 +12,10 @@ namespace Compendia.ViewModel
 {
     public class LogInViewModel : BaseViewModel
     {
-        
+        public LogInViewModel()
+        {
+
+        }
         private string user;
         private string password;
 
@@ -20,7 +23,7 @@ namespace Compendia.ViewModel
         {
             user = "User";
             password = "Password";
-            
+
 
         }
 
@@ -63,7 +66,7 @@ namespace Compendia.ViewModel
 
                 return new Command(async () =>
                 {
-                    if(user != null && password != null)
+                    if (user != null && password != null)
                     {
                         //User und Passwort überprüfen von großer Datenbank
 
@@ -73,8 +76,9 @@ namespace Compendia.ViewModel
                         await PushModalAsync(new MainView());
 
 
-                    }   
-                   
+
+                    }
+
 
                 });
 
@@ -86,8 +90,8 @@ namespace Compendia.ViewModel
             }
         }
 
-       
-        
+
+
         //Login Button wurde geklicket
         public ICommand SignUpCommand
         {

@@ -1,10 +1,8 @@
-﻿using Compendia.Database;
-using Compendia.Model;
+﻿using Compendia.Model;
 using Compendia.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -18,50 +16,18 @@ namespace Compendia
     public partial class MainPage : MasterDetailPage
     {
         Dictionary<int, NavigationPage> MenuPages = new Dictionary<int, NavigationPage>();
-
         public MainPage()
         {
             InitializeComponent();
 
-
             MasterBehavior = MasterBehavior.Popover;
 
-            //Tests
-            //ViewService.GetMainPage(this);
-            //ViewService.setDetail((NavigationPage)Detail);
             MenuPages.Add((int)MenuItemType.Main, (NavigationPage)Detail);
 
-
-            List<DbLogIn> userdata;
-            try
-            {
-                userdata = DatabaseService._LogInRepository.GetObjects();
-
-            }catch(Exception e)
-            {
-                userdata = null;
-                Debug.WriteLine(e, ToString());
-            }
             
-            if (userdata == null || userdata.Count == 0)
-            {
-                _ = ViewService.NavigateFromMenu((int)MenuItemType.LogOut);
-               
-            }
-            else
-            {
-                //mit Datenbank verbinden
-            }
-
-           
 
         }
 
-        public void setPresented(bool presented)
-        {
-            IsPresented = false;
-
-        }
         public async Task NavigateFromMenu(int id)
         {
             if (!MenuPages.ContainsKey(id))
@@ -87,12 +53,7 @@ namespace Compendia
                         MenuPages.Add(id, new NavigationPage(new ShowEntryView()));
                         break;
                     case (int)MenuItemType.LogOut:
-                        //Sachen aus Datenbank noch rauslöschen
-                        logOut();
                         MenuPages.Add(id, new NavigationPage(new LogInView()));
-                        break;
-                    case (int)MenuItemType.SignUp:
-                        MenuPages.Add(id, new NavigationPage(new SignUpView()));
                         break;
 
                 }
@@ -110,18 +71,6 @@ namespace Compendia
                 IsPresented = false;
             }
 
-        }
-                
-        private async void logOut()
-        {
-            try
-            {
-                await DatabaseService._LogInRepository.DeleteObjectAsync(DatabaseService._LogInRepository.GetLastObjectAsync().Id);
-
-            }catch(Exception e)
-            {
-                Debug.WriteLine(e.ToString());
-            }
         }
     }
 }

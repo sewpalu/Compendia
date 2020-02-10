@@ -1,6 +1,5 @@
 ﻿using Compendia.Database;
 using Compendia.Database.Base;
-using Compendia.UWP;
 using Microsoft.Data.Sqlite;
 using System;
 using System.Collections.Generic;
@@ -8,9 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 
-[assembly: Dependency(typeof(Sqlite))]
 namespace Compendia.UWP
 {
     public class Sqlite : ISqlite

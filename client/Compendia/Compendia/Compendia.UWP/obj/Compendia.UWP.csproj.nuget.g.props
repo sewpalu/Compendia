@@ -38,7 +38,7 @@
     <Pkgruntime_win10-arm_Microsoft_Net_Native_Compiler Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_Native_Compiler)' == '' ">C:\Users\debinkli\.nuget\packages\runtime.win10-arm.microsoft.net.native.compiler\2.1.8</Pkgruntime_win10-arm_Microsoft_Net_Native_Compiler>
     <PkgMicrosoft_Net_UWPCoreRuntimeSdk Condition=" '$(PkgMicrosoft_Net_UWPCoreRuntimeSdk)' == '' ">C:\Users\debinkli\.nuget\packages\microsoft.net.uwpcoreruntimesdk\2.1.2</PkgMicrosoft_Net_UWPCoreRuntimeSdk>
     <PkgMicrosoft_Net_Native_Compiler Condition=" '$(PkgMicrosoft_Net_Native_Compiler)' == '' ">C:\Users\debinkli\.nuget\packages\microsoft.net.native.compiler\2.1.8</PkgMicrosoft_Net_Native_Compiler>
-    <PkgSyncfusion_SfInput_UWP Condition=" '$(PkgSyncfusion_SfInput_UWP)' == '' ">C:\Users\debinkli\.nuget\packages\syncfusion.sfinput.uwp\17.4.0.46</PkgSyncfusion_SfInput_UWP>
+    <PkgSyncfusion_SfInput_UWP Condition=" '$(PkgSyncfusion_SfInput_UWP)' == '' ">C:\Users\debinkli\.nuget\packages\syncfusion.sfinput.uwp\17.4.0.47</PkgSyncfusion_SfInput_UWP>
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\debinkli\.nuget\packages\microsoft.entityframeworkcore.tools\3.1.1</PkgMicrosoft_EntityFrameworkCore_Tools>
   </PropertyGroup>
 </Project>

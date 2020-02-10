@@ -19,8 +19,6 @@ namespace Compendia.Droid
 
             base.OnCreate(savedInstanceState);
 
-            SQLitePCL.Batteries.Init();
-
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

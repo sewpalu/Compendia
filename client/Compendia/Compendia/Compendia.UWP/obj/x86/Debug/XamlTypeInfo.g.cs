@@ -204,31 +204,19 @@ namespace Compendia.UWP.Compendia_UWP_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[11];
+            _typeNameTable = new string[5];
             _typeNameTable[0] = "Xamarin.Forms.Platform.UWP.WindowsPage";
             _typeNameTable[1] = "Xamarin.Forms.Platform.UWP.WindowsBasePage";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[3] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[4] = "Compendia.UWP.MainPage";
-            _typeNameTable[5] = "Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper";
-            _typeNameTable[6] = "Object";
-            _typeNameTable[7] = "String";
-            _typeNameTable[8] = "Windows.UI.Xaml.Data.Binding";
-            _typeNameTable[9] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper>";
-            _typeNameTable[10] = "Windows.UI.Xaml.FrameworkElement";
 
-            _typeTable = new global::System.Type[11];
+            _typeTable = new global::System.Type[5];
             _typeTable[0] = typeof(global::Xamarin.Forms.Platform.UWP.WindowsPage);
             _typeTable[1] = typeof(global::Xamarin.Forms.Platform.UWP.WindowsBasePage);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[4] = typeof(global::Compendia.UWP.MainPage);
-            _typeTable[5] = typeof(global::Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper);
-            _typeTable[6] = typeof(global::System.Object);
-            _typeTable[7] = typeof(global::System.String);
-            _typeTable[8] = typeof(global::Windows.UI.Xaml.Data.Binding);
-            _typeTable[9] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper>);
-            _typeTable[10] = typeof(global::Windows.UI.Xaml.FrameworkElement);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -265,14 +253,6 @@ namespace Compendia.UWP.Compendia_UWP_XamlTypeInfo
 
         private object Activate_0_WindowsPage() { return new global::Xamarin.Forms.Platform.UWP.WindowsPage(); }
         private object Activate_4_MainPage() { return new global::Compendia.UWP.MainPage(); }
-        private object Activate_5_SetterValueBindingHelper() { return new global::Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper(); }
-        private object Activate_9_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper>(); }
-        private void VectorAdd_9_Collection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper>)instance;
-            var newItem = (global::Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper)item;
-            collection.Add(newItem);
-        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -309,41 +289,6 @@ namespace Compendia.UWP.Compendia_UWP_XamlTypeInfo
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
-
-            case 5:   //  Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper
-                userType = new global::Compendia.UWP.Compendia_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_5_SetterValueBindingHelper;
-                userType.AddMemberName("Type");
-                userType.AddMemberName("Property");
-                userType.AddMemberName("Binding");
-                userType.AddMemberName("Values");
-                userType.AddMemberName("PropertyBinding");
-                userType.SetIsBindable();
-                xamlType = userType;
-                break;
-
-            case 6:   //  Object
-                xamlType = new global::Compendia.UWP.Compendia_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 7:   //  String
-                xamlType = new global::Compendia.UWP.Compendia_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 8:   //  Windows.UI.Xaml.Data.Binding
-                xamlType = new global::Compendia.UWP.Compendia_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 9:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper>
-                userType = new global::Compendia.UWP.Compendia_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_9_Collection;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 10:   //  Windows.UI.Xaml.FrameworkElement
-                xamlType = new global::Compendia.UWP.Compendia_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
             }
             return xamlType;
         }
@@ -357,12 +302,6 @@ namespace Compendia.UWP.Compendia_UWP_XamlTypeInfo
                 {
                     var otherProviders = new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>();
                     global::Windows.UI.Xaml.Markup.IXamlMetadataProvider provider;
-                    provider = new global::Syncfusion.XForms.UWP.Core.Syncfusion_Core_XForms_UWP_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.UI.Xaml.Controls.Input.Syncfusion_SfInput_UWP_2017_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.UI.Xaml.Controls.Syncfusion_SfShared_UWP_2017_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    otherProviders.Add(provider); 
                     provider = new global::Xamarin.Forms.Platform.UAP.Xamarin_Forms_Platform_UAP_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
                     otherProviders.Add(provider); 
                     _otherProviders = otherProviders;
@@ -409,90 +348,11 @@ namespace Compendia.UWP.Compendia_UWP_XamlTypeInfo
             return foundXamlType;
         }
 
-        private object get_0_SetterValueBindingHelper_Type(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper)instance;
-            return that.Type;
-        }
-        private void set_0_SetterValueBindingHelper_Type(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper)instance;
-            that.Type = (global::System.String)Value;
-        }
-        private object get_1_SetterValueBindingHelper_Property(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper)instance;
-            return that.Property;
-        }
-        private void set_1_SetterValueBindingHelper_Property(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper)instance;
-            that.Property = (global::System.String)Value;
-        }
-        private object get_2_SetterValueBindingHelper_Binding(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper)instance;
-            return that.Binding;
-        }
-        private void set_2_SetterValueBindingHelper_Binding(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper)instance;
-            that.Binding = (global::Windows.UI.Xaml.Data.Binding)Value;
-        }
-        private object get_3_SetterValueBindingHelper_Values(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper)instance;
-            return that.Values;
-        }
-        private object get_4_SetterValueBindingHelper_PropertyBinding(object instance)
-        {
-            return global::Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.GetPropertyBinding((global::Windows.UI.Xaml.FrameworkElement)instance);
-        }
-        private void set_4_SetterValueBindingHelper_PropertyBinding(object instance, object Value)
-        {
-            global::Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.SetPropertyBinding((global::Windows.UI.Xaml.FrameworkElement)instance, (global::Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper)Value);
-        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::Compendia.UWP.Compendia_UWP_XamlTypeInfo.XamlMember xamlMember = null;
-            global::Compendia.UWP.Compendia_UWP_XamlTypeInfo.XamlUserType userType;
-
-            switch (longMemberName)
-            {
-            case "Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.Type":
-                userType = (global::Compendia.UWP.Compendia_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper");
-                xamlMember = new global::Compendia.UWP.Compendia_UWP_XamlTypeInfo.XamlMember(this, "Type", "String");
-                xamlMember.Getter = get_0_SetterValueBindingHelper_Type;
-                xamlMember.Setter = set_0_SetterValueBindingHelper_Type;
-                break;
-            case "Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.Property":
-                userType = (global::Compendia.UWP.Compendia_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper");
-                xamlMember = new global::Compendia.UWP.Compendia_UWP_XamlTypeInfo.XamlMember(this, "Property", "String");
-                xamlMember.Getter = get_1_SetterValueBindingHelper_Property;
-                xamlMember.Setter = set_1_SetterValueBindingHelper_Property;
-                break;
-            case "Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.Binding":
-                userType = (global::Compendia.UWP.Compendia_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper");
-                xamlMember = new global::Compendia.UWP.Compendia_UWP_XamlTypeInfo.XamlMember(this, "Binding", "Windows.UI.Xaml.Data.Binding");
-                xamlMember.Getter = get_2_SetterValueBindingHelper_Binding;
-                xamlMember.Setter = set_2_SetterValueBindingHelper_Binding;
-                break;
-            case "Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.Values":
-                userType = (global::Compendia.UWP.Compendia_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper");
-                xamlMember = new global::Compendia.UWP.Compendia_UWP_XamlTypeInfo.XamlMember(this, "Values", "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper>");
-                xamlMember.Getter = get_3_SetterValueBindingHelper_Values;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.PropertyBinding":
-                userType = (global::Compendia.UWP.Compendia_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper");
-                xamlMember = new global::Compendia.UWP.Compendia_UWP_XamlTypeInfo.XamlMember(this, "PropertyBinding", "Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper");
-                xamlMember.SetTargetTypeName("Windows.UI.Xaml.FrameworkElement");
-                xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_4_SetterValueBindingHelper_PropertyBinding;
-                xamlMember.Setter = set_4_SetterValueBindingHelper_PropertyBinding;
-                break;
-            }
+            // No Local Properties
             return xamlMember;
         }
     }

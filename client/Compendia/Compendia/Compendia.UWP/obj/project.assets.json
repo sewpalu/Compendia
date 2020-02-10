@@ -701,7 +701,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/17.4.0.46": {
+      "Syncfusion.Licensing/17.4.0.47": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -710,11 +710,11 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfInput.UWP/17.4.0.46": {
+      "Syncfusion.SfInput.UWP/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46",
-          "Syncfusion.SfShared.UWP": "17.4.0.46"
+          "Syncfusion.Licensing": "17.4.0.47",
+          "Syncfusion.SfShared.UWP": "17.4.0.47"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
@@ -723,10 +723,10 @@
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
         }
       },
-      "Syncfusion.SfShared.UWP/17.4.0.46": {
+      "Syncfusion.SfShared.UWP/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46"
+          "Syncfusion.Licensing": "17.4.0.47"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
@@ -735,10 +735,10 @@
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/17.4.0.46": {
+      "Syncfusion.Xamarin.Core/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46",
+          "Syncfusion.Licensing": "17.4.0.47",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -750,11 +750,11 @@
           "lib/uap10.0/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfCalendar/17.4.0.46": {
+      "Syncfusion.Xamarin.SfCalendar/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.SfInput.UWP": "17.4.0.46",
-          "Syncfusion.Xamarin.Core": "17.4.0.46",
+          "Syncfusion.SfInput.UWP": "17.4.0.47",
+          "Syncfusion.Xamarin.Core": "17.4.0.47",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -935,7 +935,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.1",
-          "Syncfusion.Xamarin.SfCalendar": "17.4.0.46",
+          "Syncfusion.Xamarin.SfCalendar": "17.4.0.47",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.0.0.425677"
         },
@@ -1759,7 +1759,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/17.4.0.46": {
+      "Syncfusion.Licensing/17.4.0.47": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -1768,11 +1768,11 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfInput.UWP/17.4.0.46": {
+      "Syncfusion.SfInput.UWP/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46",
-          "Syncfusion.SfShared.UWP": "17.4.0.46"
+          "Syncfusion.Licensing": "17.4.0.47",
+          "Syncfusion.SfShared.UWP": "17.4.0.47"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
@@ -1781,10 +1781,10 @@
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
         }
       },
-      "Syncfusion.SfShared.UWP/17.4.0.46": {
+      "Syncfusion.SfShared.UWP/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46"
+          "Syncfusion.Licensing": "17.4.0.47"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
@@ -1793,10 +1793,10 @@
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/17.4.0.46": {
+      "Syncfusion.Xamarin.Core/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46",
+          "Syncfusion.Licensing": "17.4.0.47",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -1808,11 +1808,11 @@
           "lib/uap10.0/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfCalendar/17.4.0.46": {
+      "Syncfusion.Xamarin.SfCalendar/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.SfInput.UWP": "17.4.0.46",
-          "Syncfusion.Xamarin.Core": "17.4.0.46",
+          "Syncfusion.SfInput.UWP": "17.4.0.47",
+          "Syncfusion.Xamarin.Core": "17.4.0.47",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -1982,7 +1982,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.1",
-          "Syncfusion.Xamarin.SfCalendar": "17.4.0.46",
+          "Syncfusion.Xamarin.SfCalendar": "17.4.0.47",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.0.0.425677"
         },
@@ -2807,7 +2807,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/17.4.0.46": {
+      "Syncfusion.Licensing/17.4.0.47": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -2816,11 +2816,11 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfInput.UWP/17.4.0.46": {
+      "Syncfusion.SfInput.UWP/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46",
-          "Syncfusion.SfShared.UWP": "17.4.0.46"
+          "Syncfusion.Licensing": "17.4.0.47",
+          "Syncfusion.SfShared.UWP": "17.4.0.47"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
@@ -2829,10 +2829,10 @@
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
         }
       },
-      "Syncfusion.SfShared.UWP/17.4.0.46": {
+      "Syncfusion.SfShared.UWP/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46"
+          "Syncfusion.Licensing": "17.4.0.47"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
@@ -2841,10 +2841,10 @@
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/17.4.0.46": {
+      "Syncfusion.Xamarin.Core/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46",
+          "Syncfusion.Licensing": "17.4.0.47",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -2856,11 +2856,11 @@
           "lib/uap10.0/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfCalendar/17.4.0.46": {
+      "Syncfusion.Xamarin.SfCalendar/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.SfInput.UWP": "17.4.0.46",
-          "Syncfusion.Xamarin.Core": "17.4.0.46",
+          "Syncfusion.SfInput.UWP": "17.4.0.47",
+          "Syncfusion.Xamarin.Core": "17.4.0.47",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -3030,7 +3030,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.1",
-          "Syncfusion.Xamarin.SfCalendar": "17.4.0.46",
+          "Syncfusion.Xamarin.SfCalendar": "17.4.0.47",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.0.0.425677"
         },
@@ -3679,7 +3679,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/17.4.0.46": {
+      "Syncfusion.Licensing/17.4.0.47": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -3688,11 +3688,11 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfInput.UWP/17.4.0.46": {
+      "Syncfusion.SfInput.UWP/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46",
-          "Syncfusion.SfShared.UWP": "17.4.0.46"
+          "Syncfusion.Licensing": "17.4.0.47",
+          "Syncfusion.SfShared.UWP": "17.4.0.47"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
@@ -3701,10 +3701,10 @@
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
         }
       },
-      "Syncfusion.SfShared.UWP/17.4.0.46": {
+      "Syncfusion.SfShared.UWP/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46"
+          "Syncfusion.Licensing": "17.4.0.47"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
@@ -3713,10 +3713,10 @@
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/17.4.0.46": {
+      "Syncfusion.Xamarin.Core/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46",
+          "Syncfusion.Licensing": "17.4.0.47",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -3728,11 +3728,11 @@
           "lib/uap10.0/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfCalendar/17.4.0.46": {
+      "Syncfusion.Xamarin.SfCalendar/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.SfInput.UWP": "17.4.0.46",
-          "Syncfusion.Xamarin.Core": "17.4.0.46",
+          "Syncfusion.SfInput.UWP": "17.4.0.47",
+          "Syncfusion.Xamarin.Core": "17.4.0.47",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -3899,7 +3899,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.1",
-          "Syncfusion.Xamarin.SfCalendar": "17.4.0.46",
+          "Syncfusion.Xamarin.SfCalendar": "17.4.0.47",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.0.0.425677"
         },
@@ -4723,7 +4723,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/17.4.0.46": {
+      "Syncfusion.Licensing/17.4.0.47": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -4732,11 +4732,11 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfInput.UWP/17.4.0.46": {
+      "Syncfusion.SfInput.UWP/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46",
-          "Syncfusion.SfShared.UWP": "17.4.0.46"
+          "Syncfusion.Licensing": "17.4.0.47",
+          "Syncfusion.SfShared.UWP": "17.4.0.47"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
@@ -4745,10 +4745,10 @@
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
         }
       },
-      "Syncfusion.SfShared.UWP/17.4.0.46": {
+      "Syncfusion.SfShared.UWP/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46"
+          "Syncfusion.Licensing": "17.4.0.47"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
@@ -4757,10 +4757,10 @@
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/17.4.0.46": {
+      "Syncfusion.Xamarin.Core/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46",
+          "Syncfusion.Licensing": "17.4.0.47",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -4772,11 +4772,11 @@
           "lib/uap10.0/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfCalendar/17.4.0.46": {
+      "Syncfusion.Xamarin.SfCalendar/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.SfInput.UWP": "17.4.0.46",
-          "Syncfusion.Xamarin.Core": "17.4.0.46",
+          "Syncfusion.SfInput.UWP": "17.4.0.47",
+          "Syncfusion.Xamarin.Core": "17.4.0.47",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -4946,7 +4946,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.1",
-          "Syncfusion.Xamarin.SfCalendar": "17.4.0.46",
+          "Syncfusion.Xamarin.SfCalendar": "17.4.0.47",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.0.0.425677"
         },
@@ -5771,7 +5771,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/17.4.0.46": {
+      "Syncfusion.Licensing/17.4.0.47": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -5780,11 +5780,11 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfInput.UWP/17.4.0.46": {
+      "Syncfusion.SfInput.UWP/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46",
-          "Syncfusion.SfShared.UWP": "17.4.0.46"
+          "Syncfusion.Licensing": "17.4.0.47",
+          "Syncfusion.SfShared.UWP": "17.4.0.47"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
@@ -5793,10 +5793,10 @@
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
         }
       },
-      "Syncfusion.SfShared.UWP/17.4.0.46": {
+      "Syncfusion.SfShared.UWP/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46"
+          "Syncfusion.Licensing": "17.4.0.47"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
@@ -5805,10 +5805,10 @@
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/17.4.0.46": {
+      "Syncfusion.Xamarin.Core/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46",
+          "Syncfusion.Licensing": "17.4.0.47",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -5820,11 +5820,11 @@
           "lib/uap10.0/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfCalendar/17.4.0.46": {
+      "Syncfusion.Xamarin.SfCalendar/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.SfInput.UWP": "17.4.0.46",
-          "Syncfusion.Xamarin.Core": "17.4.0.46",
+          "Syncfusion.SfInput.UWP": "17.4.0.47",
+          "Syncfusion.Xamarin.Core": "17.4.0.47",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -5994,7 +5994,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.1",
-          "Syncfusion.Xamarin.SfCalendar": "17.4.0.46",
+          "Syncfusion.Xamarin.SfCalendar": "17.4.0.47",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.0.0.425677"
         },
@@ -6818,7 +6818,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/17.4.0.46": {
+      "Syncfusion.Licensing/17.4.0.47": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -6827,11 +6827,11 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfInput.UWP/17.4.0.46": {
+      "Syncfusion.SfInput.UWP/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46",
-          "Syncfusion.SfShared.UWP": "17.4.0.46"
+          "Syncfusion.Licensing": "17.4.0.47",
+          "Syncfusion.SfShared.UWP": "17.4.0.47"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
@@ -6840,10 +6840,10 @@
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
         }
       },
-      "Syncfusion.SfShared.UWP/17.4.0.46": {
+      "Syncfusion.SfShared.UWP/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46"
+          "Syncfusion.Licensing": "17.4.0.47"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
@@ -6852,10 +6852,10 @@
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/17.4.0.46": {
+      "Syncfusion.Xamarin.Core/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46",
+          "Syncfusion.Licensing": "17.4.0.47",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -6867,11 +6867,11 @@
           "lib/uap10.0/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfCalendar/17.4.0.46": {
+      "Syncfusion.Xamarin.SfCalendar/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.SfInput.UWP": "17.4.0.46",
-          "Syncfusion.Xamarin.Core": "17.4.0.46",
+          "Syncfusion.SfInput.UWP": "17.4.0.47",
+          "Syncfusion.Xamarin.Core": "17.4.0.47",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -7041,7 +7041,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.1",
-          "Syncfusion.Xamarin.SfCalendar": "17.4.0.46",
+          "Syncfusion.Xamarin.SfCalendar": "17.4.0.47",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.0.0.425677"
         },
@@ -7866,7 +7866,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/17.4.0.46": {
+      "Syncfusion.Licensing/17.4.0.47": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -7875,11 +7875,11 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfInput.UWP/17.4.0.46": {
+      "Syncfusion.SfInput.UWP/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46",
-          "Syncfusion.SfShared.UWP": "17.4.0.46"
+          "Syncfusion.Licensing": "17.4.0.47",
+          "Syncfusion.SfShared.UWP": "17.4.0.47"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
@@ -7888,10 +7888,10 @@
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
         }
       },
-      "Syncfusion.SfShared.UWP/17.4.0.46": {
+      "Syncfusion.SfShared.UWP/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46"
+          "Syncfusion.Licensing": "17.4.0.47"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
@@ -7900,10 +7900,10 @@
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/17.4.0.46": {
+      "Syncfusion.Xamarin.Core/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46",
+          "Syncfusion.Licensing": "17.4.0.47",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -7915,11 +7915,11 @@
           "lib/uap10.0/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfCalendar/17.4.0.46": {
+      "Syncfusion.Xamarin.SfCalendar/17.4.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.SfInput.UWP": "17.4.0.46",
-          "Syncfusion.Xamarin.Core": "17.4.0.46",
+          "Syncfusion.SfInput.UWP": "17.4.0.47",
+          "Syncfusion.Xamarin.Core": "17.4.0.47",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -8089,7 +8089,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.1",
-          "Syncfusion.Xamarin.SfCalendar": "17.4.0.46",
+          "Syncfusion.Xamarin.SfCalendar": "17.4.0.47",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.0.0.425677"
         },
@@ -12355,10 +12355,10 @@
         "sqlitepclraw.provider.e_sqlite3.nuspec"
       ]
     },
-    "Syncfusion.Licensing/17.4.0.46": {
-      "sha512": "yD7S3JRFlcpUT+k/KrJ0/fPhyrELuRXzwkbFE7MpbL5SsuuwtnqLkp8rAR6vJDMcOijc1QP4Ocks/0A1ugVNUw==",
+    "Syncfusion.Licensing/17.4.0.47": {
+      "sha512": "g7hG+OLlwM4lWyWZaEfzjZAUz69zsN0+bM9wg7nKW6dMEBVl953qGQCd6TI4TFND9FhV0/tvaW7y9KyTzPSvqw==",
       "type": "package",
-      "path": "syncfusion.licensing/17.4.0.46",
+      "path": "syncfusion.licensing/17.4.0.47",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -12378,14 +12378,14 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.17.4.0.46.nupkg.sha512",
+        "syncfusion.licensing.17.4.0.47.nupkg.sha512",
         "syncfusion.licensing.nuspec"
       ]
     },
-    "Syncfusion.SfInput.UWP/17.4.0.46": {
-      "sha512": "su9xBYMv/2YnBoZZVHdUyzVbcyoP4Phs+woyLIX/FOTvQlEFl1Xk6IXLjIm0OhlVCRq+WTy2wUpsV10mMe06hA==",
+    "Syncfusion.SfInput.UWP/17.4.0.47": {
+      "sha512": "K+BPiDPg09CEShWu8iK1mhmqZL2SyD5U6yUPI76MrFyTbIPEDF5m6dxeq2zLbNiHlPWHMSGNp+eREogU5NVEGw==",
       "type": "package",
-      "path": "syncfusion.sfinput.uwp/17.4.0.46",
+      "path": "syncfusion.sfinput.uwp/17.4.0.47",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -12403,15 +12403,15 @@
         "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/InputStyles.xbf",
         "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/generic.xaml",
         "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/generic.xbf",
-        "syncfusion.sfinput.uwp.17.4.0.46.nupkg.sha512",
+        "syncfusion.sfinput.uwp.17.4.0.47.nupkg.sha512",
         "syncfusion.sfinput.uwp.nuspec",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "Syncfusion.SfShared.UWP/17.4.0.46": {
-      "sha512": "UkhQ+XBE5xOIN3vgmFPHo3qUjKSYo3mrtnQ/IcavbNYTRiYh+D4blOwGRi+uTnlFD05HAvFcWjS697nJZT0aJA==",
+    "Syncfusion.SfShared.UWP/17.4.0.47": {
+      "sha512": "BISuMXrowDZu0Yc1QJhc+3fn+J+BnrPXfzdUK2LDyn2Mb28Z3veQmSBej8De0Xaa1eFIK/XGE3JZezc4svLHGg==",
       "type": "package",
-      "path": "syncfusion.sfshared.uwp/17.4.0.46",
+      "path": "syncfusion.sfshared.uwp/17.4.0.47",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -12423,14 +12423,14 @@
         "lib/uap10.0/Syncfusion.SfShared.UWP/Syncfusion.SfShared.UWP.xr.xml",
         "lib/uap10.0/Syncfusion.SfShared.UWP/Themes/generic.xaml",
         "lib/uap10.0/Syncfusion.SfShared.UWP/Themes/generic.xbf",
-        "syncfusion.sfshared.uwp.17.4.0.46.nupkg.sha512",
+        "syncfusion.sfshared.uwp.17.4.0.47.nupkg.sha512",
         "syncfusion.sfshared.uwp.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Core/17.4.0.46": {
-      "sha512": "KUBYHZRfy5Fk6Ne8Bi2FWwMTC/XM+JqxFz3ZbjyBWZSAZLOHZBpNQFzh38ebLTrOxUOs5XRUc/mwXrxwu1GY2g==",
+    "Syncfusion.Xamarin.Core/17.4.0.47": {
+      "sha512": "ijkFaAi/hRaPHFXLdzprMoWYK/VLqIo9uNoW/PNwweiA3zRfULau7aNdNMKsdUjcTSvuvrodc8w4OSxUqTpfzQ==",
       "type": "package",
-      "path": "syncfusion.xamarin.core/17.4.0.46",
+      "path": "syncfusion.xamarin.core/17.4.0.47",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -12454,14 +12454,14 @@
         "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
         "lib/uap10.0/Syncfusion.Core.XForms.dll",
         "lib/uap10.0/Syncfusion.Core.XForms.xml",
-        "syncfusion.xamarin.core.17.4.0.46.nupkg.sha512",
+        "syncfusion.xamarin.core.17.4.0.47.nupkg.sha512",
         "syncfusion.xamarin.core.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfCalendar/17.4.0.46": {
-      "sha512": "swlbmNqI164iAtQQfs1pcMT2/fDJvDgOAsTfC5aWtxRpf38nJyl2GNAFA3732qre0boHxGtUImtrBPtpQENwSg==",
+    "Syncfusion.Xamarin.SfCalendar/17.4.0.47": {
+      "sha512": "GtDPwBIqLm7BTrJ9KYLcDJbzjvjD4U8YA905sYFun5SPqhekIf1lVBA6mVMnxBo/Lehn8GYCm77286Yh/0Uq4w==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfcalendar/17.4.0.46",
+      "path": "syncfusion.xamarin.sfcalendar/17.4.0.47",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -12479,7 +12479,7 @@
         "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.dll",
         "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll",
         "lib/uap10.0/Syncfusion.SfCalendar.XForms.xml",
-        "syncfusion.xamarin.sfcalendar.17.4.0.46.nupkg.sha512",
+        "syncfusion.xamarin.sfcalendar.17.4.0.47.nupkg.sha512",
         "syncfusion.xamarin.sfcalendar.nuspec"
       ]
     },
@@ -13114,7 +13114,7 @@
       "Microsoft.EntityFrameworkCore.Sqlite.Core >= 3.1.1",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.1",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.1.9",
-      "Syncfusion.Xamarin.SfCalendar >= 17.4.0.46",
+      "Syncfusion.Xamarin.SfCalendar >= 17.4.0.47",
       "Xamarin.Essentials >= 1.1.0",
       "Xamarin.Forms >= 4.0.0.425677"
     ]
@@ -13127,11 +13127,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.UWP\\Compendia.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia.UWP\\Compendia.UWP.csproj",
       "projectName": "Compendia.UWP",
-      "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.UWP\\Compendia.UWP.csproj",
+      "projectPath": "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia.UWP\\Compendia.UWP.csproj",
       "packagesPath": "C:\\Users\\debinkli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.UWP\\obj\\",
+      "outputPath": "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -13153,8 +13153,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
-              "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj"
+            "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
+              "projectPath": "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia\\Compendia.csproj"
             }
           }
         }
@@ -13189,7 +13189,7 @@
           },
           "Syncfusion.Xamarin.SfCalendar": {
             "target": "Package",
-            "version": "[17.4.0.46, )"
+            "version": "[17.4.0.47, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",

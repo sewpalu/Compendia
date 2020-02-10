@@ -1,17 +1,18 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
 namespace Compendia.Model
 {
     public enum MenuItemType
     {
-        
         Main,
         Statistics,
         EntrymaskCreation,
         EntryCreation,
         ShowEntry,
         Settings,
-        LogOut,
-        SignUp
+        LogOut
     }
     public class HomeMenuItem
     {

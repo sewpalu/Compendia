@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "9e6b3335e02bfebddf9b859c03159eacbda7b4ac"
+    "signature": "132994210f7c9537de7870202e40239db1ad1bc5"
   },
   "compilationOptions": {},
   "targets": {
@@ -12,9 +12,7 @@
           "Microsoft.EntityFrameworkCore.Design": "3.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.1",
-          "Microsoft.EntityFrameworkCore.Tools": "3.1.1",
           "NETStandard.Library": "2.0.3",
-          "Syncfusion.Xamarin.SfCalendar": "17.4.0.46",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.0.0.425677"
         },
@@ -138,11 +136,6 @@
             "assemblyVersion": "3.1.1.0",
             "fileVersion": "3.100.119.61403"
           }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Tools/3.1.1": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "3.1.1"
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/3.1.1": {
@@ -320,38 +313,6 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.e_sqlite3.dll": {
             "assemblyVersion": "2.0.2.669",
             "fileVersion": "2.0.2.669"
-          }
-        }
-      },
-      "Syncfusion.Licensing/17.4.0.46": {
-        "runtime": {
-          "lib/netstandard2.0/Syncfusion.Licensing.dll": {
-            "assemblyVersion": "17.4.0.46",
-            "fileVersion": "17.4.0.46"
-          }
-        }
-      },
-      "Syncfusion.Xamarin.Core/17.4.0.46": {
-        "dependencies": {
-          "Syncfusion.Licensing": "17.4.0.46",
-          "Xamarin.Forms": "4.0.0.425677"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Syncfusion.Core.XForms.dll": {
-            "assemblyVersion": "17.4451.0.46",
-            "fileVersion": "17.4451.0.46"
-          }
-        }
-      },
-      "Syncfusion.Xamarin.SfCalendar/17.4.0.46": {
-        "dependencies": {
-          "Syncfusion.Xamarin.Core": "17.4.0.46",
-          "Xamarin.Forms": "4.0.0.425677"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Syncfusion.SfCalendar.XForms.dll": {
-            "assemblyVersion": "17.4451.0.46",
-            "fileVersion": "17.4451.0.46"
           }
         }
       },
@@ -580,13 +541,6 @@
       "path": "microsoft.entityframeworkcore.sqlite.core/3.1.1",
       "hashPath": "microsoft.entityframeworkcore.sqlite.core.3.1.1.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Tools/3.1.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-rk6bBWIACTeEDFQnmslhPQYyVI4Qwy1k1XQ5NAwyZZ6Po6kGvyRs7n0tzb2M40m461vrebKhclLyR8VQYSuxig==",
-      "path": "microsoft.entityframeworkcore.tools/3.1.1",
-      "hashPath": "microsoft.entityframeworkcore.tools.3.1.1.nupkg.sha512"
-    },
     "Microsoft.Extensions.Caching.Abstractions/3.1.1": {
       "type": "package",
       "serviceable": true,
@@ -712,27 +666,6 @@
       "sha512": "sha512-i85nt+PE5q+85jDDKos+32MyCyPIBjW09DHhTJm8Tr2lXjRza+zBB3/1ovBbHgZP8o/fXzqNwB8bZsRzEtzk4Q==",
       "path": "sqlitepclraw.provider.e_sqlite3/2.0.2",
       "hashPath": "sqlitepclraw.provider.e_sqlite3.2.0.2.nupkg.sha512"
-    },
-    "Syncfusion.Licensing/17.4.0.46": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-yD7S3JRFlcpUT+k/KrJ0/fPhyrELuRXzwkbFE7MpbL5SsuuwtnqLkp8rAR6vJDMcOijc1QP4Ocks/0A1ugVNUw==",
-      "path": "syncfusion.licensing/17.4.0.46",
-      "hashPath": "syncfusion.licensing.17.4.0.46.nupkg.sha512"
-    },
-    "Syncfusion.Xamarin.Core/17.4.0.46": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-KUBYHZRfy5Fk6Ne8Bi2FWwMTC/XM+JqxFz3ZbjyBWZSAZLOHZBpNQFzh38ebLTrOxUOs5XRUc/mwXrxwu1GY2g==",
-      "path": "syncfusion.xamarin.core/17.4.0.46",
-      "hashPath": "syncfusion.xamarin.core.17.4.0.46.nupkg.sha512"
-    },
-    "Syncfusion.Xamarin.SfCalendar/17.4.0.46": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-swlbmNqI164iAtQQfs1pcMT2/fDJvDgOAsTfC5aWtxRpf38nJyl2GNAFA3732qre0boHxGtUImtrBPtpQENwSg==",
-      "path": "syncfusion.xamarin.sfcalendar/17.4.0.46",
-      "hashPath": "syncfusion.xamarin.sfcalendar.17.4.0.46.nupkg.sha512"
     },
     "System.Buffers/4.5.0": {
       "type": "package",

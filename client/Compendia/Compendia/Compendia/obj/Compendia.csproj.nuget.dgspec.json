@@ -1,18 +1,17 @@
 {
   "format": 1,
   "restore": {
-
-    "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {}
+    "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
+    "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
+        "projectUniqueName": "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
         "projectName": "Compendia",
-        "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
+        "projectPath": "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
         "packagesPath": "C:\\Users\\debinkli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\obj\\",
+        "outputPath": "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -22,15 +21,12 @@
           "C:\\Users\\debinkli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -73,11 +69,9 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
-
             "Syncfusion.Xamarin.SfCalendar": {
               "target": "Package",
-              "version": "[17.4.0.46, )"
-
+              "version": "[17.4.0.47, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -89,12 +83,10 @@
             }
           },
           "imports": [
-
             "net461"
           ],
           "assetTargetFallback": true,
           "warn": true
-
         }
       }
     }
