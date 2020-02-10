@@ -329,6 +329,18 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Rg.Plugins.Popup/1.2.0.223": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/netstandard1.0/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.0.2": {
         "type": "package",
         "dependencies": {
@@ -1227,6 +1239,36 @@
         "netstandard.library.nuspec"
       ]
     },
+    "Rg.Plugins.Popup/1.2.0.223": {
+      "sha512": "0ruzj7EedYRUhhsk327z7ymaHzf9E/n6Slg2ZJfOYqtZ14tX1dtWbyNRSmGEnWxLyN1qSq4Od4U6vYupHRpdtw==",
+      "type": "package",
+      "path": "rg.plugins.popup/1.2.0.223",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll",
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.pdb",
+        "lib/MonoAndroid/Rg.Plugins.Popup.dll",
+        "lib/MonoAndroid/Rg.Plugins.Popup.pdb",
+        "lib/MonoTouch/Rg.Plugins.Popup.IOS.dll",
+        "lib/MonoTouch/Rg.Plugins.Popup.IOS.pdb",
+        "lib/MonoTouch/Rg.Plugins.Popup.dll",
+        "lib/MonoTouch/Rg.Plugins.Popup.pdb",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.pdb",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.dll",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.pdb",
+        "lib/netstandard1.0/Rg.Plugins.Popup.dll",
+        "lib/netstandard1.0/Rg.Plugins.Popup.pdb",
+        "lib/uap10.0/Rg.Plugins.Popup.UWP.dll",
+        "lib/uap10.0/Rg.Plugins.Popup.UWP.pdb",
+        "lib/uap10.0/Rg.Plugins.Popup.dll",
+        "lib/uap10.0/Rg.Plugins.Popup.pdb",
+        "readme.txt",
+        "rg.plugins.popup.1.2.0.223.nupkg.sha512",
+        "rg.plugins.popup.nuspec"
+      ]
+    },
     "SQLitePCLRaw.bundle_e_sqlite3/2.0.2": {
       "sha512": "OVPI/nh5AqfLCIKhAYqjCa6AHhc7oKApGcGM3UhMRSerFiBx58nSpGwxVFdMgjOCWZR+fA49nzsnKlWp5hFo8w==",
       "type": "package",
@@ -2017,6 +2059,7 @@
       "Microsoft.EntityFrameworkCore.Sqlite.Core >= 3.1.1",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.1",
       "NETStandard.Library >= 2.0.3",
+      "Rg.Plugins.Popup >= 1.2.0.223",
       "Syncfusion.Xamarin.SfCalendar >= 17.4.0.47",
       "Xamarin.Essentials >= 1.1.0",
       "Xamarin.Forms >= 4.0.0.425677"
@@ -2030,11 +2073,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
+      "projectUniqueName": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
       "projectName": "Compendia",
-      "projectPath": "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
+      "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
       "packagesPath": "C:\\Users\\debinkli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia\\obj\\",
+      "outputPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -2091,6 +2134,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "Rg.Plugins.Popup": {
+            "target": "Package",
+            "version": "[1.2.0.223, )"
           },
           "Syncfusion.Xamarin.SfCalendar": {
             "target": "Package",

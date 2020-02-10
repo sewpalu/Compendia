@@ -308,6 +308,20 @@
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
+      "Rg.Plugins.Popup/1.2.0.223": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll": {},
+          "lib/MonoAndroid/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll": {},
+          "lib/MonoAndroid/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.0.2": {
         "type": "package",
         "dependencies": {
@@ -1336,6 +1350,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.1",
+          "Rg.Plugins.Popup": "1.2.0.223",
           "Syncfusion.Xamarin.SfCalendar": "17.4.0.47",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.0.0.425677"
@@ -1823,6 +1838,36 @@
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
         "microsoft.extensions.primitives.3.1.1.nupkg.sha512",
         "microsoft.extensions.primitives.nuspec"
+      ]
+    },
+    "Rg.Plugins.Popup/1.2.0.223": {
+      "sha512": "0ruzj7EedYRUhhsk327z7ymaHzf9E/n6Slg2ZJfOYqtZ14tX1dtWbyNRSmGEnWxLyN1qSq4Od4U6vYupHRpdtw==",
+      "type": "package",
+      "path": "rg.plugins.popup/1.2.0.223",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll",
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.pdb",
+        "lib/MonoAndroid/Rg.Plugins.Popup.dll",
+        "lib/MonoAndroid/Rg.Plugins.Popup.pdb",
+        "lib/MonoTouch/Rg.Plugins.Popup.IOS.dll",
+        "lib/MonoTouch/Rg.Plugins.Popup.IOS.pdb",
+        "lib/MonoTouch/Rg.Plugins.Popup.dll",
+        "lib/MonoTouch/Rg.Plugins.Popup.pdb",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.pdb",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.dll",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.pdb",
+        "lib/netstandard1.0/Rg.Plugins.Popup.dll",
+        "lib/netstandard1.0/Rg.Plugins.Popup.pdb",
+        "lib/uap10.0/Rg.Plugins.Popup.UWP.dll",
+        "lib/uap10.0/Rg.Plugins.Popup.UWP.pdb",
+        "lib/uap10.0/Rg.Plugins.Popup.dll",
+        "lib/uap10.0/Rg.Plugins.Popup.pdb",
+        "readme.txt",
+        "rg.plugins.popup.1.2.0.223.nupkg.sha512",
+        "rg.plugins.popup.nuspec"
       ]
     },
     "SQLitePCLRaw.bundle_e_sqlite3/2.0.2": {
@@ -3387,6 +3432,7 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.1",
       "Microsoft.EntityFrameworkCore.Sqlite.Core >= 3.1.1",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.1",
+      "Rg.Plugins.Popup >= 1.2.0.223",
       "Syncfusion.Xamarin.SfCalendar >= 17.4.0.47",
       "Xamarin.Android.Support.Core.Utils >= 28.0.0.1",
       "Xamarin.Android.Support.CustomTabs >= 28.0.0.1",
@@ -3406,11 +3452,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia.Android\\Compendia.Android.csproj",
+      "projectUniqueName": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.Android\\Compendia.Android.csproj",
       "projectName": "Compendia.Android",
-      "projectPath": "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia.Android\\Compendia.Android.csproj",
+      "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.Android\\Compendia.Android.csproj",
       "packagesPath": "C:\\Users\\debinkli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia.Android\\obj\\",
+      "outputPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3431,8 +3477,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
-              "projectPath": "C:\\Users\\debinkli\\Documents\\Compendia\\Compendia\\Compendia\\Compendia.csproj"
+            "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
+              "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj"
             }
           }
         }
@@ -3460,6 +3506,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[3.1.1, )"
+          },
+          "Rg.Plugins.Popup": {
+            "target": "Package",
+            "version": "[1.2.0.223, )"
           },
           "Syncfusion.Xamarin.SfCalendar": {
             "target": "Package",

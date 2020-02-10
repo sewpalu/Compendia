@@ -14,7 +14,7 @@ namespace Compendia.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\SignUpView.xaml")]
-    public partial class SignUpView : global::Xamarin.Forms.ContentPage {
+    public partial class SignUpView : global::Rg.Plugins.Popup.Pages.PopupPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {

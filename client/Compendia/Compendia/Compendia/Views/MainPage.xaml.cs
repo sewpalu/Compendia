@@ -1,8 +1,10 @@
-﻿using Compendia.Model;
+﻿using Compendia.Database;
+using Compendia.Model;
 using Compendia.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -24,10 +26,14 @@ namespace Compendia
 
             MenuPages.Add((int)MenuItemType.Main, (NavigationPage)Detail);
 
-            
 
         }
 
+        public void setPresented(bool presented)
+        {
+            IsPresented = false;
+
+        }
         public async Task NavigateFromMenu(int id)
         {
             if (!MenuPages.ContainsKey(id))
@@ -53,8 +59,11 @@ namespace Compendia
                         MenuPages.Add(id, new NavigationPage(new ShowEntryView()));
                         break;
                     case (int)MenuItemType.LogOut:
-                        MenuPages.Add(id, new NavigationPage(new LogInView()));
+                        //Sachen aus Datenbank noch rauslöschen
+                        logOut();
+                        MenuPages.Add(id, new NavigationPage(new MainView()));
                         break;
+
 
                 }
             }
@@ -71,6 +80,19 @@ namespace Compendia
                 IsPresented = false;
             }
 
+        }
+
+        private async void logOut()
+        {
+            try
+            {
+                await DatabaseService._LogInRepository.DeleteObjectAsync(DatabaseService._LogInRepository.GetLastObjectAsync().Id);
+
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.ToString());
+            }
         }
     }
 }

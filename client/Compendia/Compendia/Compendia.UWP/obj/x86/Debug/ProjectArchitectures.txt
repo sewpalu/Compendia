@@ -1,1 +1,1 @@
-C:\Users\debinkli\source\repos\Compendia\Compendia\Compendia.UWP\Compendia.UWP.csproj;x86
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\Compendia.UWP.csproj;x86

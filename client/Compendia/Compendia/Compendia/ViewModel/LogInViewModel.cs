@@ -12,10 +12,7 @@ namespace Compendia.ViewModel
 {
     public class LogInViewModel : BaseViewModel
     {
-        public LogInViewModel()
-        {
 
-        }
         private string user;
         private string password;
 

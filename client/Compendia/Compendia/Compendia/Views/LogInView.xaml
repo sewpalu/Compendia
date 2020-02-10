@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:pagemodels="clr-namespace:Compendia.ViewModel"
-             x:Class="Compendia.Views.LogInView">
+             x:Class="Compendia.Views.LogInView"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
 
 
     <pages:PopupPage.BindingContext>
@@ -47,6 +48,5 @@
                     Style="{StaticResource GreyButtonStyle}"
                     Command="{Binding SignUpCommand}"/>
     </AbsoluteLayout>
-
 
 </pages:PopupPage>

@@ -12,8 +12,11 @@ using Android.Views;
 using Android.Widget;
 using Compendia.Database;
 using Compendia.Database.Base;
+using Compendia.Droid.Database;
 using Microsoft.Data.Sqlite;
+using Xamarin.Forms;
 
+[assembly: Dependency(typeof(Sqlite))]
 namespace Compendia.Droid.Database
 {
     public class Sqlite : ISqlite

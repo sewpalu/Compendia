@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:pagemodels="clr-namespace:Compendia.ViewModel"
-             x:Class="Compendia.Views.SignUpView">
+             x:Class="Compendia.Views.SignUpView"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
 
 
-    <ContentPage.BindingContext>
+    <pages:PopupPage.BindingContext>
         <pagemodels:MainViewModel/>
-    </ContentPage.BindingContext>
+    </pages:PopupPage.BindingContext>
 
-    <ContentPage.Content>
         <AbsoluteLayout Padding="40">
             <Label AbsoluteLayout.LayoutBounds=".5, .15, 233, 43" AbsoluteLayout.LayoutFlags="PositionProportional"
                    Text="COMPENDIA"
@@ -69,5 +69,4 @@
             </Label>
         </AbsoluteLayout>
 
-    </ContentPage.Content>
-</ContentPage>
+</pages:PopupPage>

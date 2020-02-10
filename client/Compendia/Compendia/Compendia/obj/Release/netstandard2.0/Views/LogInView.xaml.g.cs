@@ -14,7 +14,7 @@ namespace Compendia.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\LogInView.xaml")]
-    public partial class LogInView : global::Xamarin.Forms.ContentPage {
+    public partial class LogInView : global::Rg.Plugins.Popup.Pages.PopupPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {

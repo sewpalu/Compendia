@@ -140,6 +140,9 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Rg.Plugins.Popup">
+      <Version>1.2.0.223</Version>
+    </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfCalendar">
       <Version>17.4.0.47</Version>
     </PackageReference>
