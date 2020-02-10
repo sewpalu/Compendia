@@ -210,7 +210,7 @@ namespace Compendia.ViewModel
 
                 return new Command(async () =>
                 {
-                    //await PushModalAsync(new SignUpView());
+                    await PopupNavigation.Instance.PushAsync(new SignUpView());
 
                 });
             }

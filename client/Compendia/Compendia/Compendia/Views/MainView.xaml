@@ -12,8 +12,6 @@
     <pagemodels:MainViewModel/>
   </ContentPage.BindingContext>
 
-
-
   <ContentPage.Content>
     <StackLayout Padding="15">
       <StackLayout>
