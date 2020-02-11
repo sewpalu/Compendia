@@ -45,6 +45,7 @@ namespace Compendia.ViewModel
                 //await PushModalAsync(new LogInView());
                 //Popup aufrufen
                 await PopupNavigation.Instance.PushAsync(new LogInView());
+                
 
             }
             else

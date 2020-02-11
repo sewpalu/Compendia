@@ -5,48 +5,44 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:pagemodels="clr-namespace:Compendia.ViewModel"
-             x:Class="Compendia.Views.LogInView"
-             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             x:Class="Compendia.Views.LogInView">
+    <pages:PopupPage.BindingContext>
+        <pagemodels:MainViewModel/>
+    </pages:PopupPage.BindingContext>
 
-
-  <pages:PopupPage.BindingContext>
-    <pagemodels:MainViewModel/>
-  </pages:PopupPage.BindingContext>
-
-  <AbsoluteLayout Padding="40">
-    <Label AbsoluteLayout.LayoutBounds=".5, .15, 233, 43" AbsoluteLayout.LayoutFlags="PositionProportional"
+    <AbsoluteLayout Padding="40">
+        <Label AbsoluteLayout.LayoutBounds=".5, .15, 233, 43" AbsoluteLayout.LayoutFlags="PositionProportional"
                Text="COMPENDIA"
                FontSize="40"
                FontAttributes="Bold"/>
 
-    <Label AbsoluteLayout.LayoutBounds=".5,.25,205,13" AbsoluteLayout.LayoutFlags="PositionProportional"
+        <Label AbsoluteLayout.LayoutBounds=".5,.25,205,13" AbsoluteLayout.LayoutFlags="PositionProportional"
                Text="Hallo! Bitte logge dich in deinen Account ein."
                FontSize="10"
                TextColor="{StaticResource Slate}"/>
 
-    <Entry AbsoluteLayout.LayoutBounds=".5,.4,1,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+        <Entry AbsoluteLayout.LayoutBounds=".5,.4,1,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                Text="{Binding EntryUser}"
                Placeholder="Benutzername"/>
 
-    <Entry AbsoluteLayout.LayoutBounds=".5,.525,1,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+        <Entry AbsoluteLayout.LayoutBounds=".5,.525,1,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                IsPassword="True"
                Placeholder="Passwort"
                Text="{Binding EntryPassword}"/>
 
-    <Button AbsoluteLayout.LayoutBounds="0,.75,.4,45" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+        <Button AbsoluteLayout.LayoutBounds="0,.75,.4,45" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="CenterAndExpand"
                 Text="Login"
                 Style="{StaticResource BlueButtonStyle}"
                 Command="{Binding LogInCommand}"/>
 
-    <Button AbsoluteLayout.LayoutBounds="1,.75,.4,45" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+        <Button AbsoluteLayout.LayoutBounds="1,.75,.4,45" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="CenterAndExpand"
                 Text="Sign up"
                 Style="{StaticResource GreyButtonStyle}"
                 Command="{Binding SignUpCommand}"/>
-  </AbsoluteLayout>
-
+    </AbsoluteLayout>
 </pages:PopupPage>
-

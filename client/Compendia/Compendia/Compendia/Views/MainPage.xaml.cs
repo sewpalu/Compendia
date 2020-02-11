@@ -60,7 +60,7 @@ namespace Compendia
                         break;
                     case (int)MenuItemType.LogOut:
                         //Sachen aus Datenbank noch rauslöschen
-                        logOut();
+                        _= await logOut();
                         MenuPages.Add(id, new NavigationPage(new MainView()));
                         break;
 
@@ -82,17 +82,20 @@ namespace Compendia
 
         }
 
-        private async void logOut()
+        private async Task<bool> logOut()
         {
             try
             {
-                await DatabaseService._LogInRepository.DeleteObjectAsync(DatabaseService._LogInRepository.GetLastObjectAsync().Id);
-
+                await DatabaseService._LogInRepository.DeleteObjectsAsync();
+                //await DatabaseService._LogInRepository.DeleteObjectAsync(DatabaseService._LogInRepository.GetLastObjectAsync().Id);
+                return true;
             }
             catch (Exception e)
             {
                 Debug.WriteLine(e.ToString());
+                
             }
+            return false;
         }
     }
 }

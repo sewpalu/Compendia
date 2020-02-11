@@ -5,85 +5,82 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:pagemodels="clr-namespace:Compendia.ViewModel"
-             xmlns:compendia="clr-namespace:Compendia;assembly=Compendia"
              x:Class="Compendia.Views.MainView">
+    <ContentPage.BindingContext>
+        <pagemodels:MainViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <StackLayout>
+                <Grid BackgroundColor="Gainsboro">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="16.667*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="14.286*" />
+                        <ColumnDefinition Width="14.286*" />
+                        <ColumnDefinition Width="14.286*" />
+                        <ColumnDefinition Width="14.286*" />
+                        <ColumnDefinition Width="14.286*" />
+                        <ColumnDefinition Width="14.286*" />
+                        <ColumnDefinition Width="14.286*" />
+                    </Grid.ColumnDefinitions>
 
-  <ContentPage.BindingContext>
-    <pagemodels:MainViewModel/>
-  </ContentPage.BindingContext>
+                    <Label Text="Mo." XAlign="Center" Grid.Row="0" Grid.Column="0"/>
+                    <Label Text="Di." XAlign="Center" Grid.Row="0" Grid.Column="1"/>
+                    <Label Text="Mi." XAlign="Center" Grid.Row="0" Grid.Column="2"/>
+                    <Label Text="Do." XAlign="Center" Grid.Row="0" Grid.Column="3"/>
+                    <Label Text="Fr." XAlign="Center" Grid.Row="0" Grid.Column="4"/>
+                    <Label Text="Sa." XAlign="Center" Grid.Row="0" Grid.Column="5"/>
+                    <Label Text="So." XAlign="Center" Grid.Row="0" Grid.Column="6"/>
+                </Grid>
 
-  <ContentPage.Content>
-    <StackLayout Padding="15">
-      <StackLayout>
-        <Grid BackgroundColor="Gainsboro">
-          <Grid.RowDefinitions>
-            <RowDefinition Height="16.667*" />
-          </Grid.RowDefinitions>
-          <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="14.286*" />
-            <ColumnDefinition Width="14.286*" />
-            <ColumnDefinition Width="14.286*" />
-            <ColumnDefinition Width="14.286*" />
-            <ColumnDefinition Width="14.286*" />
-            <ColumnDefinition Width="14.286*" />
-            <ColumnDefinition Width="14.286*" />
-          </Grid.ColumnDefinitions>
+                <Grid x:Name="MonthView" ColumnSpacing="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="16.667*" />
+                        <RowDefinition Height="16.667*" />
+                        <RowDefinition Height="16.667*" />
+                        <RowDefinition Height="16.667*" />
+                        <RowDefinition Height="16.667*" />
+                        <RowDefinition Height="16.667*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="14.286*" />
+                        <ColumnDefinition Width="14.286*" />
+                        <ColumnDefinition Width="14.286*" />
+                        <ColumnDefinition Width="14.286*" />
+                        <ColumnDefinition Width="14.286*" />
+                        <ColumnDefinition Width="14.286*" />
+                        <ColumnDefinition Width="14.286*" />
+                    </Grid.ColumnDefinitions>
 
-          <Label Text="Mo." XAlign="Center" Grid.Row="0" Grid.Column="0"/>
-          <Label Text="Di." XAlign="Center" Grid.Row="0" Grid.Column="1"/>
-          <Label Text="Mi." XAlign="Center" Grid.Row="0" Grid.Column="2"/>
-          <Label Text="Do." XAlign="Center" Grid.Row="0" Grid.Column="3"/>
-          <Label Text="Fr." XAlign="Center" Grid.Row="0" Grid.Column="4"/>
-          <Label Text="Sa." XAlign="Center" Grid.Row="0" Grid.Column="5"/>
-          <Label Text="So." XAlign="Center" Grid.Row="0" Grid.Column="6"/>
-        </Grid>
-
-        <Grid x:Name="MonthView" ColumnSpacing="0" RowSpacing="0">
-          <Grid.RowDefinitions>
-            <RowDefinition Height="16.667*" />
-            <RowDefinition Height="16.667*" />
-            <RowDefinition Height="16.667*" />
-            <RowDefinition Height="16.667*" />
-            <RowDefinition Height="16.667*" />
-            <RowDefinition Height="16.667*" />
-          </Grid.RowDefinitions>
-          <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="14.286*" />
-            <ColumnDefinition Width="14.286*" />
-            <ColumnDefinition Width="14.286*" />
-            <ColumnDefinition Width="14.286*" />
-            <ColumnDefinition Width="14.286*" />
-            <ColumnDefinition Width="14.286*" />
-            <ColumnDefinition Width="14.286*" />
-          </Grid.ColumnDefinitions>
-
-          <Label Text="1" XAlign="Center" Grid.Row="0" Grid.Column="0"/>
-          <Label Text="2" XAlign="Center" Grid.Row="0" Grid.Column="1"/>
-          <Label Text="3" XAlign="Center" Grid.Row="0" Grid.Column="2"/>
-          <Label Text="4" XAlign="Center" Grid.Row="0" Grid.Column="3"/>
-          <Label Text="5" XAlign="Center" Grid.Row="0" Grid.Column="4"/>
-          <Label Text="6" XAlign="Center" Grid.Row="0" Grid.Column="5"/>
-          <Label Text="7" XAlign="Center" Grid.Row="0" Grid.Column="6"/>
+                    <Label Text="1" XAlign="Center" Grid.Row="0" Grid.Column="0"/>
+                    <Label Text="2" XAlign="Center" Grid.Row="0" Grid.Column="1"/>
+                    <Label Text="3" XAlign="Center" Grid.Row="0" Grid.Column="2"/>
+                    <Label Text="4" XAlign="Center" Grid.Row="0" Grid.Column="3"/>
+                    <Label Text="5" XAlign="Center" Grid.Row="0" Grid.Column="4"/>
+                    <Label Text="6" XAlign="Center" Grid.Row="0" Grid.Column="5"/>
+                    <Label Text="7" XAlign="Center" Grid.Row="0" Grid.Column="6"/>
 
 
-        </Grid>
-      </StackLayout>
-      <Label Text="{Binding ChosenDate}"/>
-      <AbsoluteLayout>
-        <Button AbsoluteLayout.LayoutBounds="0,1,.4,45" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                </Grid>
+            </StackLayout>
+            <Label Text="{Binding ChosenDate}"/>
+            <AbsoluteLayout>
+                <Button AbsoluteLayout.LayoutBounds="0,1,.4,45" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="CenterAndExpand"
                 Text="Jahr"
-                Style="{StaticResource BlueButtonStyle}"
                 Command="{Binding JahrCommand}"/>
-
-        <Button AbsoluteLayout.LayoutBounds="1,1,.4,45" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                <!--Style="{StaticResource BlueButtonStyle}"-->
+                <Button AbsoluteLayout.LayoutBounds="1,1,.4,45" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="CenterAndExpand"
                 Text="Monat"
-                Style="{StaticResource GreyButtonStyle}"
                 Command="{Binding MonatCommand}"/>
-      </AbsoluteLayout>
-    </StackLayout>
-  </ContentPage.Content>
+                <!--Style="{StaticResource GreyButtonStyle}"-->
+            </AbsoluteLayout>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

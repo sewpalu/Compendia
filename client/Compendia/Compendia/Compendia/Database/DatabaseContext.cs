@@ -1,15 +1,15 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Compendia.Model;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Compendia.Database
 {
-        public class DatabaseContext : DbContext
-        {
-            //public DbSet<DbObjects> Ojects { get; set; }
-            //public DbSet<DbKategorie> Kategorie { get; set; }
-            //public DbSet<DbObjectKategorie> ObjectKategories { get; set; }
+
+    public class DatabaseContext : DbContext
+    {
+            public DbSet<DbLogIn> LogIn { get; private set; }
 
             private readonly string _databasePath;
 
@@ -36,10 +36,10 @@ namespace Compendia.Database
             {
                 base.OnModelCreating(modelBuilder);
 
-                //modelBuilder.Entity<DbObjectKategorie>()
-                //   .HasKey(ok => new { ok.ObjectId, ok.KategorieId });
+                modelBuilder.Entity<DbLogIn>();
 
             }
         }
+    
     
 }
