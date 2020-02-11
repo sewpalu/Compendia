@@ -69,21 +69,7 @@
         </Grid>
       </StackLayout>
       <Label Text="{Binding ChosenDate}"/>
-      <AbsoluteLayout>
-        <Button AbsoluteLayout.LayoutBounds="0,1,.4,45" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="CenterAndExpand"
-                Text="Jahr"
-                Style="{StaticResource BlueButtonStyle}"
-                Command="{Binding JahrCommand}"/>
-
-        <Button AbsoluteLayout.LayoutBounds="1,1,.4,45" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="CenterAndExpand"
-                Text="Monat"
-                Style="{StaticResource GreyButtonStyle}"
-                Command="{Binding MonatCommand}"/>
-      </AbsoluteLayout>
+      
     </StackLayout>
   </ContentPage.Content>
 </ContentPage>
