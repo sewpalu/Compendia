@@ -75,7 +75,7 @@ namespace Compendia.ViewModel
         private void AddtoItemList(string txt)
         {
             var tmp = new List<ItemModel>(ItemList);
-            tmp.Add(new ItemModel(new Entry()));;
+            tmp.Add(new ItemModel(new Entry(), "Thomas"));;
 
             ItemList = tmp;
 

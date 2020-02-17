@@ -12,8 +12,9 @@
     
     <ContentPage.Content>
         <StackLayout>
+            <Button Text="Close"
+                    Command="{Binding CloseCommand}"/>
 
-            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

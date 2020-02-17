@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -7,9 +7,10 @@
              xmlns:pagemodels="clr-namespace:Compendia.ViewModel"
              xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
              x:Class="Compendia.Views.LogInView">
-    <pages:PopupPage.BindingContext>
-        <pagemodels:MainViewModel/>
-    </pages:PopupPage.BindingContext>
+    
+    <ContentPage.BindingContext>
+        <pagemodels:LoginViewModel/>
+    </ContentPage.BindingContext>
 
     <AbsoluteLayout Padding="40">
         <Label AbsoluteLayout.LayoutBounds=".5, .15, 233, 43" AbsoluteLayout.LayoutFlags="PositionProportional"
@@ -45,4 +46,4 @@
                 Style="{StaticResource GreyButtonStyle}"
                 Command="{Binding SignUpCommand}"/>
     </AbsoluteLayout>
-</pages:PopupPage>
+</ContentPage>

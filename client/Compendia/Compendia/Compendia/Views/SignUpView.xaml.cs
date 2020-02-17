@@ -11,7 +11,7 @@ using Xamarin.Forms.Xaml;
 namespace Compendia.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SignUpView : PopupPage
+    public partial class SignUpView : ContentPage
     {
         public SignUpView()
         {

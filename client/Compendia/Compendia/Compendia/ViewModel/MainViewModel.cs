@@ -15,10 +15,8 @@ namespace Compendia.ViewModel
     public class MainViewModel : BaseViewModel
     {
         private DateTime? _date = DateTime.Today;
-        private string userLogIn;
-        private string passwordLogIn;
-        private string userSignUp;
-        private string passwordSignUp;
+        
+        
 
         public MainViewModel()
         {
@@ -45,17 +43,8 @@ namespace Compendia.ViewModel
 
             if (userdata == null || userdata.Count == 0)
             {
-                //await PushModalAsync(new LogInView());
-                //Popup aufrufen
-                Debug.WriteLine("Sollte Popup aufrufen");
-                //Device.BeginInvokeOnMainThread(async () =>
-                //{
-                //   await Application.Current.MainPage.Navigation.PushPopupAsync(new LogInView());
-                //});
-                await PopupNavigation.Instance.PushAsync(new LogInView());
-                //await Application.Current.MainPage.Navigation.PushPopupAsync(new LogInView());
-                Debug.WriteLine("Popup wurde aufgerufen :)");
                 
+                await PushModalAsync(new LogInView());
 
             }
             else
@@ -110,145 +99,8 @@ namespace Compendia.ViewModel
         }
         #endregion
 
-        #region LogInPopUp
-
-        public string EntryUserLogIn
-        {
-            get
-            {
-                return userLogIn;
-            }
-            set
-            {
-                userLogIn = value;
-
-                OnPropertyChanged(nameof(EntryUserLogIn));
-            }
-        }
-
-        public string EntryPasswordLogIn
-        {
-            get
-            {
-                return passwordLogIn;
-            }
-            set
-            {
-                passwordLogIn = value;
-
-                OnPropertyChanged(nameof(EntryPasswordLogIn));
-            }
-        }
-        public ICommand LogInCommand
-        {
-
-            get
-            {
-
-                return new Command(async () =>
-                {
-                    if (userLogIn != null && passwordLogIn != null)
-                    {
-                        //User und Passwort überprüfen von großer Datenbank
-
-                        //Falls richtig: Userdaten in lokale Datenbank schreiben
-                        var result = await DatabaseService._LogInRepository.AddObjectAsync(new DbLogIn(userLogIn, passwordLogIn));
-
-                        // await PushModalAsync(new MainView());
-                        await PopupNavigation.Instance.PopAsync();
-
-                    }
-
-                });
-
-            }
-            set
-            {
-
-            }
-        }
-
-        public ICommand SignUpCommandLogIn
-        {
-            get
-            {
-
-                return new Command(async () =>
-                {
-                    await PopupNavigation.Instance.PushAsync(new SignUpView());
-                });
-            }
-        }
-        #endregion
-
-        #region SignUpPopUp
-
-        public string EntryUserSignUp
-        {
-            get
-            {
-                return userSignUp;
-            }
-            set
-            {
-                userSignUp = value;
-
-                OnPropertyChanged(nameof(EntryUserSignUp));
-            }
-        }
-
-        public string EntryPasswordSignUp
-        {
-            get
-            {
-                return passwordSignUp;
-            }
-            set
-            {
-                passwordSignUp = value;
-
-                OnPropertyChanged(nameof(EntryPasswordSignUp));
-            }
-        }
+       
 
 
-
-        //Sign Up Button wurde geklicket
-        public ICommand SignUpCommand
-        {
-
-            get
-            {
-
-                return new Command(async () =>
-                {
-                    await PopupNavigation.Instance.PushAsync(new SignUpView());
-
-                });
-            }
-            set
-            {
-
-            }
-        }
-
-        //Label to Login wurde geklicket
-        public ICommand LabelCommandSignUp
-        {
-
-            get
-            {
-
-                return new Command(async () => {
-                    await PopupNavigation.Instance.PopAsync();
-                });
-            }
-            set
-            {
-
-            }
-        }
-
-        #endregion
     }
 }
