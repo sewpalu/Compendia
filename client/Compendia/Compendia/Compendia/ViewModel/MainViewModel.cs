@@ -52,7 +52,7 @@ namespace Compendia.ViewModel
                 //{
                 //   await Application.Current.MainPage.Navigation.PushPopupAsync(new LogInView());
                 //});
-                //await PopupNavigation.Instance.PushAsync(new LogInView);
+                await PopupNavigation.Instance.PushAsync(new LogInView());
                 //await Application.Current.MainPage.Navigation.PushPopupAsync(new LogInView());
                 Debug.WriteLine("Popup wurde aufgerufen :)");
                 
@@ -68,7 +68,8 @@ namespace Compendia.ViewModel
         private async void ServerConnection()
         {
             var status = await Server.GetHTTPResquestAsync();
-            var tmp = await Server.PostHTTPRequestAsync("{\"sender\": \"client\",\"command\": \"addUser\",\"userName\": \"Max Mustermann\"}");
+           string request = "{\"command\": \"addUser\",\"parameters\": {\"userName\": \"Max Mustermann\"}}";
+            var tmp = await Server.PostHTTPRequestAsync(request);
         }
 
         public DateTime? Date

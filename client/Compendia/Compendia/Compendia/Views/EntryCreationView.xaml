@@ -17,32 +17,31 @@
                 ItemsSource="{Binding PickerItemMaske}"
                 SelectedItem="{Binding SelctedPickerItemMaske}">
             </Picker>
-            <ListView x:Name="ItemsListView"
-                ItemsSource="{Binding Items}"
-                VerticalOptions="FillAndExpand"
-                HasUnevenRows="true"
-                RefreshCommand="{Binding LoadItemsCommand}"
-                IsPullToRefreshEnabled="true"
-                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
-                CachingStrategy="RecycleElement"
-                >
-                <d:ListView.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
 
-                    </x:Array>
-                </d:ListView.ItemsSource>
+            <ListView
+                ItemsSource="{Binding ItemList}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout>
-                                
+                            <StackLayout 
                                
+                               
+                                >
+                                <!--Label Text="{Binding Name}"-->
+                                
                             </StackLayout>
+
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
+                
             </ListView>
-
+            <Button
+                Text="Add Item"
+                TextColor="Black"
+                Command="{Binding AddItemCommand}">
+                
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
