@@ -12,9 +12,8 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Eintrag bearbeiten"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

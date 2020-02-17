@@ -7,5 +7,7 @@ namespace Compendia.ViewModel
 {
     public class EditEntryViewModel : BaseViewModel
     {
+        
+
     }
 }

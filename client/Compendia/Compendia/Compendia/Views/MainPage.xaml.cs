@@ -29,11 +29,6 @@ namespace Compendia
 
         }
 
-        public void setPresented(bool presented)
-        {
-            IsPresented = false;
-
-        }
         public async Task NavigateFromMenu(int id)
         {
             if (!MenuPages.ContainsKey(id))

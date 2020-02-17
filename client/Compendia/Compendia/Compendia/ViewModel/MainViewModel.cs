@@ -53,7 +53,7 @@ namespace Compendia.ViewModel
                 //   await Application.Current.MainPage.Navigation.PushPopupAsync(new LogInView());
                 //});
                 //await PopupNavigation.Instance.PushAsync(new LogInView);
-                await Application.Current.MainPage.Navigation.PushPopupAsync(new LogInView());
+                //await Application.Current.MainPage.Navigation.PushPopupAsync(new LogInView());
                 Debug.WriteLine("Popup wurde aufgerufen :)");
                 
 
