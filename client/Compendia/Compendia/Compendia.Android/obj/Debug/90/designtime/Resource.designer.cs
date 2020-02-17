@@ -26,6 +26,49 @@ namespace Compendia.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar1 = global::Compendia.Droid.Resource.Drawable.Avatar1;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar10 = global::Compendia.Droid.Resource.Drawable.Avatar10;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar11 = global::Compendia.Droid.Resource.Drawable.Avatar11;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar12 = global::Compendia.Droid.Resource.Drawable.Avatar12;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar13 = global::Compendia.Droid.Resource.Drawable.Avatar13;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar14 = global::Compendia.Droid.Resource.Drawable.Avatar14;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar15 = global::Compendia.Droid.Resource.Drawable.Avatar15;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar16 = global::Compendia.Droid.Resource.Drawable.Avatar16;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar17 = global::Compendia.Droid.Resource.Drawable.Avatar17;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar18 = global::Compendia.Droid.Resource.Drawable.Avatar18;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar19 = global::Compendia.Droid.Resource.Drawable.Avatar19;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar2 = global::Compendia.Droid.Resource.Drawable.Avatar2;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar20 = global::Compendia.Droid.Resource.Drawable.Avatar20;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar21 = global::Compendia.Droid.Resource.Drawable.Avatar21;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar22 = global::Compendia.Droid.Resource.Drawable.Avatar22;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar23 = global::Compendia.Droid.Resource.Drawable.Avatar23;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar24 = global::Compendia.Droid.Resource.Drawable.Avatar24;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar25 = global::Compendia.Droid.Resource.Drawable.Avatar25;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar26 = global::Compendia.Droid.Resource.Drawable.Avatar26;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar27 = global::Compendia.Droid.Resource.Drawable.Avatar27;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar28 = global::Compendia.Droid.Resource.Drawable.Avatar28;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar29 = global::Compendia.Droid.Resource.Drawable.Avatar29;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar3 = global::Compendia.Droid.Resource.Drawable.Avatar3;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar30 = global::Compendia.Droid.Resource.Drawable.Avatar30;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar4 = global::Compendia.Droid.Resource.Drawable.Avatar4;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar5 = global::Compendia.Droid.Resource.Drawable.Avatar5;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar6 = global::Compendia.Droid.Resource.Drawable.Avatar6;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar7 = global::Compendia.Droid.Resource.Drawable.Avatar7;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar8 = global::Compendia.Droid.Resource.Drawable.Avatar8;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar9 = global::Compendia.Droid.Resource.Drawable.Avatar9;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.input_layout_drop_down_icon = global::Compendia.Droid.Resource.Drawable.input_layout_drop_down_icon;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.inputlayout_togglecollapseicon = global::Compendia.Droid.Resource.Drawable.inputlayout_togglecollapseicon;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.inputlayout_togglevisibleicon = global::Compendia.Droid.Resource.Drawable.inputlayout_togglevisibleicon;
+			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Dimension.activity_horizontal_margin = global::Compendia.Droid.Resource.Dimension.activity_horizontal_margin;
+			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Dimension.activity_vertical_margin = global::Compendia.Droid.Resource.Dimension.activity_vertical_margin;
+			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Dimension.date_text_size = global::Compendia.Droid.Resource.Dimension.date_text_size;
+			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Dimension.date_text_tab_size = global::Compendia.Droid.Resource.Dimension.date_text_tab_size;
+			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Dimension.month_row_size = global::Compendia.Droid.Resource.Dimension.month_row_size;
+			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Dimension.month_row_tab_size = global::Compendia.Droid.Resource.Dimension.month_row_tab_size;
+			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Dimension.month_text_size = global::Compendia.Droid.Resource.Dimension.month_text_size;
+			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Dimension.month_text_tab_size = global::Compendia.Droid.Resource.Dimension.month_text_tab_size;
+			global::Syncfusion.SfCalendar.XForms.Droid.Resource.String.sfcalendar_inlineviewalldaytext = global::Compendia.Droid.Resource.String.sfcalendar_inlineviewalldaytext;
+			global::Syncfusion.SfCalendar.XForms.Droid.Resource.String.sfcalendar_inlineviewnoappointmenttext = global::Compendia.Droid.Resource.String.sfcalendar_inlineviewnoappointmenttext;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::Compendia.Droid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.coordinatorLayoutStyle = global::Compendia.Droid.Resource.Attribute.coordinatorLayoutStyle;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::Compendia.Droid.Resource.Attribute.font;
@@ -2774,17 +2817,17 @@ namespace Compendia.Droid
 			// aapt resource value: 0x7F010010
 			public const int design_snackbar_out = 2130771984;
 			
-			// aapt resource value: 0x7F090018
-			public const int EnterFromLeft = 2131296280;
+			// aapt resource value: 0x7F110018
+			public const int EnterFromLeft = 2131820568;
 			
-			// aapt resource value: 0x7F090019
-			public const int EnterFromRight = 2131296281;
+			// aapt resource value: 0x7F110019
+			public const int EnterFromRight = 2131820569;
 			
-			// aapt resource value: 0x7F090020
-			public const int ExitToLeft = 2131296288;
+			// aapt resource value: 0x7F110020
+			public const int ExitToLeft = 2131820576;
 			
-			// aapt resource value: 0x7F090021
-			public const int ExitToRight = 2131296289;
+			// aapt resource value: 0x7F110021
+			public const int ExitToRight = 2131820577;
 			
 			static Animation()
 			{
@@ -4999,6 +5042,12 @@ namespace Compendia.Droid
 			// aapt resource value: 0x7F08004B
 			public const int abc_text_size_title_material_toolbar = 2131230795;
 			
+			// aapt resource value: 0x7F070002
+			public const int activity_horizontal_margin = 2131165186;
+			
+			// aapt resource value: 0x7F070003
+			public const int activity_vertical_margin = 2131165187;
+			
 			// aapt resource value: 0x7F080001
 			public const int browser_actions_context_menu_max_width = 2131230721;
 			
@@ -5034,6 +5083,12 @@ namespace Compendia.Droid
 			
 			// aapt resource value: 0x7F080007
 			public const int compat_notification_large_icon_max_width = 2131230727;
+			
+			// aapt resource value: 0x7F070004
+			public const int date_text_size = 2131165188;
+			
+			// aapt resource value: 0x7F070005
+			public const int date_text_tab_size = 2131165189;
 			
 			// aapt resource value: 0x7F080056
 			public const int design_appbar_elevation = 2131230806;
@@ -5211,6 +5266,18 @@ namespace Compendia.Droid
 			
 			// aapt resource value: 0x7F080090
 			public const int item_touch_helper_swipe_escape_velocity = 2131230864;
+			
+			// aapt resource value: 0x7F070008
+			public const int month_row_size = 2131165192;
+			
+			// aapt resource value: 0x7F070009
+			public const int month_row_tab_size = 2131165193;
+			
+			// aapt resource value: 0x7F070006
+			public const int month_text_size = 2131165190;
+			
+			// aapt resource value: 0x7F070007
+			public const int month_text_tab_size = 2131165191;
 			
 			// aapt resource value: 0x7F080062
 			public const int mr_controller_volume_group_list_item_height = 2131230818;
@@ -5719,6 +5786,96 @@ namespace Compendia.Droid
 			
 			// aapt resource value: 0x7F090054
 			public const int abc_vector_test = 2131296340;
+			
+			// aapt resource value: 0x7F010003
+			public const int Avatar1 = 2130771971;
+			
+			// aapt resource value: 0x7F010004
+			public const int Avatar10 = 2130771972;
+			
+			// aapt resource value: 0x7F010005
+			public const int Avatar11 = 2130771973;
+			
+			// aapt resource value: 0x7F010006
+			public const int Avatar12 = 2130771974;
+			
+			// aapt resource value: 0x7F010007
+			public const int Avatar13 = 2130771975;
+			
+			// aapt resource value: 0x7F010008
+			public const int Avatar14 = 2130771976;
+			
+			// aapt resource value: 0x7F010009
+			public const int Avatar15 = 2130771977;
+			
+			// aapt resource value: 0x7F010010
+			public const int Avatar16 = 2130771984;
+			
+			// aapt resource value: 0x7F010011
+			public const int Avatar17 = 2130771985;
+			
+			// aapt resource value: 0x7F010012
+			public const int Avatar18 = 2130771986;
+			
+			// aapt resource value: 0x7F010013
+			public const int Avatar19 = 2130771987;
+			
+			// aapt resource value: 0x7F010014
+			public const int Avatar2 = 2130771988;
+			
+			// aapt resource value: 0x7F010015
+			public const int Avatar20 = 2130771989;
+			
+			// aapt resource value: 0x7F010016
+			public const int Avatar21 = 2130771990;
+			
+			// aapt resource value: 0x7F010017
+			public const int Avatar22 = 2130771991;
+			
+			// aapt resource value: 0x7F010018
+			public const int Avatar23 = 2130771992;
+			
+			// aapt resource value: 0x7F010019
+			public const int Avatar24 = 2130771993;
+			
+			// aapt resource value: 0x7F010020
+			public const int Avatar25 = 2130772000;
+			
+			// aapt resource value: 0x7F010021
+			public const int Avatar26 = 2130772001;
+			
+			// aapt resource value: 0x7F010022
+			public const int Avatar27 = 2130772002;
+			
+			// aapt resource value: 0x7F010023
+			public const int Avatar28 = 2130772003;
+			
+			// aapt resource value: 0x7F010024
+			public const int Avatar29 = 2130772004;
+			
+			// aapt resource value: 0x7F010025
+			public const int Avatar3 = 2130772005;
+			
+			// aapt resource value: 0x7F010026
+			public const int Avatar30 = 2130772006;
+			
+			// aapt resource value: 0x7F010027
+			public const int Avatar4 = 2130772007;
+			
+			// aapt resource value: 0x7F010028
+			public const int Avatar5 = 2130772008;
+			
+			// aapt resource value: 0x7F010029
+			public const int Avatar6 = 2130772009;
+			
+			// aapt resource value: 0x7F010030
+			public const int Avatar7 = 2130772016;
+			
+			// aapt resource value: 0x7F010031
+			public const int Avatar8 = 2130772017;
+			
+			// aapt resource value: 0x7F010032
+			public const int Avatar9 = 2130772018;
 			
 			// aapt resource value: 0x7F090055
 			public const int avd_hide_password = 2131296341;
@@ -6286,6 +6443,15 @@ namespace Compendia.Droid
 			
 			// aapt resource value: 0x7F090105
 			public const int ic_vol_type_tv_light = 2131296517;
+			
+			// aapt resource value: 0x7F010033
+			public const int inputlayout_togglecollapseicon = 2130772019;
+			
+			// aapt resource value: 0x7F010034
+			public const int inputlayout_togglevisibleicon = 2130772020;
+			
+			// aapt resource value: 0x7F010035
+			public const int input_layout_drop_down_icon = 2130772021;
 			
 			// aapt resource value: 0x7F090106
 			public const int mr_button_connected_dark = 2131296518;
@@ -7711,6 +7877,12 @@ namespace Compendia.Droid
 			
 			// aapt resource value: 0x7F150035
 			public const int search_menu_title = 2132082741;
+			
+			// aapt resource value: 0x7F080003
+			public const int sfcalendar_inlineviewalldaytext = 2131230723;
+			
+			// aapt resource value: 0x7F080002
+			public const int sfcalendar_inlineviewnoappointmenttext = 2131230722;
 			
 			// aapt resource value: 0x7F150001
 			public const int status_bar_notification_info_overflow = 2132082689;
@@ -9317,11 +9489,11 @@ namespace Compendia.Droid
 			public static int[] ActionBarLayout = new int[] {
 					16842931};
 			
-			// aapt resource value: 0x7F070082
-			public const int ActionBarLayout_android_layout_gravity = 2131165314;
+			// aapt resource value: 0x7F090082
+			public const int ActionBarLayout_android_layout_gravity = 2131296386;
 			
-			// aapt resource value: 0x7F070052
-			public const int ActionBar_background = 2131165266;
+			// aapt resource value: 0x7F090052
+			public const int ActionBar_background = 2131296338;
 			
 			// aapt resource value: 0x1
 			public const int ActionBar_backgroundSplit = 1;
@@ -9410,8 +9582,8 @@ namespace Compendia.Droid
 			public static int[] ActionMenuItemView = new int[] {
 					16843071};
 			
-			// aapt resource value: 0x7F070084
-			public const int ActionMenuItemView_android_minWidth = 2131165316;
+			// aapt resource value: 0x7F090084
+			public const int ActionMenuItemView_android_minWidth = 2131296388;
 			
 			public static int[] ActionMenuView = new int[] {
 					0};
@@ -9424,8 +9596,8 @@ namespace Compendia.Droid
 					2130968951,
 					2130969030};
 			
-			// aapt resource value: 0x7F070086
-			public const int ActionMode_background = 2131165318;
+			// aapt resource value: 0x7F090086
+			public const int ActionMode_background = 2131296390;
 			
 			// aapt resource value: 0x1
 			public const int ActionMode_backgroundSplit = 1;
@@ -9446,8 +9618,8 @@ namespace Compendia.Droid
 					2130968763,
 					2130968824};
 			
-			// aapt resource value: 0x7F070093
-			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 2131165331;
+			// aapt resource value: 0x7F090093
+			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 2131296403;
 			
 			// aapt resource value: 0x1
 			public const int ActivityChooserView_initialActivityCount = 1;
@@ -9462,8 +9634,8 @@ namespace Compendia.Droid
 					2130968924,
 					2130968925};
 			
-			// aapt resource value: 0x7F070096
-			public const int AlertDialog_android_layout = 2131165334;
+			// aapt resource value: 0x7F090096
+			public const int AlertDialog_android_layout = 2131296406;
 			
 			// aapt resource value: 0x1
 			public const int AlertDialog_buttonIconDimen = 1;
@@ -9494,8 +9666,8 @@ namespace Compendia.Droid
 					16843157,
 					16843156};
 			
-			// aapt resource value: 0x7F070730
-			public const int AnimatedStateListDrawableCompat_android_constantSize = 2131167024;
+			// aapt resource value: 0x7F090730
+			public const int AnimatedStateListDrawableCompat_android_constantSize = 2131298096;
 			
 			// aapt resource value: 0x1
 			public const int AnimatedStateListDrawableCompat_android_dither = 1;
@@ -9516,8 +9688,8 @@ namespace Compendia.Droid
 					16843161,
 					16842960};
 			
-			// aapt resource value: 0x7F070737
-			public const int AnimatedStateListDrawableItem_android_drawable = 2131167031;
+			// aapt resource value: 0x7F090737
+			public const int AnimatedStateListDrawableItem_android_drawable = 2131298103;
 			
 			// aapt resource value: 0x1
 			public const int AnimatedStateListDrawableItem_android_id = 1;
@@ -9528,8 +9700,8 @@ namespace Compendia.Droid
 					16843851,
 					16843849};
 			
-			// aapt resource value: 0x7F070740
-			public const int AnimatedStateListDrawableTransition_android_drawable = 2131167040;
+			// aapt resource value: 0x7F090740
+			public const int AnimatedStateListDrawableTransition_android_drawable = 2131298112;
 			
 			// aapt resource value: 0x1
 			public const int AnimatedStateListDrawableTransition_android_fromId = 1;
@@ -9554,8 +9726,8 @@ namespace Compendia.Droid
 					2130968940,
 					2130968941};
 			
-			// aapt resource value: 0x7F070112
-			public const int AppBarLayoutStates_state_collapsed = 2131165458;
+			// aapt resource value: 0x7F090112
+			public const int AppBarLayoutStates_state_collapsed = 2131296530;
 			
 			// aapt resource value: 0x1
 			public const int AppBarLayoutStates_state_collapsible = 1;
@@ -9566,8 +9738,8 @@ namespace Compendia.Droid
 			// aapt resource value: 0x3
 			public const int AppBarLayoutStates_state_lifted = 3;
 			
-			// aapt resource value: 0x7F070105
-			public const int AppBarLayout_android_background = 2131165445;
+			// aapt resource value: 0x7F090105
+			public const int AppBarLayout_android_background = 2131296517;
 			
 			// aapt resource value: 0x1
 			public const int AppBarLayout_android_keyboardNavigationCluster = 1;
@@ -9585,8 +9757,8 @@ namespace Compendia.Droid
 					2130968852,
 					2130968853};
 			
-			// aapt resource value: 0x7F070117
-			public const int AppBarLayout_Layout_layout_scrollFlags = 2131165463;
+			// aapt resource value: 0x7F090117
+			public const int AppBarLayout_Layout_layout_scrollFlags = 2131296535;
 			
 			// aapt resource value: 0x1
 			public const int AppBarLayout_Layout_layout_scrollInterpolator = 1;
@@ -9600,8 +9772,8 @@ namespace Compendia.Droid
 					2130969018,
 					2130969019};
 			
-			// aapt resource value: 0x7F070120
-			public const int AppCompatImageView_android_src = 2131165472;
+			// aapt resource value: 0x7F090120
+			public const int AppCompatImageView_android_src = 2131296544;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatImageView_srcCompat = 1;
@@ -9618,8 +9790,8 @@ namespace Compendia.Droid
 					2130969016,
 					2130969017};
 			
-			// aapt resource value: 0x7F070125
-			public const int AppCompatSeekBar_android_thumb = 2131165477;
+			// aapt resource value: 0x7F090125
+			public const int AppCompatSeekBar_android_thumb = 2131296549;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatSeekBar_tickMark = 1;
@@ -9639,8 +9811,8 @@ namespace Compendia.Droid
 					16843117,
 					16842804};
 			
-			// aapt resource value: 0x7F070130
-			public const int AppCompatTextHelper_android_drawableBottom = 2131165488;
+			// aapt resource value: 0x7F090130
+			public const int AppCompatTextHelper_android_drawableBottom = 2131296560;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatTextHelper_android_drawableEnd = 1;
@@ -9673,8 +9845,8 @@ namespace Compendia.Droid
 					2130968855,
 					2130968983};
 			
-			// aapt resource value: 0x7F070138
-			public const int AppCompatTextView_android_textAppearance = 2131165496;
+			// aapt resource value: 0x7F090138
+			public const int AppCompatTextView_android_textAppearance = 2131296568;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatTextView_autoSizeMaxTextSize = 1;
@@ -9829,8 +10001,8 @@ namespace Compendia.Droid
 					2130969052,
 					2130969053};
 			
-			// aapt resource value: 0x7F070150
-			public const int AppCompatTheme_actionBarDivider = 2131165520;
+			// aapt resource value: 0x7F090150
+			public const int AppCompatTheme_actionBarDivider = 2131296592;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatTheme_actionBarItemBackground = 1;
@@ -10200,8 +10372,8 @@ namespace Compendia.Droid
 					2130968775,
 					2130968806};
 			
-			// aapt resource value: 0x7F070272
-			public const int BottomAppBar_backgroundTint = 2131165810;
+			// aapt resource value: 0x7F090272
+			public const int BottomAppBar_backgroundTint = 2131296882;
 			
 			// aapt resource value: 0x1
 			public const int BottomAppBar_fabAlignmentMode = 1;
@@ -10230,8 +10402,8 @@ namespace Compendia.Droid
 					2130968840,
 					2130968876};
 			
-			// aapt resource value: 0x7F070279
-			public const int BottomNavigationView_elevation = 2131165817;
+			// aapt resource value: 0x7F090279
+			public const int BottomNavigationView_elevation = 2131296889;
 			
 			// aapt resource value: 0x1
 			public const int BottomNavigationView_itemBackground = 1;
@@ -10266,8 +10438,8 @@ namespace Compendia.Droid
 					2130968636,
 					2130968637};
 			
-			// aapt resource value: 0x7F070290
-			public const int BottomSheetBehavior_Layout_behavior_fitToContents = 2131165840;
+			// aapt resource value: 0x7F090290
+			public const int BottomSheetBehavior_Layout_behavior_fitToContents = 2131296912;
 			
 			// aapt resource value: 0x1
 			public const int BottomSheetBehavior_Layout_behavior_hideable = 1;
@@ -10281,8 +10453,8 @@ namespace Compendia.Droid
 			public static int[] ButtonBarLayout = new int[] {
 					2130968615};
 			
-			// aapt resource value: 0x7F070295
-			public const int ButtonBarLayout_allowStacking = 2131165845;
+			// aapt resource value: 0x7F090295
+			public const int ButtonBarLayout_allowStacking = 2131296917;
 			
 			public static int[] CardView = new int[] {
 					16843072,
@@ -10299,8 +10471,8 @@ namespace Compendia.Droid
 					2130968731,
 					2130968732};
 			
-			// aapt resource value: 0x7F070297
-			public const int CardView_android_minHeight = 2131165847;
+			// aapt resource value: 0x7F090297
+			public const int CardView_android_minHeight = 2131296919;
 			
 			// aapt resource value: 0x1
 			public const int CardView_android_minWidth = 1;
@@ -10382,8 +10554,8 @@ namespace Compendia.Droid
 					2130968926,
 					2130968927};
 			
-			// aapt resource value: 0x7F070346
-			public const int ChipGroup_checkedChip = 2131166022;
+			// aapt resource value: 0x7F090346
+			public const int ChipGroup_checkedChip = 2131297094;
 			
 			// aapt resource value: 0x1
 			public const int ChipGroup_chipSpacing = 1;
@@ -10400,8 +10572,8 @@ namespace Compendia.Droid
 			// aapt resource value: 0x5
 			public const int ChipGroup_singleSelection = 5;
 			
-			// aapt resource value: 0x7F070311
-			public const int Chip_android_checkable = 2131165969;
+			// aapt resource value: 0x7F090311
+			public const int Chip_android_checkable = 2131297041;
 			
 			// aapt resource value: 0x1
 			public const int Chip_android_ellipsize = 1;
@@ -10520,8 +10692,8 @@ namespace Compendia.Droid
 					2130969021,
 					2130969031};
 			
-			// aapt resource value: 0x7F070353
-			public const int CollapsingToolbarLayout_collapsedTitleGravity = 2131166035;
+			// aapt resource value: 0x7F090353
+			public const int CollapsingToolbarLayout_collapsedTitleGravity = 2131297107;
 			
 			// aapt resource value: 0x1
 			public const int CollapsingToolbarLayout_collapsedTitleTextAppearance = 1;
@@ -10554,8 +10726,8 @@ namespace Compendia.Droid
 					2130968847,
 					2130968848};
 			
-			// aapt resource value: 0x7F070370
-			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 2131166064;
+			// aapt resource value: 0x7F090370
+			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 2131297136;
 			
 			// aapt resource value: 0x1
 			public const int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = 1;
@@ -10583,8 +10755,8 @@ namespace Compendia.Droid
 					16843551,
 					16843173};
 			
-			// aapt resource value: 0x7F070003
-			public const int ColorStateListItem_alpha = 2131165187;
+			// aapt resource value: 0x7F090003
+			public const int ColorStateListItem_alpha = 2131296259;
 			
 			// aapt resource value: 0x1
 			public const int ColorStateListItem_android_alpha = 1;
@@ -10597,8 +10769,8 @@ namespace Compendia.Droid
 					2130968663,
 					2130968664};
 			
-			// aapt resource value: 0x7F070373
-			public const int CompoundButton_android_button = 2131166067;
+			// aapt resource value: 0x7F090373
+			public const int CompoundButton_android_button = 2131297139;
 			
 			// aapt resource value: 0x1
 			public const int CompoundButton_buttonTint = 1;
@@ -10610,8 +10782,8 @@ namespace Compendia.Droid
 					2130968589,
 					2130968596};
 			
-			// aapt resource value: 0x7F070041
-			public const int CoordinatorLayout_keylines = 2131165249;
+			// aapt resource value: 0x7F090041
+			public const int CoordinatorLayout_keylines = 2131296321;
 			
 			public static int[] CoordinatorLayout_Layout = new int[] {
 					16842931,
@@ -10622,8 +10794,8 @@ namespace Compendia.Droid
 					2130968594,
 					2130968595};
 			
-			// aapt resource value: 0x7F070044
-			public const int CoordinatorLayout_Layout_android_layout_gravity = 2131165252;
+			// aapt resource value: 0x7F090044
+			public const int CoordinatorLayout_Layout_android_layout_gravity = 2131296324;
 			
 			// aapt resource value: 0x1
 			public const int CoordinatorLayout_Layout_layout_anchor = 1;
@@ -10650,8 +10822,8 @@ namespace Compendia.Droid
 					2130968642,
 					2130968643};
 			
-			// aapt resource value: 0x7F070377
-			public const int DesignTheme_bottomSheetDialogTheme = 2131166071;
+			// aapt resource value: 0x7F090377
+			public const int DesignTheme_bottomSheetDialogTheme = 2131297143;
 			
 			// aapt resource value: 0x1
 			public const int DesignTheme_bottomSheetStyle = 1;
@@ -10666,8 +10838,8 @@ namespace Compendia.Droid
 					2130968931,
 					2130969011};
 			
-			// aapt resource value: 0x7F070380
-			public const int DrawerArrowToggle_arrowHeadLength = 2131166080;
+			// aapt resource value: 0x7F090380
+			public const int DrawerArrowToggle_arrowHeadLength = 2131297152;
 			
 			// aapt resource value: 0x1
 			public const int DrawerArrowToggle_arrowShaftLength = 1;
@@ -10705,8 +10877,8 @@ namespace Compendia.Droid
 					2130968922,
 					2130969041};
 			
-			// aapt resource value: 0x7F070389
-			public const int FloatingActionButton_backgroundTint = 2131166089;
+			// aapt resource value: 0x7F090389
+			public const int FloatingActionButton_backgroundTint = 2131297161;
 			
 			// aapt resource value: 0x1
 			public const int FloatingActionButton_backgroundTintMode = 1;
@@ -10714,8 +10886,8 @@ namespace Compendia.Droid
 			public static int[] FloatingActionButton_Behavior_Layout = new int[] {
 					2130968632};
 			
-			// aapt resource value: 0x7F070403
-			public const int FloatingActionButton_Behavior_Layout_behavior_autoHide = 2131166211;
+			// aapt resource value: 0x7F090403
+			public const int FloatingActionButton_Behavior_Layout_behavior_autoHide = 2131297283;
 			
 			// aapt resource value: 0x2
 			public const int FloatingActionButton_borderWidth = 2;
@@ -10754,8 +10926,8 @@ namespace Compendia.Droid
 					2130968834,
 					2130968856};
 			
-			// aapt resource value: 0x7F070405
-			public const int FlowLayout_itemSpacing = 2131166213;
+			// aapt resource value: 0x7F090405
+			public const int FlowLayout_itemSpacing = 2131297285;
 			
 			// aapt resource value: 0x1
 			public const int FlowLayout_lineSpacing = 1;
@@ -10780,8 +10952,8 @@ namespace Compendia.Droid
 					2130968587,
 					2130968588};
 			
-			// aapt resource value: 0x7F070014
-			public const int FontFamilyFont_android_font = 2131165204;
+			// aapt resource value: 0x7F090014
+			public const int FontFamilyFont_android_font = 2131296276;
 			
 			// aapt resource value: 0x1
 			public const int FontFamilyFont_android_fontStyle = 1;
@@ -10810,8 +10982,8 @@ namespace Compendia.Droid
 			// aapt resource value: 0x9
 			public const int FontFamilyFont_ttcIndex = 9;
 			
-			// aapt resource value: 0x7F070007
-			public const int FontFamily_fontProviderAuthority = 2131165191;
+			// aapt resource value: 0x7F090007
+			public const int FontFamily_fontProviderAuthority = 2131296263;
 			
 			// aapt resource value: 0x1
 			public const int FontFamily_fontProviderCerts = 1;
@@ -10833,8 +11005,8 @@ namespace Compendia.Droid
 					16843264,
 					2130968796};
 			
-			// aapt resource value: 0x7F070408
-			public const int ForegroundLinearLayout_android_foreground = 2131166216;
+			// aapt resource value: 0x7F090408
+			public const int ForegroundLinearLayout_android_foreground = 2131297288;
 			
 			// aapt resource value: 0x1
 			public const int ForegroundLinearLayout_android_foregroundGravity = 1;
@@ -10860,14 +11032,14 @@ namespace Compendia.Droid
 					16843173,
 					16844052};
 			
-			// aapt resource value: 0x7F070038
-			public const int GradientColorItem_android_color = 2131165240;
+			// aapt resource value: 0x7F090038
+			public const int GradientColorItem_android_color = 2131296312;
 			
 			// aapt resource value: 0x1
 			public const int GradientColorItem_android_offset = 1;
 			
-			// aapt resource value: 0x7F070025
-			public const int GradientColor_android_centerColor = 2131165221;
+			// aapt resource value: 0x7F090025
+			public const int GradientColor_android_centerColor = 2131296293;
 			
 			// aapt resource value: 0x1
 			public const int GradientColor_android_centerX = 1;
@@ -10913,8 +11085,8 @@ namespace Compendia.Droid
 					2130968875,
 					2130968921};
 			
-			// aapt resource value: 0x7F070412
-			public const int LinearLayoutCompat_android_baselineAligned = 2131166226;
+			// aapt resource value: 0x7F090412
+			public const int LinearLayoutCompat_android_baselineAligned = 2131297298;
 			
 			// aapt resource value: 0x1
 			public const int LinearLayoutCompat_android_baselineAlignedChildIndex = 1;
@@ -10940,8 +11112,8 @@ namespace Compendia.Droid
 					16843137,
 					16842996};
 			
-			// aapt resource value: 0x7F070422
-			public const int LinearLayoutCompat_Layout_android_layout_gravity = 2131166242;
+			// aapt resource value: 0x7F090422
+			public const int LinearLayoutCompat_Layout_android_layout_gravity = 2131297314;
 			
 			// aapt resource value: 0x1
 			public const int LinearLayoutCompat_Layout_android_layout_height = 1;
@@ -10962,8 +11134,8 @@ namespace Compendia.Droid
 					16843436,
 					16843437};
 			
-			// aapt resource value: 0x7F070427
-			public const int ListPopupWindow_android_dropDownHorizontalOffset = 2131166247;
+			// aapt resource value: 0x7F090427
+			public const int ListPopupWindow_android_dropDownHorizontalOffset = 2131297319;
 			
 			// aapt resource value: 0x1
 			public const int ListPopupWindow_android_dropDownVerticalOffset = 1;
@@ -10986,8 +11158,8 @@ namespace Compendia.Droid
 					2130968944,
 					2130968945};
 			
-			// aapt resource value: 0x7F070430
-			public const int MaterialButton_android_insetBottom = 2131166256;
+			// aapt resource value: 0x7F090430
+			public const int MaterialButton_android_insetBottom = 2131297328;
 			
 			// aapt resource value: 0x1
 			public const int MaterialButton_android_insetLeft = 1;
@@ -11038,8 +11210,8 @@ namespace Compendia.Droid
 					2130968944,
 					2130968945};
 			
-			// aapt resource value: 0x7F070447
-			public const int MaterialCardView_strokeColor = 2131166279;
+			// aapt resource value: 0x7F090447
+			public const int MaterialCardView_strokeColor = 2131297351;
 			
 			// aapt resource value: 0x1
 			public const int MaterialCardView_strokeWidth = 1;
@@ -11078,8 +11250,8 @@ namespace Compendia.Droid
 					2130969004,
 					2130969008};
 			
-			// aapt resource value: 0x7F070450
-			public const int MaterialComponentsTheme_bottomSheetDialogTheme = 2131166288;
+			// aapt resource value: 0x7F090450
+			public const int MaterialComponentsTheme_bottomSheetDialogTheme = 2131297360;
 			
 			// aapt resource value: 0x1
 			public const int MaterialComponentsTheme_bottomSheetStyle = 1;
@@ -11180,8 +11352,8 @@ namespace Compendia.Droid
 					2130968691,
 					2130968752};
 			
-			// aapt resource value: 0x7F070754
-			public const int MediaRouteButton_android_minHeight = 2131167060;
+			// aapt resource value: 0x7F090754
+			public const int MediaRouteButton_android_minHeight = 2131298132;
 			
 			// aapt resource value: 0x1
 			public const int MediaRouteButton_android_minWidth = 1;
@@ -11200,8 +11372,8 @@ namespace Compendia.Droid
 					16843231,
 					16843156};
 			
-			// aapt resource value: 0x7F070483
-			public const int MenuGroup_android_checkableBehavior = 2131166339;
+			// aapt resource value: 0x7F090483
+			public const int MenuGroup_android_checkableBehavior = 2131297411;
 			
 			// aapt resource value: 0x1
 			public const int MenuGroup_android_enabled = 1;
@@ -11243,8 +11415,8 @@ namespace Compendia.Droid
 					2130968920,
 					2130969036};
 			
-			// aapt resource value: 0x7F070490
-			public const int MenuItem_actionLayout = 2131166352;
+			// aapt resource value: 0x7F090490
+			public const int MenuItem_actionLayout = 2131297424;
 			
 			// aapt resource value: 0x1
 			public const int MenuItem_actionProviderClass = 1;
@@ -11323,8 +11495,8 @@ namespace Compendia.Droid
 					2130968899,
 					2130968946};
 			
-			// aapt resource value: 0x7F070514
-			public const int MenuView_android_headerBackground = 2131166484;
+			// aapt resource value: 0x7F090514
+			public const int MenuView_android_headerBackground = 2131297556;
 			
 			// aapt resource value: 0x1
 			public const int MenuView_android_horizontalDivider = 1;
@@ -11364,8 +11536,8 @@ namespace Compendia.Droid
 					2130968838,
 					2130968876};
 			
-			// aapt resource value: 0x7F070524
-			public const int NavigationView_android_background = 2131166500;
+			// aapt resource value: 0x7F090524
+			public const int NavigationView_android_background = 2131297572;
 			
 			// aapt resource value: 0x1
 			public const int NavigationView_android_fitsSystemWindows = 1;
@@ -11408,11 +11580,11 @@ namespace Compendia.Droid
 			public static int[] PopupWindowBackgroundState = new int[] {
 					2130968937};
 			
-			// aapt resource value: 0x7F070541
-			public const int PopupWindowBackgroundState_state_above_anchor = 2131166529;
+			// aapt resource value: 0x7F090541
+			public const int PopupWindowBackgroundState_state_above_anchor = 2131297601;
 			
-			// aapt resource value: 0x7F070537
-			public const int PopupWindow_android_popupAnimationStyle = 2131166519;
+			// aapt resource value: 0x7F090537
+			public const int PopupWindow_android_popupAnimationStyle = 2131297591;
 			
 			// aapt resource value: 0x1
 			public const int PopupWindow_android_popupBackground = 1;
@@ -11424,8 +11596,8 @@ namespace Compendia.Droid
 					2130968884,
 					2130968887};
 			
-			// aapt resource value: 0x7F070543
-			public const int RecycleListView_paddingBottomNoButtons = 2131166531;
+			// aapt resource value: 0x7F090543
+			public const int RecycleListView_paddingBottomNoButtons = 2131297603;
 			
 			// aapt resource value: 0x1
 			public const int RecycleListView_paddingTopNoTitle = 1;
@@ -11443,8 +11615,8 @@ namespace Compendia.Droid
 					2130968930,
 					2130968936};
 			
-			// aapt resource value: 0x7F070546
-			public const int RecyclerView_android_descendantFocusability = 2131166534;
+			// aapt resource value: 0x7F090546
+			public const int RecyclerView_android_descendantFocusability = 2131297606;
 			
 			// aapt resource value: 0x1
 			public const int RecyclerView_android_orientation = 1;
@@ -11479,14 +11651,14 @@ namespace Compendia.Droid
 			public static int[] ScrimInsetsFrameLayout = new int[] {
 					2130968825};
 			
-			// aapt resource value: 0x7F070558
-			public const int ScrimInsetsFrameLayout_insetForeground = 2131166552;
+			// aapt resource value: 0x7F090558
+			public const int ScrimInsetsFrameLayout_insetForeground = 2131297624;
 			
 			public static int[] ScrollingViewBehavior_Layout = new int[] {
 					2130968635};
 			
-			// aapt resource value: 0x7F070560
-			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 2131166560;
+			// aapt resource value: 0x7F090560
+			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 2131297632;
 			
 			public static int[] SearchView = new int[] {
 					16842970,
@@ -11507,8 +11679,8 @@ namespace Compendia.Droid
 					2130968952,
 					2130969043};
 			
-			// aapt resource value: 0x7F070562
-			public const int SearchView_android_focusable = 2131166562;
+			// aapt resource value: 0x7F090562
+			public const int SearchView_android_focusable = 2131297634;
 			
 			// aapt resource value: 0x1
 			public const int SearchView_android_imeOptions = 1;
@@ -11567,8 +11739,8 @@ namespace Compendia.Droid
 					2130968758,
 					2130968872};
 			
-			// aapt resource value: 0x7F070583
-			public const int SnackbarLayout_android_maxWidth = 2131166595;
+			// aapt resource value: 0x7F090583
+			public const int SnackbarLayout_android_maxWidth = 2131297667;
 			
 			// aapt resource value: 0x1
 			public const int SnackbarLayout_elevation = 1;
@@ -11576,8 +11748,8 @@ namespace Compendia.Droid
 			// aapt resource value: 0x2
 			public const int SnackbarLayout_maxActionInlineWidth = 2;
 			
-			// aapt resource value: 0x7F070580
-			public const int Snackbar_snackbarButtonStyle = 2131166592;
+			// aapt resource value: 0x7F090580
+			public const int Snackbar_snackbarButtonStyle = 2131297664;
 			
 			// aapt resource value: 0x1
 			public const int Snackbar_snackbarStyle = 1;
@@ -11589,8 +11761,8 @@ namespace Compendia.Droid
 					16843131,
 					2130968897};
 			
-			// aapt resource value: 0x7F070587
-			public const int Spinner_android_dropDownWidth = 2131166599;
+			// aapt resource value: 0x7F090587
+			public const int Spinner_android_dropDownWidth = 2131297671;
 			
 			// aapt resource value: 0x1
 			public const int Spinner_android_entries = 1;
@@ -11615,11 +11787,11 @@ namespace Compendia.Droid
 			public static int[] StateListDrawableItem = new int[] {
 					16843161};
 			
-			// aapt resource value: 0x7F070752
-			public const int StateListDrawableItem_android_drawable = 2131167058;
+			// aapt resource value: 0x7F090752
+			public const int StateListDrawableItem_android_drawable = 2131298130;
 			
-			// aapt resource value: 0x7F070745
-			public const int StateListDrawable_android_constantSize = 2131167045;
+			// aapt resource value: 0x7F090745
+			public const int StateListDrawable_android_constantSize = 2131298117;
 			
 			// aapt resource value: 0x1
 			public const int StateListDrawable_android_dither = 1;
@@ -11652,8 +11824,8 @@ namespace Compendia.Droid
 					2130969038,
 					2130969039};
 			
-			// aapt resource value: 0x7F070593
-			public const int SwitchCompat_android_textOff = 2131166611;
+			// aapt resource value: 0x7F090593
+			public const int SwitchCompat_android_textOff = 2131297683;
 			
 			// aapt resource value: 0x1
 			public const int SwitchCompat_android_textOn = 1;
@@ -11699,8 +11871,8 @@ namespace Compendia.Droid
 					16842994,
 					16843087};
 			
-			// aapt resource value: 0x7F070608
-			public const int TabItem_android_icon = 2131166728;
+			// aapt resource value: 0x7F090608
+			public const int TabItem_android_icon = 2131297800;
 			
 			// aapt resource value: 0x1
 			public const int TabItem_android_layout = 1;
@@ -11735,8 +11907,8 @@ namespace Compendia.Droid
 					2130968981,
 					2130968982};
 			
-			// aapt resource value: 0x7F070612
-			public const int TabLayout_tabBackground = 2131166738;
+			// aapt resource value: 0x7F090612
+			public const int TabLayout_tabBackground = 2131297810;
 			
 			// aapt resource value: 0x1
 			public const int TabLayout_tabContentStart = 1;
@@ -11825,8 +11997,8 @@ namespace Compendia.Droid
 					2130968786,
 					2130968983};
 			
-			// aapt resource value: 0x7F070638
-			public const int TextAppearance_android_fontFamily = 2131166776;
+			// aapt resource value: 0x7F090638
+			public const int TextAppearance_android_fontFamily = 2131297848;
 			
 			// aapt resource value: 0x1
 			public const int TextAppearance_android_shadowColor = 1;
@@ -11894,8 +12066,8 @@ namespace Compendia.Droid
 					2130968894,
 					2130968895};
 			
-			// aapt resource value: 0x7F070652
-			public const int TextInputLayout_android_hint = 2131166802;
+			// aapt resource value: 0x7F090652
+			public const int TextInputLayout_android_hint = 2131297874;
 			
 			// aapt resource value: 0x1
 			public const int TextInputLayout_android_textColorHint = 1;
@@ -11983,8 +12155,8 @@ namespace Compendia.Droid
 					2130968759,
 					2130968760};
 			
-			// aapt resource value: 0x7F070681
-			public const int ThemeEnforcement_android_textAppearance = 2131166849;
+			// aapt resource value: 0x7F090681
+			public const int ThemeEnforcement_android_textAppearance = 2131297921;
 			
 			// aapt resource value: 0x1
 			public const int ThemeEnforcement_enforceMaterialTheme = 1;
@@ -12023,8 +12195,8 @@ namespace Compendia.Droid
 					2130969028,
 					2130969029};
 			
-			// aapt resource value: 0x7F070685
-			public const int Toolbar_android_gravity = 2131166853;
+			// aapt resource value: 0x7F090685
+			public const int Toolbar_android_gravity = 2131297925;
 			
 			// aapt resource value: 0x1
 			public const int Toolbar_android_minHeight = 1;
@@ -12122,8 +12294,8 @@ namespace Compendia.Droid
 					2130968629,
 					2130968630};
 			
-			// aapt resource value: 0x7F070721
-			public const int ViewBackgroundHelper_android_background = 2131167009;
+			// aapt resource value: 0x7F090721
+			public const int ViewBackgroundHelper_android_background = 2131298081;
 			
 			// aapt resource value: 0x1
 			public const int ViewBackgroundHelper_backgroundTint = 1;
@@ -12136,8 +12308,8 @@ namespace Compendia.Droid
 					16842995,
 					16842994};
 			
-			// aapt resource value: 0x7F070725
-			public const int ViewStubCompat_android_id = 2131167013;
+			// aapt resource value: 0x7F090725
+			public const int ViewStubCompat_android_id = 2131298085;
 			
 			// aapt resource value: 0x1
 			public const int ViewStubCompat_android_inflatedId = 1;
@@ -12145,8 +12317,8 @@ namespace Compendia.Droid
 			// aapt resource value: 0x2
 			public const int ViewStubCompat_android_layout = 2;
 			
-			// aapt resource value: 0x7F070715
-			public const int View_android_focusable = 2131166997;
+			// aapt resource value: 0x7F090715
+			public const int View_android_focusable = 2131298069;
 			
 			// aapt resource value: 0x1
 			public const int View_android_theme = 1;
@@ -12173,8 +12345,8 @@ namespace Compendia.Droid
 		public partial class Xml
 		{
 			
-			// aapt resource value: 0x7F080002
-			public const int xamarin_essentials_fileprovider_file_paths = 2131230722;
+			// aapt resource value: 0x7F100002
+			public const int xamarin_essentials_fileprovider_file_paths = 2131755010;
 			
 			static Xml()
 			{

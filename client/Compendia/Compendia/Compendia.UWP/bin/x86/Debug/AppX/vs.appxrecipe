@@ -872,7 +872,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia\bin\Debug\netstandard2.0\Compendia.dll">
       <PackagePath>Compendia.dll</PackagePath>
-      <Modified>2020-02-10T17:08:27.709</Modified>
+      <Modified>2020-02-12T10:53:37.558</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>

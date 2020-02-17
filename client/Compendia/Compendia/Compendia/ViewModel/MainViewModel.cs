@@ -6,6 +6,7 @@ using Compendia.Database;
 using Compendia.Model;
 using Compendia.ViewModel.Base;
 using Compendia.Views;
+using Rg.Plugins.Popup.Extensions;
 using Rg.Plugins.Popup.Services;
 using Xamarin.Forms;
 
@@ -21,11 +22,13 @@ namespace Compendia.ViewModel
 
         public MainViewModel()
         {
+            
             _ = ConnectUserAsync();
             //ServerConnection();
         }
 
         #region MainView
+        [Obsolete]
         private async System.Threading.Tasks.Task ConnectUserAsync()
         {
             List<DbLogIn> userdata;
@@ -44,7 +47,14 @@ namespace Compendia.ViewModel
             {
                 //await PushModalAsync(new LogInView());
                 //Popup aufrufen
-                await PopupNavigation.Instance.PushAsync(new LogInView());
+                Debug.WriteLine("Sollte Popup aufrufen");
+                //Device.BeginInvokeOnMainThread(async () =>
+                //{
+                //   await Application.Current.MainPage.Navigation.PushPopupAsync(new LogInView());
+                //});
+                //await PopupNavigation.Instance.PushAsync(new LogInView);
+                await Application.Current.MainPage.Navigation.PushPopupAsync(new LogInView());
+                Debug.WriteLine("Popup wurde aufgerufen :)");
                 
 
             }

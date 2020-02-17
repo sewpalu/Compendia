@@ -3,7 +3,8 @@
     "",
     "\\Compendia",
     "\\Compendia\\Compendia",
-    "\\Compendia\\Compendia.Android"
+    "\\Compendia\\Compendia.Android",
+    "\\Compendia\\Compendia.Android\\Resources"
   ],
   "SelectedNode": "\\Compendia.sln",
   "PreviewInSolutionExplorer": false
