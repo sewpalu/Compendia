@@ -11,47 +11,88 @@ namespace Compendia.ViewModel
 {
     public class SignUpViewModel : BaseViewModel
     {
-        private string userSignUp;
-        private string passwordSignUp;
+        private string username;
+        private string password;
+        private string passwordConfirm;
+        private string name;
+        private string surname;
+
 
         public SignUpViewModel()
         {
 
         }
+        #region Properties
 
-        public string EntryUserSignUp
+        public string EntryUsername
         {
             get
             {
-                return userSignUp;
+                return username;
             }
             set
             {
-                userSignUp = value;
+                username = value;
 
-                OnPropertyChanged(nameof(EntryUserSignUp));
+                OnPropertyChanged(nameof(EntryUsername));
             }
         }
-
-        public string EntryPasswordSignUp
+        public string EntryName
         {
             get
             {
-                return passwordSignUp;
+                return name;
             }
             set
             {
-                passwordSignUp = value;
+                name = value;
 
-                OnPropertyChanged(nameof(EntryPasswordSignUp));
+                OnPropertyChanged(nameof(EntryName));
+            }
+        }
+        public string EntrySurname
+        {
+            get
+            {
+                return surname;
+            }
+            set
+            {
+                surname = value;
+
+                OnPropertyChanged(nameof(EntrySurname));
             }
         }
 
-        //Sign Up Button wurde geklicket
-        
+        public string EntryPassword
+        {
+            get
+            {
+                return password;
+            }
+            set
+            {
+                password = value;
+
+                OnPropertyChanged(nameof(EntryPassword));
+            }
+        }
+        public string EntryConfirmPassword
+        {
+            get
+            {
+                return passwordConfirm;
+            }
+            set
+            {
+                passwordConfirm = value;
+
+                OnPropertyChanged(nameof(EntryConfirmPassword));
+            }
+        }
 
         //Label to Login wurde geklicket
-        public ICommand LabelCommandSignUp
+        public ICommand LabelCommand
         {
 
             get
@@ -65,7 +106,26 @@ namespace Compendia.ViewModel
             set
             {
 
+
+           }
+        }
+        public ICommand SignUpCommand
+        {
+
+            get
+            {
+
+                return new Command(async () =>
+                {
+                    await PopModalAsync();
+                });
+            }
+            set
+            {
+
+
             }
         }
+        #endregion Properties
     }
 }

@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              xmlns:pagemodels="clr-namespace:Compendia.ViewModel"
              x:Class="Compendia.Views.EditEntryView">
+    
     <ContentPage.BindingContext>
         <pagemodels:EditEntryViewModel/>
     </ContentPage.BindingContext>

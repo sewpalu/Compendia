@@ -1,6 +1,7 @@
 ﻿using Compendia.Database;
 using Compendia.Model;
 using Compendia.ViewModel.Base;
+using Compendia.Views;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,7 +19,7 @@ namespace Compendia.ViewModel
 
         }
 
-        public string EntryUserLogIn
+        public string EntryUser
         {
             get
             {
@@ -28,11 +29,11 @@ namespace Compendia.ViewModel
             {
                 userLogIn = value;
 
-                OnPropertyChanged(nameof(EntryUserLogIn));
+                OnPropertyChanged(nameof(EntryUser));
             }
         }
 
-        public string EntryPasswordLogIn
+        public string EntryPassword
         {
             get
             {
@@ -42,7 +43,7 @@ namespace Compendia.ViewModel
             {
                 passwordLogIn = value;
 
-                OnPropertyChanged(nameof(EntryPasswordLogIn));
+                OnPropertyChanged(nameof(EntryPassword));
             }
         }
         public ICommand LogInCommand
@@ -75,14 +76,14 @@ namespace Compendia.ViewModel
         }
 
 
-        public ICommand SignUpCommandLogIn
+        public ICommand SignUpCommand
         {
             get
             {
 
                 return new Command(async () =>
                 {
-                    //await PushModalAsync(new SignUpView());
+                    await PushModalAsync(new SignUpView());
                 });
             }
         }

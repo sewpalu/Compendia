@@ -5,45 +5,113 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:pagemodels="clr-namespace:Compendia.ViewModel"
-             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
              x:Class="Compendia.Views.LogInView">
     
     <ContentPage.BindingContext>
         <pagemodels:LoginViewModel/>
     </ContentPage.BindingContext>
 
-    <AbsoluteLayout Padding="40">
-        <Label AbsoluteLayout.LayoutBounds=".5, .15, 233, 43" AbsoluteLayout.LayoutFlags="PositionProportional"
+    <ContentPage.Resources>
+        <Style
+            x:Key="ButtonStyle"
+            TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="Center"></Setter>
+                <Setter Property="VerticalOptions" Value="Center"></Setter>
+                <Setter Property="CornerRadius" Value="0"></Setter>
+                <Setter Property="Margin" Value="20"></Setter>
+        </Style>
+        <Style
+            x:Key="EntryStyle"
+            TargetType="Entry">
+            <Setter Property="HorizontalOptions" Value="Fill"></Setter>
+            <Setter Property="VerticalOptions" Value="Center"></Setter>
+            <Setter Property="Margin" Value="10"></Setter>
+        </Style>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+
+        <StackLayout Margin="20" VerticalOptions="Center" HorizontalOptions="Center">
+            
+            <Label Text="COMPENDIA"
+                   FontSize="40"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   Margin="10"/>
+            
+            <Label Text="Hallo! Bitte logge dich in denen Account ein."
+                   FontSize="Small"
+                   HorizontalOptions="Center"
+                   TextColor="Gray"
+                   Margin="10"/>
+
+            <Entry Text="{Binding EntryUser}"
+                    Style="{StaticResource EntryStyle}"
+                    Placeholder="Benutzername"/>
+            
+            <Entry IsPassword="True"
+               Placeholder="Passwort"
+                   Style="{StaticResource EntryStyle}"
+                   Text="{Binding EntryPassword}"/>
+            
+            <StackLayout Orientation="Horizontal" Margin=" 20"  HorizontalOptions="Center">
+                <Button 
+                Text="Login"
+                    BackgroundColor="Blue"
+                    BorderColor="Blue"
+                    TextColor="White"
+                Style="{StaticResource ButtonStyle}"
+                Command="{Binding LogInCommand}"/>
+                
+                <Button 
+                    Text="Sign up"
+                    BackgroundColor="White"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    TextColor="Black"
+                    Style="{StaticResource ButtonStyle}"
+                    Command="{Binding SignUpCommand}"/>
+            
+            </StackLayout>
+            
+        </StackLayout>
+        
+
+       <!-- <AbsoluteLayout Padding="40">
+            <Label AbsoluteLayout.LayoutBounds=".5, .15, 233, 43" AbsoluteLayout.LayoutFlags="PositionProportional"
                Text="COMPENDIA"
                FontSize="40"
                FontAttributes="Bold"/>
 
-        <Label AbsoluteLayout.LayoutBounds=".5,.25,205,13" AbsoluteLayout.LayoutFlags="PositionProportional"
+            <Label AbsoluteLayout.LayoutBounds=".5,.25,205,13" AbsoluteLayout.LayoutFlags="PositionProportional"
                Text="Hallo! Bitte logge dich in deinen Account ein."
                FontSize="10"
                TextColor="{StaticResource Slate}"/>
 
-        <Entry AbsoluteLayout.LayoutBounds=".5,.4,1,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+            <Entry AbsoluteLayout.LayoutBounds=".5,.4,1,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                Text="{Binding EntryUser}"
                Placeholder="Benutzername"/>
 
-        <Entry AbsoluteLayout.LayoutBounds=".5,.525,1,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+            <Entry AbsoluteLayout.LayoutBounds=".5,.525,1,40" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                IsPassword="True"
                Placeholder="Passwort"
                Text="{Binding EntryPassword}"/>
 
-        <Button AbsoluteLayout.LayoutBounds="0,.75,.4,45" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+            <Button AbsoluteLayout.LayoutBounds="0,.75,.4,45" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="CenterAndExpand"
                 Text="Login"
                 Style="{StaticResource BlueButtonStyle}"
                 Command="{Binding LogInCommand}"/>
 
-        <Button AbsoluteLayout.LayoutBounds="1,.75,.4,45" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+            <Button AbsoluteLayout.LayoutBounds="1,.75,.4,45" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="CenterAndExpand"
                 Text="Sign up"
                 Style="{StaticResource GreyButtonStyle}"
                 Command="{Binding SignUpCommand}"/>
-    </AbsoluteLayout>
+        </AbsoluteLayout>-->
+
+    </ContentPage.Content>
 </ContentPage>

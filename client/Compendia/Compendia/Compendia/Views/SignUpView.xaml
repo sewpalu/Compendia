@@ -13,7 +13,83 @@
         <pagemodels:SignUpViewModel/>
     </ContentPage.BindingContext>
 
-        <AbsoluteLayout Padding="40">
+    <ContentPage.Resources>
+        <Style
+            x:Key="ButtonStyle"
+            TargetType="Button">
+            <Setter Property="HorizontalOptions" Value="Center"></Setter>
+            <Setter Property="VerticalOptions" Value="Center"></Setter>
+            <Setter Property="CornerRadius" Value="0"></Setter>
+            
+        </Style>
+        <Style
+            x:Key="EntryStyle"
+            TargetType="Entry">
+            <Setter Property="HorizontalOptions" Value="Fill"></Setter>
+            <Setter Property="VerticalOptions" Value="Center"></Setter>
+            <Setter Property="Margin" Value="10"></Setter>
+        </Style>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+
+        <StackLayout Margin="20" VerticalOptions="Center" HorizontalOptions="Center">
+
+            <Label Text="COMPENDIA"
+                   FontSize="40"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   Margin="10"/>
+
+            <Label Text="Hallo!  Erstelle dir einen neuen Account."
+                   FontSize="Small"
+                   HorizontalOptions="Center"
+                   TextColor="Gray"
+                   Margin="10"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+                <Entry Text="{Binding EntryName}"
+                    Style="{StaticResource EntryStyle}"
+                    Placeholder="Vorname      "/>
+                <Entry Text="{Binding EntrySurname}"
+                    Style="{StaticResource EntryStyle}"
+                    Placeholder="Nachname     "/>
+            </StackLayout>
+            <Entry Text="{Binding EntryUsername}"
+                    Style="{StaticResource EntryStyle}"
+                    Placeholder="Username      "/>
+            <Entry Text="{Binding EntryPassword}"
+                    Style="{StaticResource EntryStyle}"
+                    Placeholder="Password     "/>
+            <Entry Text="{Binding EntryUser}"
+                    Style="{StaticResource EntryConfirmPassword}"
+                    Placeholder="Confirm Password"/>
+            <Button 
+                    BackgroundColor="Blue"
+                    BorderColor="Blue"
+                    TextColor="White"
+                    BorderWidth="5"
+                    Text ="Account erstellen"
+                    Style="{StaticResource ButtonStyle}"
+                    Command="{Binding SignUpCommand}"/>
+            
+            <Label Text="Du hast schon einen Account? Login."
+                   HorizontalOptions="Center"
+                   TextDecorations="Underline"
+                   FontSize="10"
+                   TextColor="{StaticResource Onyx}">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                                 Command="{Binding LabelCommand}"
+                          />
+                </Label.GestureRecognizers>
+            </Label>
+            
+            
+
+        </StackLayout>
+        
+        <!--<AbsoluteLayout Padding="40">
             <Label AbsoluteLayout.LayoutBounds=".5, .15, 233, 43" AbsoluteLayout.LayoutFlags="PositionProportional"
                    Text="COMPENDIA"
                    FontSize="40"
@@ -67,6 +143,6 @@
                           />
                 </Label.GestureRecognizers>
             </Label>
-        </AbsoluteLayout>
-
+        </AbsoluteLayout>-->
+    </ContentPage.Content>
 </ContentPage>
