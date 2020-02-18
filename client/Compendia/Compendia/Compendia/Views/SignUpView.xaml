@@ -20,7 +20,7 @@
             <Setter Property="HorizontalOptions" Value="Center"></Setter>
             <Setter Property="VerticalOptions" Value="Center"></Setter>
             <Setter Property="CornerRadius" Value="0"></Setter>
-            
+            <Setter Property="Margin" Value="20"></Setter>
         </Style>
         <Style
             x:Key="EntryStyle"
@@ -61,8 +61,8 @@
             <Entry Text="{Binding EntryPassword}"
                     Style="{StaticResource EntryStyle}"
                     Placeholder="Password     "/>
-            <Entry Text="{Binding EntryUser}"
-                    Style="{StaticResource EntryConfirmPassword}"
+            <Entry Text="{Binding EntryConfirmPassword}"
+                    Style="{StaticResource EntryStyle}"
                     Placeholder="Confirm Password"/>
             <Button 
                     BackgroundColor="Blue"
@@ -77,7 +77,7 @@
                    HorizontalOptions="Center"
                    TextDecorations="Underline"
                    FontSize="10"
-                   TextColor="{StaticResource Onyx}">
+                   TextColor="Gray">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer
                                  Command="{Binding LabelCommand}"

@@ -23,7 +23,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout>
+                            <StackLayout >
                                 <Label Text="{Binding Name}"></Label>
                                 
                             </StackLayout>
