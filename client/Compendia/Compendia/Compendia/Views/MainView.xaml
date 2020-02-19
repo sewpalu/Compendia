@@ -15,11 +15,15 @@
         <StackLayout Padding="15">
       
             <syncfusion:SfCalendar x:Name="Calendar" 
+                                   WidthRequest="100"
+                                   HeightRequest="600"
                                    FirstDayofWeek="1"
-                                   ShowInlineEvents="false" 
+                                   ShowInlineEvents="true" 
                                    InlineViewMode="Agenda" 
                                    MaximumEventIndicatorCount="3" 
-                                   DataSource="{Binding CalendarInlineEvents}" /><!--OnCalendarTapped="{Binding xxx}"/>!-->
+                                   YearViewMode="Date"
+                                   DataSource="{Binding CalendarInlineEvents}" 
+                                   TapCommand="{Binding CalendarCellTapped}"/>
             <Label Text="{Binding ChosenDate}"/>
       
         </StackLayout>
