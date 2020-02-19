@@ -19,9 +19,8 @@ namespace Compendia.Views
         {
             InitializeComponent();
 
-            ItemsStack.BindingContextChanged += (s, e) => {
-                //Debug.WriteLine(s.ToString() + e.ToString());
-                ItemsStack.Children.Add(new Entry()); };
+            ItemsStack.BindingContextChanged += (s, e) => { ItemsStack.Children.Add(new Entry()); };
+            
 
             
         }

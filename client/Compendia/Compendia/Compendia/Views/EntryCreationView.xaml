@@ -19,7 +19,7 @@
                 SelectedItem="{Binding SelctedPickerItemMaske}">
             </Picker>
 
-            <StackLayout x:Name="ItemsStack" BindingContext="{Binding DayInfo.Items}">
+            <StackLayout x:Name="ItemsStack" BindingContext="{Binding Child.Child}">
                 
             </StackLayout>
             <!--<ListView  
