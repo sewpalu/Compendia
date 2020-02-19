@@ -6,31 +6,34 @@
              mc:Ignorable="d"
              xmlns:pagemodels="clr-namespace:Compendia.ViewModel"
              x:Class="Compendia.Views.EntryCreationView">
+    
     <ContentPage.BindingContext>
         <pagemodels:EntryCreationViewModel/>
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout >
             <Picker
                 Title="Maskenauswahl"
                 ItemsSource="{Binding PickerItemMaske}"
                 SelectedItem="{Binding SelctedPickerItemMaske}">
             </Picker>
 
-            <ListView  
+            <StackLayout x:Name="ItemsStack" BindingContext="{Binding DayInfo.Items}">
+                
+            </StackLayout>
+            <!--<ListView  
                 ItemsSource="{Binding ItemList}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout >
-                                <Label Text="{Binding Name}"></Label>
-                                
+                            <StackLayout x:Name="ItemsStack" BindingContext="{Binding Child}" >
+                                <Label></Label>
                             </StackLayout>
                         </ViewCell>
                      </DataTemplate>
             </ListView.ItemTemplate>
-            </ListView>
+            </ListView>-->
 
             <Button
                 Text="Add Item"

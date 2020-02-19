@@ -10,10 +10,14 @@ namespace Compendia.Model
        
         public Object Child { get; set; }
 
-        public ItemModel(Object child, string name)
+        public ItemModel(Object child)
         {
             Child = child;
-            Name = name;
+            
+        }
+        public ItemModel()
+        {
+
         }
 
         public override string ToString()
