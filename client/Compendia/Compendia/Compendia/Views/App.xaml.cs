@@ -12,7 +12,9 @@ namespace Compendia
         {
             InitializeComponent();
 
-            //Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjA1NDU3QDMxMzcyZTM0MmUzMEY1eW9qVHEyK1JxOVgyTmRuejNhanFvLzVDM05pSStlQjI1MHN3UUJwRUk9");
+            //Register Syncfusion license
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjA1NDU3QDMxMzcyZTM0MmUzMEY1eW9qVHEyK1JxOVgyTmRuejNhanFvLzVDM05pSStlQjI1MHN3UUJwRUk9");
+
             //MainPage = new NavigationPage(new LogInView());
             MainPage = new MainPage();
 

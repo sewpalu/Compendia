@@ -5,17 +5,24 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:pagemodels="clr-namespace:Compendia.ViewModel"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
              x:Class="Compendia.Views.MainView">
     <ContentPage.BindingContext>
         <pagemodels:MainViewModel/>
     </ContentPage.BindingContext>
   
-  <ContentPage.Content>
-    <StackLayout Padding="15">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
       
-      <Label Text="{Binding ChosenDate}"/>
+            <syncfusion:SfCalendar x:Name="Calendar" 
+                                   FirstDayofWeek="1"
+                                   ShowInlineEvents="false" 
+                                   InlineViewMode="Agenda" 
+                                   MaximumEventIndicatorCount="3" 
+                                   DataSource="{Binding CalendarInlineEvents}" /><!--OnCalendarTapped="{Binding xxx}"/>!-->
+            <Label Text="{Binding ChosenDate}"/>
       
-    </StackLayout>
-  </ContentPage.Content>
+        </StackLayout>
+    </ContentPage.Content>
 
 </ContentPage>
