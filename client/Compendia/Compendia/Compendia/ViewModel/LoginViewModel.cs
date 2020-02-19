@@ -83,7 +83,9 @@ namespace Compendia.ViewModel
 
                 return new Command(async () =>
                 {
+                    await PopModalAsync();
                     await PushModalAsync(new SignUpView());
+                    
                 });
             }
         }

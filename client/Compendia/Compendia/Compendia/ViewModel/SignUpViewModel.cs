@@ -117,7 +117,12 @@ namespace Compendia.ViewModel
 
                 return new Command(async () =>
                 {
-                    await PopModalAsync();
+                    if (checkEntrys()) {
+                        var result = await DatabaseService._LogInRepository.AddObjectAsync(new DbLogIn(username, password));
+
+                        await PopModalAsync();
+                        
+                    }
                 });
             }
             set
@@ -127,5 +132,14 @@ namespace Compendia.ViewModel
             }
         }
         #endregion Properties
+
+        private bool checkEntrys()
+        {
+            if (username != null && password != null && passwordConfirm != null && name != null && surname != null)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
