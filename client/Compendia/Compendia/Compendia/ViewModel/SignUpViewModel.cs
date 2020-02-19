@@ -1,6 +1,7 @@
 ﻿using Compendia.Database;
 using Compendia.Model;
 using Compendia.ViewModel.Base;
+using Compendia.Views;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -101,6 +102,7 @@ namespace Compendia.ViewModel
                 return new Command(async () =>
                 {
                     await PopModalAsync();
+                    await PushModalAsync(new LogInView());
                 });
             }
             set
