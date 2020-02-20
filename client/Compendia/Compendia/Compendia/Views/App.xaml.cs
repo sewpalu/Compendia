@@ -28,7 +28,7 @@ namespace Compendia
         private async void StdInit()
         {
 
-            var getStdMask =  await DatabaseService._MaskRepository.GetObjectsAsync();
+           /* var getStdMask =  await DatabaseService._MaskRepository.GetObjectsAsync();
 
             if (getStdMask != null)
             {
@@ -50,7 +50,7 @@ namespace Compendia
 
             var stdmask = new DBMask(
                 "Standardmaske",list);
-            await DatabaseService._MaskRepository.AddObjectAsync(stdmask);
+            await DatabaseService._MaskRepository.AddObjectAsync(stdmask);*/
         }
         protected override void OnStart()
         {
