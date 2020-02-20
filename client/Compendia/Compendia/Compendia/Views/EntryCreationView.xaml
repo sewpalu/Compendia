@@ -19,8 +19,8 @@
                 SelectedItem="{Binding SelctedPickerItemMaske}">
             </Picker>
 
-            <StackLayout x:Name="ItemsStack" BindingContext="{Binding Child.Child}">
-                
+            <StackLayout x:Name="ItemsStack" BindingContext="{Binding Child}">
+
             </StackLayout>
             <!--<ListView  
                 ItemsSource="{Binding ItemList}">

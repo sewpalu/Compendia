@@ -15,7 +15,7 @@ namespace Compendia.ViewModel
         private List<string> pickerItemMaske;
 
         private List<ItemModel> _itemList;
-        private ItemModel child;
+        private View child;
 
 
 
@@ -34,7 +34,7 @@ namespace Compendia.ViewModel
         }
         public string SelctedPickerItemMaske { get; set; }
 
-        public Object Child
+        public View Child
         {
             get
             {
@@ -42,7 +42,7 @@ namespace Compendia.ViewModel
             }
             set
             {
-                child = new ItemModel(value);
+                child = value;
 
                 OnPropertyChanged(nameof(Child));
 
@@ -63,7 +63,7 @@ namespace Compendia.ViewModel
             {
                 return new Command(() =>
                 {
-                    AddtoItem(new ItemModel(new Button()));
+                    //AddtoItem(new Button());
                 });
             }
             set{ }
@@ -78,6 +78,9 @@ namespace Compendia.ViewModel
             AddtoPicker("Standardmaske");
             AddtoPicker("Standardmaske2");
             AddtoPicker("Standardmaske45q");
+            AddtoItem(new Entry());
+            AddtoItem(new Label());
+            AddtoItem(new BoxView());
 
            
 
@@ -88,9 +91,9 @@ namespace Compendia.ViewModel
             PickerItemMaske.Add(txt);
         }
 
-        private void AddtoItem(Object o)
+        private void AddtoItem(View v)
         {
-            Child = o;
+            Child = v;
         }
 /*
 

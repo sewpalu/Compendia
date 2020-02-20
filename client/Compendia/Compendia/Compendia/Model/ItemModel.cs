@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Xamarin.Forms;
 
 namespace Compendia.Model
 {
@@ -8,9 +9,9 @@ namespace Compendia.Model
     {
         public string Name { get; set; }
        
-        public Object Child { get; set; }
+        public View Child { get; set; }
 
-        public ItemModel(Object child)
+        public ItemModel(View child)
         {
             Child = child;
             

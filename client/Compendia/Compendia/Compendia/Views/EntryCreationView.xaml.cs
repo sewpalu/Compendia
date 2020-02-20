@@ -19,12 +19,21 @@ namespace Compendia.Views
         {
             InitializeComponent();
 
-            ItemsStack.BindingContextChanged += (s, e) => { ItemsStack.Children.Add(new Entry()); };
+            ItemsStack.BindingContextChanged += (s, e) => {
+
+                var item = (View) ItemsStack.BindingContext;
+                Debug.WriteLine(item.ToString());
+                //var child = new View();
+                
+
+                ItemsStack.Children.Add(item);
+            };
             
 
             
         }
 
+        
         
     }
 }
