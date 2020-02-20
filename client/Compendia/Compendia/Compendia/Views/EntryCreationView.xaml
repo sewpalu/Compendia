@@ -17,23 +17,15 @@
                 Title="Maskenauswahl"
                 ItemsSource="{Binding PickerItemMaske}"
                 SelectedItem="{Binding SelctedPickerItemMaske}">
+                <Picker.GestureRecognizers>
+                    <TapGestureRecognizer
+                                 Command="{Binding PickerCommand}"
+                          />
+                </Picker.GestureRecognizers>
             </Picker>
 
-            <StackLayout x:Name="ItemsStack" BindingContext="{Binding Child}">
+            <StackLayout x:Name="ItemsStack" BindingContext="{Binding Child}"></StackLayout>
 
-            </StackLayout>
-            <!--<ListView  
-                ItemsSource="{Binding ItemList}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout x:Name="ItemsStack" BindingContext="{Binding Child}" >
-                                <Label></Label>
-                            </StackLayout>
-                        </ViewCell>
-                     </DataTemplate>
-            </ListView.ItemTemplate>
-            </ListView>-->
 
             <Button
                 Text="Add Item"

@@ -13,6 +13,7 @@ namespace Compendia.Database
         public static string Name { get; }
 
         public static LogInRepository _LogInRepository { get; private set; }
+        public static MaskRepository _MaskRepository { get; private set; }
 
         static DatabaseService()
         {
@@ -36,6 +37,7 @@ namespace Compendia.Database
         private static void Init()
         {
             _LogInRepository = new LogInRepository(_DatabaseContext);
+            _MaskRepository = new MaskRepository(_DatabaseContext);
 
 
 

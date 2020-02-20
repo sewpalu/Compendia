@@ -69,6 +69,21 @@ namespace Compendia.ViewModel
             set{ }
         }
 
+        public ICommand PickerCommand
+        {
+            get
+            {
+                return new Command(() =>
+                {
+                    //Standardmaske laden
+                });
+            }
+            set
+            {
+
+            }
+        }
+
         #endregion Properties
         #region Consturctor
         public EntryCreationViewModel()
@@ -76,8 +91,7 @@ namespace Compendia.ViewModel
             PickerItemMaske = new List<string>();
             ItemList = new List<ItemModel>();
             AddtoPicker("Standardmaske");
-            AddtoPicker("Standardmaske2");
-            AddtoPicker("Standardmaske45q");
+
             AddtoItem(new Entry());
             AddtoItem(new Label());
             AddtoItem(new BoxView());
@@ -95,16 +109,6 @@ namespace Compendia.ViewModel
         {
             Child = v;
         }
-/*
 
-        private void AddtoItemList(string txt)
-        {
-            var tmp = new List<ItemModel>(ItemList);
-            tmp.Add(new ItemModel(new Entry()));;
-
-            ItemList = tmp;
-
-            
-        }*/
     }
 }
