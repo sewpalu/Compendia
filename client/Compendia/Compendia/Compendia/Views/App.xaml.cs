@@ -1,5 +1,8 @@
-﻿using Compendia.Views;
+﻿using Compendia.Database;
+using Compendia.Model;
+using Compendia.Views;
 using System;
+using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -18,8 +21,36 @@ namespace Compendia
             //MainPage = new NavigationPage(new LogInView());
             MainPage = new MainPage();
 
+            StdInit();
+
         }
 
+        private async void StdInit()
+        {
+
+            var getStdMask =  await DatabaseService._MaskRepository.GetObjectsAsync();
+
+            foreach(var mask in getStdMask)
+            {
+                if(mask.Name.Equals("Standardmaske"))
+                {
+                    return;
+                }
+            }
+
+            Entry titel = new Entry();
+            titel.Placeholder= "Titel";
+            Editor text = new Editor();
+            List<View> list = new List<View>();
+            list.Add(titel);
+            list.Add(text);
+
+
+            var stdmask = new DBMask(
+                "Standardmaske",list);
+            
+
+        }
         protected override void OnStart()
         {
             // Handle when your app starts
