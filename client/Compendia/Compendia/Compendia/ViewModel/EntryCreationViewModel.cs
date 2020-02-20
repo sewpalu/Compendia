@@ -1,4 +1,5 @@
-﻿using Compendia.Model;
+﻿using Compendia.Database;
+using Compendia.Model;
 using Compendia.ViewModel.Base;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace Compendia.ViewModel
 
         #region Attributes
         private List<string> pickerItemMaske;
-
+        private List<DBMask> maskList;
         private List<ItemModel> _itemList;
         private View child;
 
@@ -73,9 +74,22 @@ namespace Compendia.ViewModel
         {
             get
             {
-                return new Command(() =>
+                return new Command(async () =>
                 {
-                    //Standardmaske laden
+                   /* var tmp = await DatabaseService._MaskRepository.GetObjectsAsync();
+                    foreach(var item in tmp)
+                    {
+                        if (SelctedPickerItemMaske.Equals(item.Name)){
+                            foreach(var view in item.ViewList)
+                            {
+                                AddtoItem(view);
+                            }
+
+                            break;
+                        }
+                    }*/
+                    
+
                 });
             }
             set
@@ -110,5 +124,19 @@ namespace Compendia.ViewModel
             Child = v;
         }
 
+
+        public async void GeneratePickerKategorie()
+        {
+            var tmp = await DatabaseService._MaskRepository.GetObjectsAsync();
+
+            maskList = tmp;
+
+            for (int i = 0; i < maskList.Count; i++)
+            {
+                AddtoPicker(maskList[i].Name);
+
+            }
+
+        }
     }
 }

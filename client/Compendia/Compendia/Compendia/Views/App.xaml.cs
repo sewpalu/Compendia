@@ -30,14 +30,16 @@ namespace Compendia
 
             var getStdMask =  await DatabaseService._MaskRepository.GetObjectsAsync();
 
-            foreach(var mask in getStdMask)
+            if (getStdMask != null)
             {
-                if(mask.Name.Equals("Standardmaske"))
+                foreach (var mask in getStdMask)
                 {
-                    return;
+                    if (mask.Name.Equals("Standardmaske"))
+                    {
+                        return;
+                    }
                 }
             }
-
             Entry titel = new Entry();
             titel.Placeholder= "Titel";
             Editor text = new Editor();
@@ -48,8 +50,7 @@ namespace Compendia
 
             var stdmask = new DBMask(
                 "Standardmaske",list);
-            
-
+            await DatabaseService._MaskRepository.AddObjectAsync(stdmask);
         }
         protected override void OnStart()
         {
