@@ -6,21 +6,32 @@ This document specifies the expected format of the JSON files used by Compendia
 
 The JSON object shall consist of
 - A property "command" (string). One of "addUser", "addEntry" or "getEntries".
-- A property "parameters" (object). It shall consist of
-  - A property "userName" (string), if "command" is "addUser"
-  - A property "userId" (integer), if "command" is "addEntry" or "getEntries"
-  - A property "templateId" (integer), if "command" is "addEntry" or "getEntries"
-  - A property "since" (string; Format: "YYYY-Mon-DD HH:MM:SS"), if "command" is "getEntries"
-  - A property "entry" (object; As defined below), if "command" is "addEntry"
+- A property "parameters" (object). Provided attributes by command:
+  - "addUser": "userName"
+  - "addEntry": "userName", "templateUuid", "entryDefinition"
+  - "addTemplate": "userName", "isPublicTemplate", "templateName", "templateDefinition"
+  - "getEntries": "userName", "templateUuid", "since"
 - The response shall additionally include
   - A property "success" (boolean).
-  - A object "result", if "success" is true. It shall consist of
-    - A property "userId" (integer), if "command" is "addUser"
-    - A property "entryId" (integer), if "command" is "addEntry"
-    - A property "entries" (array), if "command" is "getEntries". It shall contain objects that consist of
-      - A property "entryId" (integer)
-      - A property "entry" (object; As defined below)
+  - A object "result", if "success" is true. Provided attributes by command:
+    - "addUser": None
+    - "addEntry": "entryUuid"
+    - "addTemplate": "templateUuid"
+    - "getEntries": "entries"
   - A property "error" (string), if "success" is false
+
+Used attributes are:
+- "userName" (string)
+- "templateUuid" (string)
+- "since" (string; Format: "YYYY-Mon-DD HH:MM:SS")
+- "isPublicTemplate" (boolean)
+- "templateName" (string)
+- "templateDefinition" (object)
+- "entryDefinition" (object)
+- "entryUuid" (string)
+- "creationTime" (string; Format: "YYYY-Mon-DD HH:MM:SS")
+- "entries" (array); Its elements shall be objects that consist of the attributes "entryUuid", "creationTime" and "entryDefinition"
+
 
 ### Example: addUser
 
@@ -29,7 +40,7 @@ The JSON object shall consist of
 {
   "command": "addUser",
   "parameters": {
-    "userName": "Max Mustermann"
+    "userName": "testuser"
   }
 }
 ```
@@ -40,11 +51,9 @@ The JSON object shall consist of
   "command": "addUser",
   "success": true,
   "parameters": {
-    "userName": "Max Mustermann"
+    "userName": "testuser"
   },
-  "result": {
-    "userId": 0
-  }
+  "result": {}
 }
 ```
 
@@ -55,9 +64,11 @@ The JSON object shall consist of
 {
   "command": "addEntry",
   "parameters": {
-    "userId": 0,
-    "templateId": 0,
-    "entry": null
+    "userName": "testuser",
+    "templateUuid": "fff4eb8b-677f-4c15-9da3-330927ab1ddb",
+    "entryDefinition": {
+      "some": "data"
+    }
   }
 }
 ```
@@ -68,12 +79,50 @@ The JSON object shall consist of
   "command": "addEntry",
   "success": true,
   "parameters": {
-    "userId": 0,
-    "templateId": 0,
-    "entry": null
+    "entryDefinition": {
+      "some": "data"
+    },
+    "userName": "testuser",
+    "templateUuid": "fff4eb8b-677f-4c15-9da3-330927ab1ddb"
   },
   "result": {
-    "entryId": 0
+    "entryUuid": "91af9b36-9337-4873-a1c3-6fd7eab8d0a2"
+  }
+}
+```
+
+### Example: addTemplate
+
+#### Request
+```json
+{
+  "command": "addTemplate",
+  "parameters": {
+    "userName": "testuser",
+    "isPublicTemplate": false,
+    "templateName": "testtemplate",
+    "templateDefinition": {
+      "some": "data"
+    }
+  }
+}
+```
+
+#### Response
+```json
+{
+"command": "addTemplate",
+"success": true,
+"parameters": {
+    "isPublicTemplate": false,
+    "templateName": "testtemplate",
+    "templateDefinition": {
+      "some": "data"
+    },
+    "userName": "testuser"
+  },
+  "result": {
+    "templateUuid": "fff4eb8b-677f-4c15-9da3-330927ab1ddb"
   }
 }
 ```
@@ -82,12 +131,12 @@ The JSON object shall consist of
 
 #### Request
 ```json
-{
+ {
   "command": "getEntries",
   "parameters": {
-    "userId": 0,
-    "templateId": 0,
-    "since": "2020-Feb-02 12:34:56"
+    "userName": "testuser",
+    "templateUuid": "fff4eb8b-677f-4c15-9da3-330927ab1ddb",
+    "since": "2020-Jan-01 12:00:00"
   }
 }
 ```
@@ -98,26 +147,21 @@ The JSON object shall consist of
   "command": "getEntries",
   "success": true,
   "parameters": {
-    "since": "2020-Feb-02 12:34:56",
-    "userId": 0,
-    "templateId": 0
+    "since": "2020-Jan-01 12:00:00",
+    "userName": "testuser",
+    "templateUuid": "fff4eb8b-677f-4c15-9da3-330927ab1ddb"
   },
   "result": {
     "entries": [
       {
-        "entryId": 0,
-        "entry": null
+        "entryUuid": "91af9b36-9337-4873-a1c3-6fd7eab8d0a2",
+        "entryDefinition": {
+          "some": "data"
+        },
+        "creationTime": "2020-Feb-22 19:34:29"
       }
     ]
   }
 }
 ```
-
-## Template definitions
-
-TODO
-
-## Entry data
-
-TODO
 

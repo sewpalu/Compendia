@@ -4,6 +4,7 @@
 	],
 	"copyright": "Copyright © 2019, Patrick Sewell",
 	"dependencies": {
+		"mysql-native": "~>3.0.0",
 		"vibe-d": "~>0.8.6"
 	},
 	"description": "Server for Compendia",
