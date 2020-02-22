@@ -1,0 +1,7 @@
+[Unit]
+Description = Runs the Compendia server
+[Service]
+ExecStart = /usr/share/Compendia/server/start.sh
+[Install]
+WantedBy = multi-user.target
+

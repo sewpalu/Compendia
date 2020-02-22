@@ -1,4 +1,5 @@
-Database used: mysql (XAMPP didnt like the existing MäriaDB installation...)
+# Compendia
+SW-Engineering Projekt
 
 ## Frontend
 Lisa

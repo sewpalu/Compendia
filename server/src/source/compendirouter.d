@@ -104,8 +104,9 @@ class CompendiRouter
 
     JSONValue onAddTemplate(JSONValue json)
     {
+      import std.conv; // str.to!bool
       auto userName = json["userName"].str;
-      auto isPublic = json["isPublicTemplate"].boolean;
+      auto isPublic = json["isPublicTemplate"].str.to!bool;
       auto name = json["templateName"].str;
       auto definition = json["templateDefinition"];
       return JSONValue(
