@@ -44,6 +44,7 @@ class CompendiRouter
       immutable commands = [
         "addEntry": &onAddEntry,
         "addUser": &onAddUser,
+        "addTemplate": &onAddTemplate,
         "getEntries": &onGetEntries
       ];
 
@@ -88,30 +89,44 @@ class CompendiRouter
     JSONValue onAddEntry(JSONValue json)
     {
       auto userName = json["userName"].str;
-      auto templateId = json["templateId"].integer;
-      auto entry = json["entry"];
-      return JSONValue(["entryUuid": m_db.addEntry(userName, templateId, entry)]);
+      auto templateUuid = json["templateUuid"].str;
+      auto definition = json["entryDefinition"];
+      return JSONValue(
+          ["entryUuid": m_db.addEntry(userName, templateUuid, definition)]);
     }
 
     JSONValue onAddUser(JSONValue json)
     {
       auto userName = json["userName"].str;
-      return JSONValue(["userId": m_db.addUser(userName)]);
+      JSONValue[string] empty;
+      return JSONValue(empty);
+    }
+
+    JSONValue onAddTemplate(JSONValue json)
+    {
+      auto userName = json["userName"].str;
+      auto isPublic = json["isPublicTemplate"].boolean;
+      auto name = json["templateName"].str;
+      auto definition = json["templateDefinition"];
+      return JSONValue(
+          ["templateUuid":
+              m_db.addTemplate(userName, isPublic, name, definition)]);
     }
 
     JSONValue onGetEntries(JSONValue json)
     {
       import std.algorithm;
-      auto userId = json["userId"].integer;
-      auto templateId = json["templateId"].integer;
-      auto sinceTime = DateTime.fromSimpleString(json["since"].str);
+      auto userName = json["userName"].str;
+      auto templateUuid = json["templateUuid"].str;
+      auto since= DateTime.fromSimpleString(json["since"].str);
 
-      auto entries = m_db.getEntries(userId, templateId, sinceTime);
+      auto entries = m_db.getEntries(userName, templateUuid, since);
       JSONValue[] jsonEntries;
       auto transformedEntries = entries.byKeyValue.map!(
           entry => JSONValue([
-            "entryId": JSONValue(entry.key),
-            "entry": JSONValue(entry.value)]));
+            "entryUuid": JSONValue(entry.key),
+            "creationTime": JSONValue(entry.value[0].toSimpleString),
+            "entryDefinition": entry.value[1]]));
       foreach (entry; transformedEntries)
         jsonEntries ~= entry;
       return JSONValue(["entries": jsonEntries]);
