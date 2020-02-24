@@ -37,6 +37,7 @@ namespace Compendia.Database
                 base.OnModelCreating(modelBuilder);
 
                 modelBuilder.Entity<DbLogIn>();
+                modelBuilder.Entity<DBMask>();
 
             }
         }

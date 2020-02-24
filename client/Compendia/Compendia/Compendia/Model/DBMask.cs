@@ -8,17 +8,17 @@ namespace Compendia.Model
 {
     public class DBMask : TableModel
     {
-        public string Name { get; set; }
-        public List<View> ViewList { get; set; }
+        public string name { get; set; }
+        public List<View> viewList { get; set; }
 
         public DBMask()
         {
 
         }
-        public DBMask(string name, List<View> viewList)
+        public DBMask(string name_, List<View> viewList_)
         {
-            Name = name;
-            ViewList = viewList;
+            name = name_;
+            viewList = viewList_;
         }
         
     }

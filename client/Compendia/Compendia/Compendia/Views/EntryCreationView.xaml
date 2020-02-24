@@ -16,7 +16,8 @@
             <Picker
                 Title="Maskenauswahl"
                 ItemsSource="{Binding PickerItemMaske}"
-                SelectedItem="{Binding SelctedPickerItemMaske}">
+                SelectedItem="{Binding SelctedPickerItemMaske}"
+               >
                 <Picker.GestureRecognizers>
                     <TapGestureRecognizer
                                  Command="{Binding PickerCommand}"

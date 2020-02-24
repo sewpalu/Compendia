@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-20T13:08:52.874</Modified>
+      <Modified>2020-02-21T12:05:50.306</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Compendia.UWP.exe">
       <PackagePath>entrypoint\Compendia.UWP.exe</PackagePath>
-      <Modified>2020-02-20T13:08:51.573</Modified>
+      <Modified>2020-02-21T12:05:48.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\microsoft.bcl.asyncinterfaces\1.1.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
       <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
@@ -872,7 +872,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia\bin\Debug\netstandard2.0\Compendia.dll">
       <PackagePath>Compendia.dll</PackagePath>
-      <Modified>2020-02-20T13:11:25.949</Modified>
+      <Modified>2020-02-21T12:05:39.434</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -1023,11 +1023,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-02-20T13:08:50.583</Modified>
+      <Modified>2020-02-21T12:05:46.477</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-02-20T13:08:50.583</Modified>
+      <Modified>2020-02-21T12:05:46.477</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -1063,7 +1063,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Core\Compendia.UWP.exe">
       <PackagePath>Compendia.UWP.exe</PackagePath>
-      <Modified>2020-02-20T13:08:52.852</Modified>
+      <Modified>2020-02-21T12:05:50.289</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -62,9 +62,22 @@ namespace Compendia.ViewModel
         {
             get
             {
-                return new Command(() =>
+                return new Command(async() =>
                 {
-                    //AddtoItem(new Button());
+                    var tmp = await DatabaseService._MaskRepository.GetObjectsAsync();
+                    foreach (var item in tmp)
+                    {
+                        if (SelctedPickerItemMaske.Equals(item.name))
+                        {
+                            foreach (var view in item.viewList)
+                            {
+                                AddtoItem(view);
+                            }
+
+                            break;
+                        }
+                    }
+
                 });
             }
             set{ }
@@ -76,18 +89,18 @@ namespace Compendia.ViewModel
             {
                 return new Command(async () =>
                 {
-                   /* var tmp = await DatabaseService._MaskRepository.GetObjectsAsync();
+                    var tmp = await DatabaseService._MaskRepository.GetObjectsAsync();
                     foreach(var item in tmp)
                     {
-                        if (SelctedPickerItemMaske.Equals(item.Name)){
-                            foreach(var view in item.ViewList)
+                        if (SelctedPickerItemMaske.Equals(item.name)){
+                            foreach(var view in item.viewList)
                             {
                                 AddtoItem(view);
                             }
 
                             break;
                         }
-                    }*/
+                    }
                     
 
                 });
@@ -133,7 +146,7 @@ namespace Compendia.ViewModel
 
             for (int i = 0; i < maskList.Count; i++)
             {
-                AddtoPicker(maskList[i].Name);
+                AddtoPicker(maskList[i].name);
 
             }
 
