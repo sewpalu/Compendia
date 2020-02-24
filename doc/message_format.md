@@ -5,19 +5,23 @@ This document specifies the expected format of the JSON files used by Compendia
 ## Client - Server communication
 
 The JSON object shall consist of
-- A property "command" (string). One of "addUser", "addEntry" or "getEntries".
+- A property "command" (string). One of "addUser", "addEntry", "addTemplates", "getUser", "getTemplates" or "getEntries".
 - A property "parameters" (object). Provided attributes by command:
   - "addUser": "userName"
   - "addEntry": "userName", "templateUuid", "entryDefinition"
   - "addTemplate": "userName", "isPublicTemplate", "templateName", "templateDefinition"
+  - "getUser": "userName"
   - "getEntries": "userName", "templateUuid", "since"
+  - "getTemplates": "userName"
 - The response shall additionally include
   - A property "success" (boolean).
   - A object "result", if "success" is true. Provided attributes by command:
     - "addUser": None
     - "addEntry": "entryUuid"
     - "addTemplate": "templateUuid"
+    - "getUser": "doesUserExist"
     - "getEntries": "entries"
+    - "getTemplates": "templates"
   - A property "error" (string), if "success" is false
 
 Used attributes are:
@@ -25,12 +29,14 @@ Used attributes are:
 - "templateUuid" (string)
 - "since" (string; Format: "YYYY-Mon-DD HH:MM:SS")
 - "isPublicTemplate" (boolean)
+- "doesUserExist" (boolean)
 - "templateName" (string)
 - "templateDefinition" (object)
 - "entryDefinition" (object)
 - "entryUuid" (string)
 - "creationTime" (string; Format: "YYYY-Mon-DD HH:MM:SS")
 - "entries" (array); Its elements shall be objects that consist of the attributes "entryUuid", "creationTime" and "entryDefinition"
+- "templates" (array); Its elements shall be objects that consist of the attributes "TempplateUuid", "templateName" and "templateDefinition"
 
 
 ### Example: addUser
@@ -126,6 +132,31 @@ Used attributes are:
   }
 }
 ```
+### Example: getUser
+
+#### Request
+```json
+{
+  "command": "getUser",
+  "parameters": {
+    "userName": "testuser"
+  }
+}
+```
+
+#### Response
+```json
+{
+  "command": "getUser",
+  "success": true,
+  "parameters": {
+    "userName": "testuser"
+  },
+  "result": {
+    "doesUserExist": true
+  }
+}
+```
 
 ### Example: getEntries
 
@@ -159,6 +190,47 @@ Used attributes are:
           "some": "data"
         },
         "creationTime": "2020-Feb-22 19:34:29"
+      }
+    ]
+  }
+}
+```
+
+### Example: getTemplates
+
+#### Request
+```json
+{
+  "command": "getTemplates",
+  "parameters": {
+    "userName": "testuser"
+  }
+}
+```
+
+#### Response
+```json
+{
+  "command": "getTemplates",
+  "success": true,
+  "parameters": {
+    "userName": "testuser"
+  },
+  "result": {
+    "templates": [
+      {
+        "templateName": "testtemplate",
+        "templateDefinition": {
+          "some": "data"
+        },
+        "templateUuid": "983155e6-7a20-4046-ae56-18db61bec2f4"
+      },
+      {
+        "templateName": "testtemplate",
+        "templateDefinition": {
+          "some": "data"
+        },
+        "templateUuid": "fff4eb8b-677f-4c15-9da3-330927ab1ddb"
       }
     ]
   }

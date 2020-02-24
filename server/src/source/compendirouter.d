@@ -45,7 +45,9 @@ class CompendiRouter
         "addEntry": &onAddEntry,
         "addUser": &onAddUser,
         "addTemplate": &onAddTemplate,
-        "getEntries": &onGetEntries
+        "getUser": &onGetUser,
+        "getEntries": &onGetEntries,
+        "getTemplates": &onGetTemplates
       ];
 
       JSONValue[string] dummy;
@@ -114,6 +116,12 @@ class CompendiRouter
               m_db.addTemplate(userName, isPublic, name, definition)]);
     }
 
+    JSONValue onGetUser(JSONValue json)
+    {
+      auto userName = json["userName"].str;
+      return JSONValue(["doesUserExist": m_db.getUser(userName)]);
+    }
+
     JSONValue onGetEntries(JSONValue json)
     {
       import std.algorithm;
@@ -126,11 +134,28 @@ class CompendiRouter
       auto transformedEntries = entries.byKeyValue.map!(
           entry => JSONValue([
             "entryUuid": JSONValue(entry.key),
-            "creationTime": JSONValue(entry.value[0].toSimpleString),
-            "entryDefinition": entry.value[1]]));
+            "creationTime": JSONValue(entry.value.timestamp.toSimpleString),
+            "entryDefinition": entry.value.definition]));
       foreach (entry; transformedEntries)
         jsonEntries ~= entry;
       return JSONValue(["entries": jsonEntries]);
+    }
+
+    JSONValue onGetTemplates(JSONValue json)
+    {
+      import std.algorithm;
+      auto userName = json["userName"].str;
+
+      auto entries = m_db.getTemplates(userName);
+      JSONValue[] jsonEntries;
+      auto transformedEntries = entries.byKeyValue.map!(
+          entry => JSONValue([
+            "templateUuid": JSONValue(entry.key),
+            "templateName": JSONValue(entry.value.name),
+            "templateDefinition": entry.value.definition]));
+      foreach (entry; transformedEntries)
+        jsonEntries ~= entry;
+      return JSONValue(["templates": jsonEntries]);
     }
   }
 }
