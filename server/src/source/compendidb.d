@@ -46,21 +46,64 @@ class CompendiDb
   {
   }
 
-  final Tuple!(DateTime, JSONValue)[string] getEntries(
+  final Tuple!(DateTime, "timestamp", JSONValue, "definition")[string] getEntries(
       string userName, string templateUuid, DateTime since)
   {
     import std.algorithm;
     switchToUserDb(userName);
     auto results =
       m_connection.query(
-          "SELECT entryUuid, entryDate, entryText
+          "SELECT entryUUID, entryDate, entryText
            FROM tblMain WHERE entryDate > ? AND usedTemplateID LIKE (SELECT ID FROM tblTemplates WHERE UUID LIKE ?)",
            since, templateUuid);
-    Tuple!(DateTime, JSONValue)[string] ret;
+    Tuple!(DateTime, "timestamp", JSONValue, "definition")[string] ret;
     foreach (row; results)
       ret[row[0].get!string] =
           tuple(row[1].get!DateTime, parseJSON(row[2].get!string));
     return ret;
+  }
+
+  final Tuple!(string, "name", JSONValue, "definition")[string] getTemplates(
+      string userName)
+  {
+    import std.algorithm;
+    switchToUserDb(userName);
+
+    Tuple!(string, "name", JSONValue, "definition")[string] ret;
+    auto results =
+      m_connection.query(
+          "SELECT UUID, templateName, templateXML FROM tblTemplates");
+    foreach (row; results)
+      ret[row[0].get!string] =
+          tuple(row[1].get!string, parseJSON(row[2].get!string));
+
+    results =
+      m_connection.query(
+          "SELECT UUID, templateName, templateXML
+          FROM compendia_main.tblPublicTemplates");
+    foreach (row; results)
+      ret[row[0].get!string] =
+          tuple(row[1].get!string, parseJSON(row[2].get!string));
+
+    results =
+      m_connection.query(
+          "SELECT UUID, templateName, templateXML
+          FROM compendia_main.tblDefaultTemplates");
+    foreach (row; results)
+      ret[row[0].get!string] =
+          tuple(row[1].get!string, parseJSON(row[2].get!string));
+
+    return ret;
+  }
+
+  bool getUser(string userName)
+  {
+    auto results =
+      m_connection.query("SELECT * FROM compendia_main.tblCompendiaUsers
+          WHERE UserName LIKE ?", userName);
+    foreach (row; results)
+      return true;
+    return false;
   }
 
   final close()
