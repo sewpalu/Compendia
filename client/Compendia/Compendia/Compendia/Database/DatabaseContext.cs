@@ -10,6 +10,7 @@ namespace Compendia.Database
     public class DatabaseContext : DbContext
     {
             public DbSet<DbLogIn> LogIn { get; private set; }
+            public DbSet<DBMask> Mask { get; private set; }
 
             private readonly string _databasePath;
 
@@ -36,11 +37,17 @@ namespace Compendia.Database
             {
                 base.OnModelCreating(modelBuilder);
 
-                modelBuilder.Entity<DbLogIn>();
-                modelBuilder.Entity<DBMask>();
+                modelBuilder.Entity<DbLogIn>()
+                    .HasKey(c => c.Id);
+
+
+                 modelBuilder.Entity<DBMask>()
+                    .HasKey(c => c.Id);
+
+                
 
             }
-        }
+    }
     
     
 }

@@ -59,7 +59,8 @@ namespace Compendia.ViewModel
                         //User und Passwort überprüfen von großer Datenbank
 
                         //Falls richtig: Userdaten in lokale Datenbank schreiben
-                        var result = await DatabaseService._LogInRepository.AddObjectAsync(new DbLogIn(userLogIn, passwordLogIn));
+                        var database = DatabaseService._LogInRepository;
+                        var result = await database.AddObjectAsync(new DbLogIn(userLogIn, passwordLogIn));
 
                         // await PushModalAsync(new MainView());
                         await PopModalAsync();
