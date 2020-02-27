@@ -4,7 +4,9 @@ using Compendia.ViewModel.Base;
 using Compendia.Views;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -16,7 +18,7 @@ namespace Compendia.ViewModel
         private string passwordLogIn;
         public LoginViewModel()
         {
-
+            
         }
 
         public string EntryUser
@@ -90,6 +92,8 @@ namespace Compendia.ViewModel
                 });
             }
         }
+
+       
 
     }
 }

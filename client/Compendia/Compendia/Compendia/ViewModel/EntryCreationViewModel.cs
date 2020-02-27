@@ -64,7 +64,7 @@ namespace Compendia.ViewModel
             {
                 return new Command(async() =>
                 {
-                    var tmp = await DatabaseService._MaskRepository.GetObjectsAsync();
+                   /* var tmp = await DatabaseService._MaskRepository.GetObjectsAsync();
                     foreach (var item in tmp)
                     {
                         if (SelctedPickerItemMaske.Equals(item.name))
@@ -76,7 +76,7 @@ namespace Compendia.ViewModel
 
                             break;
                         }
-                    }
+                    }*/
 
                 });
             }
@@ -89,7 +89,7 @@ namespace Compendia.ViewModel
             {
                 return new Command(async () =>
                 {
-                    var tmp = await DatabaseService._MaskRepository.GetObjectsAsync();
+                    /*var tmp = await DatabaseService._MaskRepository.GetObjectsAsync();
                     foreach(var item in tmp)
                     {
                         if (SelctedPickerItemMaske.Equals(item.name)){
@@ -100,7 +100,7 @@ namespace Compendia.ViewModel
 
                             break;
                         }
-                    }
+                    }*/
                     
 
                 });
@@ -140,7 +140,7 @@ namespace Compendia.ViewModel
 
         public async void GeneratePickerKategorie()
         {
-            var tmp = await DatabaseService._MaskRepository.GetObjectsAsync();
+            /*var tmp = await DatabaseService._MaskRepository.GetObjectsAsync();
 
             maskList = tmp;
 
@@ -148,7 +148,7 @@ namespace Compendia.ViewModel
             {
                 AddtoPicker(maskList[i].name);
 
-            }
+            }*/
 
         }
     }

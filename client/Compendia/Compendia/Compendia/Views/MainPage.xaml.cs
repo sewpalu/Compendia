@@ -55,7 +55,7 @@ namespace Compendia
                         break;
                     case (int)MenuItemType.LogOut:
                         //Sachen aus Datenbank noch rauslöschen
-                        _= await logOut();
+                        _ = logOut();
                         MenuPages.Add(id, new NavigationPage(new MainView()));
                         break;
 
@@ -88,7 +88,7 @@ namespace Compendia
             catch (Exception e)
             {
                 Debug.WriteLine(e.ToString());
-                
+
             }
             return false;
         }
