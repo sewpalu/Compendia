@@ -39,8 +39,6 @@ namespace Compendia.Database
             _LogInRepository = new LogInRepository(_DatabaseContext);
             _MaskRepository = new MaskRepository(_DatabaseContext);
 
-
-
         }
     }
 }

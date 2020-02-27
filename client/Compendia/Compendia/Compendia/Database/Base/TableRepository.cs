@@ -121,7 +121,8 @@ namespace Compendia.Database.Base
         {
             try
             {
-                var state = DatabaseContext.Set<T>().Add(t);
+                var tmp = DatabaseContext.Set<T>();
+                var state = tmp.Add(t);
                 var result = state.State == EntityState.Added;
                 DatabaseContext.SaveChanges();
                 return result;
@@ -147,6 +148,7 @@ namespace Compendia.Database.Base
             }
             catch (Exception e)
             {
+                
                 Console.WriteLine(e.Message);
 
                 Console.WriteLine(e.InnerException.Message);

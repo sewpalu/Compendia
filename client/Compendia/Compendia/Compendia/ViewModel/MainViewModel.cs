@@ -21,13 +21,13 @@ namespace Compendia.ViewModel
         public MainViewModel()
         {
             
-            _ = ConnectUserAsync();
+            ConnectUserAsync();
             //ServerConnection();
         }
 
         #region MainView
-        [Obsolete]
-        private async System.Threading.Tasks.Task ConnectUserAsync()
+       
+        private async void ConnectUserAsync()
         {
             List<DbLogIn> userdata;
             try
@@ -57,8 +57,7 @@ namespace Compendia.ViewModel
         private async void ServerConnection()
         {
             var status = await Server.GetHTTPResquestAsync();
-           string request = "{\"command\": \"addUser\",\"parameters\": {\"userName\": \"Max Mustermann\"}}";
-            var tmp = await Server.PostHTTPRequestAsync(request);
+            var tmp = await Server.AddUserAsync("user");
         }
 
         public DateTime? Date

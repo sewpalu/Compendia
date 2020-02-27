@@ -37,14 +37,11 @@ namespace Compendia.Database
             {
                 base.OnModelCreating(modelBuilder);
 
-                modelBuilder.Entity<DbLogIn>()
-                    .HasKey(c => c.Id);
+                modelBuilder.Entity<DbLogIn>();
 
 
-                 modelBuilder.Entity<DBMask>()
-                    .HasKey(c => c.Id);
 
-                
+                 modelBuilder.Entity<DBMask>();
 
             }
     }
