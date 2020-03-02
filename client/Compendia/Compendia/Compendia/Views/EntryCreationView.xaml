@@ -29,10 +29,18 @@
 
 
             <Button
-                Text="Add Item"
+                Text="Show"
                 TextColor="Black"
+                IsVisible="{Binding VisibleButtonShow}"
                 Command="{Binding AddItemCommand}">
                 
+            </Button>
+            <Button
+                Text="Create"
+                TextColor="Black"
+                IsVisible="{Binding VisibleButtonCreate}"
+                Command="{Binding CreateCommand}">
+
             </Button>
         </StackLayout>
     </ContentPage.Content>

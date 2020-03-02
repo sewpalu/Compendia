@@ -16,7 +16,10 @@ namespace Compendia.ViewModel
         private List<string> pickerItemMaske;
         private List<DBMask> maskList;
         private List<ItemModel> _itemList;
-        private View child;
+        private List<View> mylist = new List<View>();
+        private List<View> child;
+        private bool buttonvisible_show;
+        private bool buttonvisible_create;
 
 
 
@@ -33,9 +36,9 @@ namespace Compendia.ViewModel
                 OnPropertyChanged(nameof(ItemList));
             }
         }
-        public string SelctedPickerItemMaske { get; set; }
+        public string SelctedPickerItemMaske{get;set;}
 
-        public View Child
+        public List<View> Child
         {
             get
             {
@@ -45,7 +48,7 @@ namespace Compendia.ViewModel
             {
                 child = value;
 
-                OnPropertyChanged(nameof(Child));
+                OnPropertyChanged();
 
             }
         }
@@ -58,12 +61,60 @@ namespace Compendia.ViewModel
                 OnPropertyChanged(nameof(PickerItemMaske));
             }
         }
+        public bool VisibleButtonShow
+        {
+            get => buttonvisible_show;
+            set
+            {
+                buttonvisible_show = value;
+                OnPropertyChanged();
+            }
+        }
+        public bool VisibleButtonCreate
+        {
+            get => buttonvisible_create;
+            set
+            {
+                buttonvisible_create = value;
+                OnPropertyChanged();
+            }
+        }
         public ICommand AddItemCommand
         {
+            
             get
             {
-                return new Command(async() =>
+                return new Command(() =>
                 {
+                    mylist.Clear();
+                    switch (SelctedPickerItemMaske)
+                    {
+                        case "Eintrag":
+                            Entry titel_e = new Entry();
+                            titel_e.Placeholder = "Titel";
+                            Editor text_e = new Editor();
+                            mylist.Add(titel_e);
+                            mylist.Add(text_e);
+                            AddtoItem(mylist);break;
+                        case "Termin":
+                            Entry titel_t = new Entry();
+                            titel_t.Placeholder = "Titel";
+                            DatePicker datepicker = new DatePicker();
+                            Editor text_t = new Editor();
+                            mylist.Add(titel_t);
+                            mylist.Add(datepicker);
+                            mylist.Add(text_t);
+                            AddtoItem(mylist); break;
+                        default:
+                            
+                            Label label = new Label();
+                            label.Text = "Keine Maske angegeben";
+                            mylist.Add(label);
+                            AddtoItem(mylist); break; 
+                        
+                    }
+                   // VisibleButtonShow = false;
+                    VisibleButtonCreate = true;
                    /* var tmp = await DatabaseService._MaskRepository.GetObjectsAsync();
                     foreach (var item in tmp)
                     {
@@ -117,13 +168,11 @@ namespace Compendia.ViewModel
         {
             PickerItemMaske = new List<string>();
             ItemList = new List<ItemModel>();
-            AddtoPicker("Standardmaske");
+            GeneratePicker();
+            VisibleButtonShow = true;
+            VisibleButtonCreate = false;
 
-            AddtoItem(new Entry());
-            AddtoItem(new Label());
-            AddtoItem(new BoxView());
 
-           
 
         }
         #endregion Constructor
@@ -132,14 +181,16 @@ namespace Compendia.ViewModel
             PickerItemMaske.Add(txt);
         }
 
-        private void AddtoItem(View v)
+        private void AddtoItem(List<View> v)
         {
             Child = v;
         }
 
 
-        public async void GeneratePickerKategorie()
+        public async void GeneratePicker()
         {
+            AddtoPicker("Eintrag");
+            AddtoPicker("Termin");
             /*var tmp = await DatabaseService._MaskRepository.GetObjectsAsync();
 
             maskList = tmp;

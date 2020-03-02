@@ -28,6 +28,7 @@ namespace Compendia.Database.Base
             }
             catch (Exception e)
             {
+                Console.WriteLine("GetObjects");
                 Console.WriteLine(e);
                 return null;
             }
@@ -41,6 +42,7 @@ namespace Compendia.Database.Base
             }
             catch (Exception e)
             {
+                Console.WriteLine("GetObjectsAsync");
                 Console.WriteLine(e.Message.ToString());
                 return null;
             }
@@ -58,6 +60,7 @@ namespace Compendia.Database.Base
             }
             catch (Exception e)
             {
+                Console.WriteLine("GetLastObject");
                 Console.WriteLine(e);
                 return null;
             }
@@ -72,6 +75,7 @@ namespace Compendia.Database.Base
             }
             catch (Exception e)
             {
+                Console.WriteLine("GetLastObjectAsync");
                 Console.WriteLine(e.Message.ToString());
 
                 Console.WriteLine(e.InnerException.Message.ToString());
@@ -93,6 +97,7 @@ namespace Compendia.Database.Base
             }
             catch (Exception e)
             {
+                Console.WriteLine("GetObjectById");
                 Console.WriteLine(e.Message.ToString());
                 return null;
             }
@@ -107,6 +112,7 @@ namespace Compendia.Database.Base
             }
             catch (Exception e)
             {
+                Console.WriteLine("GetObjectByIdAsync");
                 Console.WriteLine(e.Message.ToString());
                 return null;
             }
@@ -130,6 +136,7 @@ namespace Compendia.Database.Base
             }
             catch (Exception e)
             {
+                Console.WriteLine("AddObject");
                 Console.WriteLine(e);
                 return false;
 
@@ -148,7 +155,8 @@ namespace Compendia.Database.Base
             }
             catch (Exception e)
             {
-                
+
+                Console.WriteLine("AddObjectAsync");
                 Console.WriteLine(e.Message);
 
                 Console.WriteLine(e.InnerException.Message);
@@ -170,6 +178,7 @@ namespace Compendia.Database.Base
             }
             catch (Exception e)
             {
+                Console.WriteLine("UpdateObject");
                 Console.WriteLine(e);
                 return false;
             }
@@ -187,7 +196,7 @@ namespace Compendia.Database.Base
             }
             catch (Exception e)
             {
-
+                Console.WriteLine("UpdateObjectAsync");
                 Console.WriteLine(e);
                 return false;
             }
@@ -209,6 +218,7 @@ namespace Compendia.Database.Base
             }
             catch (Exception e)
             {
+                Console.WriteLine("DeleteObjects");
                 Console.WriteLine(e);
                 return false;
             }
@@ -228,6 +238,7 @@ namespace Compendia.Database.Base
             }
             catch (Exception e)
             {
+                Console.WriteLine("DeletObjectsAsync");
                 Console.WriteLine(e);
                 return false;
             }
@@ -252,6 +263,7 @@ namespace Compendia.Database.Base
             }
             catch (Exception e)
             {
+                Console.WriteLine("DeletObject");
                 Console.WriteLine(e);
                 return false;
             }
@@ -271,6 +283,7 @@ namespace Compendia.Database.Base
             }
             catch (Exception e)
             {
+                Console.WriteLine("DeleteObjectAsync");
                 Console.WriteLine(e);
                 return false;
             }
@@ -290,6 +303,7 @@ namespace Compendia.Database.Base
             }
             catch (Exception e)
             {
+                Console.WriteLine("QueryObject");
                 Console.WriteLine(e);
                 return null;
             }
@@ -304,6 +318,7 @@ namespace Compendia.Database.Base
             }
             catch (Exception e)
             {
+                Console.WriteLine("QuereyObjects");
                 Console.WriteLine(e);
                 return null;
             }

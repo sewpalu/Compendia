@@ -14,6 +14,7 @@ namespace Compendia.Database
 
         public static LogInRepository _LogInRepository { get; private set; }
         public static MaskRepository _MaskRepository { get; private set; }
+        public static ItemRepository _ItemRepository { get; private set; }
 
         static DatabaseService()
         {
@@ -38,6 +39,7 @@ namespace Compendia.Database
         {
             _LogInRepository = new LogInRepository(_DatabaseContext);
             _MaskRepository = new MaskRepository(_DatabaseContext);
+            _ItemRepository = new ItemRepository(_DatabaseContext);
 
         }
     }

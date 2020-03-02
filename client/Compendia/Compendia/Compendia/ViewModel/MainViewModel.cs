@@ -81,7 +81,7 @@ namespace Compendia.ViewModel
             {
                 return new Command((obj) =>
                 {
-                    System.Diagnostics.Debug.WriteLine(obj as DateTime?);
+                    Debug.WriteLine(obj as DateTime?);
                 });
             }
         }

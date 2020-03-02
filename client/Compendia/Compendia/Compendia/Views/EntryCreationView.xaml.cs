@@ -18,15 +18,22 @@ namespace Compendia.Views
         public EntryCreationView()
         {
             InitializeComponent();
+            //ItemsStack.Children.Clear();
 
             ItemsStack.BindingContextChanged += (s, e) => {
 
-                var item = (View) ItemsStack.BindingContext;
+                //ItemsStack.Children.Clear();
+
+                var item = (List<View>) ItemsStack.BindingContext;
                 Debug.WriteLine(item.ToString());
                 //var child = new View();
-                
 
-                ItemsStack.Children.Add(item);
+                {
+                    foreach (View i in item)
+                    {
+                        ItemsStack.Children.Add(i);
+                    }
+                }
             };
             
 
