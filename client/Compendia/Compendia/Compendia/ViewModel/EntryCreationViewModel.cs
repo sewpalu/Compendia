@@ -87,20 +87,26 @@ namespace Compendia.ViewModel
                 return new Command(() =>
                 {
                     mylist.Clear();
+                    AddtoItem(mylist);
                     switch (SelctedPickerItemMaske)
                     {
                         case "Eintrag":
                             Entry titel_e = new Entry();
+
+                            titel_e.FontSize = 30;
                             titel_e.Placeholder = "Titel";
                             Editor text_e = new Editor();
+                            text_e.AutoSize = EditorAutoSizeOption.TextChanges;
                             mylist.Add(titel_e);
                             mylist.Add(text_e);
                             AddtoItem(mylist);break;
                         case "Termin":
                             Entry titel_t = new Entry();
                             titel_t.Placeholder = "Titel";
+                            titel_t.FontSize = 30;
                             DatePicker datepicker = new DatePicker();
                             Editor text_t = new Editor();
+                            text_t.AutoSize = EditorAutoSizeOption.TextChanges;
                             mylist.Add(titel_t);
                             mylist.Add(datepicker);
                             mylist.Add(text_t);
@@ -113,7 +119,7 @@ namespace Compendia.ViewModel
                             AddtoItem(mylist); break; 
                         
                     }
-                   // VisibleButtonShow = false;
+                    VisibleButtonShow = false;
                     VisibleButtonCreate = true;
                    /* var tmp = await DatabaseService._MaskRepository.GetObjectsAsync();
                     foreach (var item in tmp)

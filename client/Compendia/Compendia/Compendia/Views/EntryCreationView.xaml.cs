@@ -22,7 +22,7 @@ namespace Compendia.Views
 
             ItemsStack.BindingContextChanged += (s, e) => {
 
-                //ItemsStack.Children.Clear();
+                ItemsStack.Children.Clear();
 
                 var item = (List<View>) ItemsStack.BindingContext;
                 Debug.WriteLine(item.ToString());
