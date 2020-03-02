@@ -11,8 +11,8 @@ namespace Compendia.Database
     public class DatabaseContext : DbContext
     {
             public DbSet<DbLogIn> LogIn { get; set; }
-            //public DbSet<DBMask> Mask { get; set; }
-            //public DbSet<DbItem> Item { get; set; }
+            public DbSet<DBMask> Mask { get; set; }
+            public DbSet<DbItem> Item { get; set; }
 
             private readonly string _databasePath;
 
@@ -39,7 +39,7 @@ namespace Compendia.Database
             {
                 base.OnModelCreating(modelBuilder);
 
-                /* modelBuilder.Entity<DbLogIn>();
+                 modelBuilder.Entity<DbLogIn>();
 
 
                 modelBuilder.Entity<DBMask>()
@@ -50,7 +50,7 @@ namespace Compendia.Database
                  modelBuilder.Entity<DbItem>()
                     .HasOne(m => m.DbMask)
                     .WithMany(i => i.DbItem)
-                    .HasForeignKey(k => k.DbMask.Id)
+                    .HasForeignKey(k => k.Maskid)
                     .OnDelete(DeleteBehavior.Cascade);
 
 

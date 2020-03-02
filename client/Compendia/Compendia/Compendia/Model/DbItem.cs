@@ -8,19 +8,38 @@ namespace Compendia.Model
 {
     public class DbItem : TableModel
     {
-        public View view { get; set; }
-        public DBMask DbMask { get; set; }
+        //public View view { get; set; }
+        //public DBMask DbMask { get; set; }
+
+        
+
+        /*public int Maskid
+        {
+            get
+            {
+                return DbMask.Id;
+            }
+
+            set
+            {
+                DbMask.Id = value;
+            }
+        }
+        public DbItem()
+        {
+
+        }
 
         public DbItem(DbItem item)
         {
-            view = item.view;
+            //view = item.view;
             Id = item.Id;
 
         }
         public DbItem(View _view, DBMask mask)
         {
-            view = _view;
+           // view = _view;
             DbMask = mask;
-        }
+        }*/
     }
 }
