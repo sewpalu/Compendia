@@ -42,7 +42,7 @@ namespace Compendia.Database
                  modelBuilder.Entity<DbLogIn>();
 
 
-                modelBuilder.Entity<DBMask>()
+               /* modelBuilder.Entity<DBMask>()
                     .HasMany(i => i.DbItem)
                     .WithOne(m => m.DbMask)
                     .OnDelete(DeleteBehavior.Cascade);
