@@ -27,9 +27,10 @@ namespace Compendia.Model
             }
         }
 
-        /*private JObject handleRequestJson()
+        public string GetRequestString(string command, string[] parameters, int[] types)
         {
-            
-        } */
+            string request = "{\"command\": \"addUser\",\"parameters\": {\"userName\":" + parameters[0] + "}}";
+            return request;
+        }
     }
 }
