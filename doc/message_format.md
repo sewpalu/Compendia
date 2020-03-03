@@ -36,7 +36,7 @@ Used attributes are:
 - "entryUuid" (string)
 - "creationTime" (string; Format: "YYYY-Mon-DD HH:MM:SS")
 - "entries" (array); Its elements shall be objects that consist of the attributes "entryUuid", "creationTime" and "entryDefinition"
-- "templates" (array); Its elements shall be objects that consist of the attributes "TempplateUuid", "templateName" and "templateDefinition"
+- "templates" (array); Its elements shall be objects that consist of the attributes "templateUuid", "templateName" and "templateDefinition"
 
 
 ### Example: addUser
