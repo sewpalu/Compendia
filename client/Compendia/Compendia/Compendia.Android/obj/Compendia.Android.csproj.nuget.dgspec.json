@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia.Android\\Compendia.Android.csproj": {}
+    "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.Android\\Compendia.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia.Android\\Compendia.Android.csproj": {
+    "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.Android\\Compendia.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia.Android\\Compendia.Android.csproj",
+        "projectUniqueName": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.Android\\Compendia.Android.csproj",
         "projectName": "Compendia.Android",
-        "projectPath": "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia.Android\\Compendia.Android.csproj",
-        "packagesPath": "C:\\Users\\nikol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia.Android\\obj\\",
+        "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.Android\\Compendia.Android.csproj",
+        "packagesPath": "C:\\Users\\debinkli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\nikol\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\debinkli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "monoandroid90"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
-                "projectPath": "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj"
+              "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
+                "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj"
               }
             }
           }
@@ -59,6 +65,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             },
             "Rg.Plugins.Popup": {
               "target": "Package",
@@ -108,22 +118,29 @@
         }
       }
     },
-    "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
+    "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
+        "projectUniqueName": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
         "projectName": "Compendia",
-        "projectPath": "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
-        "packagesPath": "C:\\Users\\nikol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia\\obj\\",
+        "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
+        "packagesPath": "C:\\Users\\debinkli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\nikol\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\debinkli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -170,6 +187,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
             "Rg.Plugins.Popup": {
               "target": "Package",
               "version": "[1.2.0.223, )"
@@ -188,12 +209,7 @@
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
           "warn": true
