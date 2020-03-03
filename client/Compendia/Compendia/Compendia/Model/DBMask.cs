@@ -26,15 +26,15 @@ namespace Compendia.Model
         {
             name = name_;
 
-           // DbItem.Add(new DbItem(item));
+            DbItem.Add(new DbItem(item));
         }
 
         public bool AddItem(View view)
         {
             try
             {
-                //DatabaseService._ItemRepository.AddObject(new DbItem(view, this));
-               // DbItem.Add(DatabaseService._ItemRepository.GetLastObject());
+                DatabaseService._ItemRepository.AddObject(new DbItem(view, this));
+                DbItem.Add(DatabaseService._ItemRepository.GetLastObject());
                 return true;
             }
             catch (Exception e)

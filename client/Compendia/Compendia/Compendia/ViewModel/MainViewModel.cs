@@ -22,7 +22,18 @@ namespace Compendia.ViewModel
         {
             
             ConnectUserAsync();
+            TestDatabase();
             //ServerConnection();
+        }
+        private async void TestDatabase()
+        {
+            var mask = new DBMask("Name");
+            mask.AddItem(new Button());
+            var w = await DatabaseService._MaskRepository.AddObjectAsync(mask);
+
+            var item = DatabaseService._ItemRepository.GetObjects();
+            var view = ItemController.Deserialize(item[0].Viewitem);
+
         }
 
         #region MainView

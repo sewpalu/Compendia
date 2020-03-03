@@ -12,7 +12,7 @@ namespace Compendia.Model
         
         public DBMask DbMask { get; set; }
 
-        public byte[] Viewitem { get; set; }
+        public string Viewitem { get; set; }
 
         public int Maskid
         {
@@ -37,11 +37,12 @@ namespace Compendia.Model
             Id = item.Id;
 
         }
-        public DbItem(View view)
+        public DbItem(View view, DBMask mask)
         {
-           Viewitem = ItemModel.Serialize(view);
+           Viewitem = ItemController.Serialize(view);
+            DbMask = mask;
         }
-        public DbItem(View _view, DBMask mask)
+       /* public DbItem(View _view, DBMask mask)
         {
            // view = _view;
             DbMask = mask;

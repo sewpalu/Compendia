@@ -15,7 +15,6 @@ namespace Compendia.ViewModel
         #region Attributes
         private List<string> pickerItemMaske;
         private List<DBMask> maskList;
-        private List<ItemModel> _itemList;
         private List<View> mylist = new List<View>();
         private List<View> child;
         private bool buttonvisible_show;
@@ -27,15 +26,7 @@ namespace Compendia.ViewModel
 
         #region Properties
 
-        public List<ItemModel> ItemList
-        {
-            get => _itemList;
-            set
-            {
-                _itemList = value;
-                OnPropertyChanged(nameof(ItemList));
-            }
-        }
+
         public string SelctedPickerItemMaske{get;set;}
 
         public List<View> Child
@@ -173,7 +164,7 @@ namespace Compendia.ViewModel
         public EntryCreationViewModel()
         {
             PickerItemMaske = new List<string>();
-            ItemList = new List<ItemModel>();
+            
             GeneratePicker();
             VisibleButtonShow = true;
             VisibleButtonCreate = false;
