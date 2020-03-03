@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia.iOS\\Compendia.iOS.csproj": {}
+    "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.iOS\\Compendia.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia.iOS\\Compendia.iOS.csproj": {
+    "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.iOS\\Compendia.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia.iOS\\Compendia.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.iOS\\Compendia.iOS.csproj",
         "projectName": "Compendia.iOS",
-        "projectPath": "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia.iOS\\Compendia.iOS.csproj",
-        "packagesPath": "C:\\Users\\nikol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia.iOS\\obj\\",
+        "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.iOS\\Compendia.iOS.csproj",
+        "packagesPath": "C:\\Users\\debinkli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\nikol\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\debinkli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
-                "projectPath": "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj"
+              "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
+                "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj"
               }
             }
           }
@@ -95,22 +101,29 @@
         }
       }
     },
-    "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
+    "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
+        "projectUniqueName": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
         "projectName": "Compendia",
-        "projectPath": "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
-        "packagesPath": "C:\\Users\\nikol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikol\\ProgProject\\Compendia\\client\\Compendia\\Compendia\\Compendia\\obj\\",
+        "projectPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\Compendia.csproj",
+        "packagesPath": "C:\\Users\\debinkli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\debinkli\\Documents\\DHBW\\SE_RA\\Compendia\\client\\Compendia\\Compendia\\Compendia\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\nikol\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\debinkli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -179,12 +192,7 @@
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
           "warn": true

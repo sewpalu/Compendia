@@ -33,8 +33,9 @@ namespace Compendia.Model
         {
             try
             {
-                DatabaseService._ItemRepository.AddObject(new DbItem(view, this));
-                DbItem.Add(DatabaseService._ItemRepository.GetLastObject());
+                DbItem item = new DbItem(view, this);
+                DatabaseService._ItemRepository.AddObject(item);
+                DbItem.Add(item);
                 return true;
             }
             catch (Exception e)
