@@ -7,25 +7,23 @@ using Xamarin.Forms;
 
 namespace Compendia.Model
 {
-    public class ItemModel
+    public static  class ItemController
     {
-        public string Name { get; set; }
 
-        public byte[] data;
-        public View Child { get; set; }
 
-        public ItemModel()
+        //public static  byte[] data;
+
+
+        static ItemController()
         {
 
 
         }
 
-        public override string ToString()
+
+        public static byte[] Serialize(View child)
         {
-            return Name;
-        }
-        public void Serialize(View child)
-        {
+            byte[] data;
             using (MemoryStream stream = new MemoryStream())
             {
                 var tmp = new BinaryFormatter();
@@ -33,6 +31,7 @@ namespace Compendia.Model
                 data = stream.ToArray();
                 stream.Close();
             }
+            return data;
 
         }
 

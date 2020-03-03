@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compendia.Android", "Compen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compendia.iOS", "Compendia\Compendia.iOS\Compendia.iOS.csproj", "{D52975AE-F5AD-46E0-8F4C-07FA06FD67EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compendia", "Compendia\Compendia\Compendia.csproj", "{91A28E4A-E269-4278-8114-035E3F6A51BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Compendia", "Compendia\Compendia\Compendia.csproj", "{91A28E4A-E269-4278-8114-035E3F6A51BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
