@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
-using System.Net;
 using System.Net.Http;
-using System.Net.Sockets;
-using System.Runtime.CompilerServices;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace Compendia.Model
@@ -48,7 +42,7 @@ namespace Compendia.Model
         public static async Task<string> AddUserAsync(string Username)
         {
             string[] parameters = {Username};
-            int[] types = {1};
+            string[] types = {"userName"};
             string request = JsonHandler.Instance.GetRequestString("addUser", parameters, types);
             string tmp = await PostHTTPRequestAsync(request);
             return tmp;
@@ -56,8 +50,9 @@ namespace Compendia.Model
 
         public static async Task<string> AddEntry(int templateId, string entry)
         {
-            string request = "{\"command\": \"addEntry\",\"parameters\": {\"templateId\":" +
-                             templateId + ",\"entry\":" + entry + "}}";
+            string[] parameters = {templateId.ToString(), entry};
+            string[] types = {"templateId", "entry"};
+            string request = JsonHandler.Instance.GetRequestString("addEntry", parameters, types);
             string tmp = await PostHTTPRequestAsync(request);
             return tmp;
         }
@@ -65,8 +60,9 @@ namespace Compendia.Model
         public static async Task<string> getEntries(int templateId, string date)
         {
             // date = 2020-Feb-02 12:34:56
-            string request = "{\"command\": \"getEntries\",\"parameters\": {\"templateId\": " + templateId +
-                             ",\"since\": " + date + "}}";
+            string[] parameters = {templateId.ToString(), date};
+            string[] types = {"templateId", "since"};
+            string request = JsonHandler.Instance.GetRequestString("getEntries", parameters, types);
             string tmp = await PostHTTPRequestAsync(request);
             return tmp;
         }
