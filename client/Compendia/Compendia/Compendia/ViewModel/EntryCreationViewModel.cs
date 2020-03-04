@@ -19,6 +19,7 @@ namespace Compendia.ViewModel
         private List<View> child;
         private bool buttonvisible_show;
         private bool buttonvisible_create;
+        private View Testview;
 
 
 
@@ -77,7 +78,9 @@ namespace Compendia.ViewModel
             {
                 return new Command(() =>
                 {
-                    mylist.Clear();
+                    mylist.Add(Testview);
+                    AddtoItem(mylist);
+                    /*mylist.Clear();
                     AddtoItem(mylist);
                     switch (SelctedPickerItemMaske)
                     {
@@ -109,7 +112,7 @@ namespace Compendia.ViewModel
                             mylist.Add(label);
                             AddtoItem(mylist); break; 
                         
-                    }
+                    }*/
                     VisibleButtonShow = false;
                     VisibleButtonCreate = true;
                    /* var tmp = await DatabaseService._MaskRepository.GetObjectsAsync();
@@ -168,11 +171,24 @@ namespace Compendia.ViewModel
             GeneratePicker();
             VisibleButtonShow = true;
             VisibleButtonCreate = false;
-
+            TestDatabase();
 
 
         }
         #endregion Constructor
+
+        private async void TestDatabase()
+        {
+            var tmp = ItemController.Serialize(new Button());
+            Testview = ItemController.Deserialize(tmp);
+            /*var mask = new DBMask("Name");
+            mask.AddItem(new Button());
+            var w = await DatabaseService._MaskRepository.AddObjectAsync(mask);
+
+            var item = DatabaseService._ItemRepository.GetObjects();
+            var view = ItemController.Deserialize(item[0].Viewitem);*/
+
+        }
         private void AddtoPicker(string txt)
         {
             PickerItemMaske.Add(txt);

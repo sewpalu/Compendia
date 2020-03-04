@@ -149,7 +149,7 @@ namespace Compendia.Database.Base
             {
                 var state = await DatabaseContext.Set<T>().AddAsync(t);
                 var result = state.State == EntityState.Added;
-                await DatabaseContext.SaveChangesAsync();
+                int x =await DatabaseContext.SaveChangesAsync();
                 return result;
 
             }

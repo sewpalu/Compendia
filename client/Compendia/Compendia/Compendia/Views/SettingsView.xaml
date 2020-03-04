@@ -13,8 +13,13 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Settings"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                   FontSize="Large"
+                   TextColor="Black"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Label Text="Diese Seite wird noch bearbeitet, sie wird bald zur Verfügung stehen"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

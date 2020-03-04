@@ -27,12 +27,14 @@ namespace Compendia.ViewModel
         }
         private async void TestDatabase()
         {
-            var mask = new DBMask("Name");
+            var tmp = ItemController.Serialize(new Button());
+            var button = ItemController.Deserialize(tmp);
+            /*var mask = new DBMask("Name");
             mask.AddItem(new Button());
             var w = await DatabaseService._MaskRepository.AddObjectAsync(mask);
 
             var item = DatabaseService._ItemRepository.GetObjects();
-            var view = ItemController.Deserialize(item[0].Viewitem);
+            var view = ItemController.Deserialize(item[0].Viewitem);*/
 
         }
 
