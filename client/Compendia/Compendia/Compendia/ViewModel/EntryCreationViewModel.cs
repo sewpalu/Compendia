@@ -78,6 +78,7 @@ namespace Compendia.ViewModel
             {
                 return new Command(() =>
                 {
+                    
                     mylist.Add(Testview);
                     AddtoItem(mylist);
                     /*mylist.Clear();
@@ -179,8 +180,10 @@ namespace Compendia.ViewModel
 
         private async void TestDatabase()
         {
-            var tmp = ItemController.Serialize(new Button());
-            Testview = ItemController.Deserialize(tmp);
+            var tmp = ItemController<Button>.ViewtoDatabase(new Button(), new DBMask("Beispiel"));
+            var item = DatabaseService._ItemRepository.GetObjects();
+            var type = ItemController<View>.Deserialize(item[0].Itemtype);
+
             /*var mask = new DBMask("Name");
             mask.AddItem(new Button());
             var w = await DatabaseService._MaskRepository.AddObjectAsync(mask);

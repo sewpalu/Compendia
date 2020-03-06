@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Compendia.Database;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -10,12 +11,8 @@ using Xamarin.Forms;
 
 namespace Compendia.Model
 {
-    public static  class ItemController
+    public static  class ItemController<T>
     {
-
-
-        //public static  byte[] data;
-
 
         static ItemController()
         {
@@ -24,14 +21,16 @@ namespace Compendia.Model
         }
 
 
-        public static string Serialize(View child)
+        public static string ViewtoDatabase(T child, DBMask mask)
         {
             string data;
+            string type;
 
                 try
                 {
                     data = JsonConvert.SerializeObject(child);
-
+                    type = JsonConvert.SerializeObject(child.GetType());
+                    var i = DatabaseService._ItemRepository.AddObject(new DbItem(type, data, mask));
                 }
                 catch(Exception e)
                 {
@@ -43,9 +42,9 @@ namespace Compendia.Model
 
         }
 
-        public static View Deserialize(string viewitem)
+        public static T Deserialize(string viewitem)
         {
-            View data = JsonConvert.DeserializeObject<View>(viewitem);
+            T data = JsonConvert.DeserializeObject<T>(viewitem);
             return data;
         }
 

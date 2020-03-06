@@ -50,7 +50,7 @@ namespace Compendia.Database
                  modelBuilder.Entity<DbItem>()
                     .HasOne(m => m.DbMask)
                     .WithMany(i => i.DbItem)
-                    .HasForeignKey(k => k.Maskid)
+                    //.HasForeignKey(k => k.Maskid)
                     .OnDelete(DeleteBehavior.Cascade);
 
 

@@ -27,8 +27,7 @@ namespace Compendia.ViewModel
         }
         private async void TestDatabase()
         {
-            var tmp = ItemController.Serialize(new Button());
-            var button = ItemController.Deserialize(tmp);
+           
             /*var mask = new DBMask("Name");
             mask.AddItem(new Button());
             var w = await DatabaseService._MaskRepository.AddObjectAsync(mask);
