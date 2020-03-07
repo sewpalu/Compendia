@@ -11,8 +11,6 @@ namespace Compendia.Database
     public class DatabaseContext : DbContext
     {
             public DbSet<DbLogIn> LogIn { get; set; }
-            public DbSet<DBMask> Mask { get; set; }
-            public DbSet<DbItem> Item { get; set; }
 
             private readonly string _databasePath;
 
@@ -40,40 +38,7 @@ namespace Compendia.Database
                 base.OnModelCreating(modelBuilder);
 
                 modelBuilder.Entity<DbLogIn>();
-               
-
-                modelBuilder.Entity<DBMask>()
-                    .HasMany(i => i.DbItem)
-                    .WithOne(m => m.DbMask)
-                    .OnDelete(DeleteBehavior.Cascade);
-
-            modelBuilder.Entity<DBMask>();
-           
-                modelBuilder.Entity<DbItem>()
-                    .HasOne(m => m.DbMask)
-                    .WithMany(i => i.DbItem)
-                    .HasForeignKey(k => k.Maskid)
-                    .OnDelete(DeleteBehavior.Cascade);
-
-            modelBuilder.Entity<DbItem>();
-
-            /* Entry titel = new Entry();
-             titel.Placeholder = "Titel";
-             Editor text = new Editor();
-
-
-              var stdmask = new DBMask(
-             "Standardmaske");
-
-             stdmask.AddItem(titel);
-             stdmask.AddItem(text);
-
-              modelBuilder.Entity<DBMask>().HasData( stdmask);*/
-
-
-
-
-
+              
         }
     }
     

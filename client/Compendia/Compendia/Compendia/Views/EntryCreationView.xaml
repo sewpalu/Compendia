@@ -16,7 +16,7 @@
             <Picker
                 Title="Maskenauswahl"
                 ItemsSource="{Binding PickerItemMaske}"
-                SelectedItem="{Binding SelctedPickerItemMaske}"
+                SelectedItem="{Binding SelctedPickerItemMask}"
                >
                 <Picker.GestureRecognizers>
                     <TapGestureRecognizer
@@ -25,14 +25,32 @@
                 </Picker.GestureRecognizers>
             </Picker>
 
-            <StackLayout x:Name="ItemsStack" BindingContext="{Binding Child}"></StackLayout>
+          
+            <Entry
+                Text="{Binding EntryTitel}"
+                Placeholder="Titel"
+                TextColor="Blue"
+                IsVisible="{Binding ItemVisible}">
+                
+            </Entry>
+            <DatePicker
+                  Date="{Binding PickerDate}"
+                  IsVisible="{Binding PickerVisibel}"
+            ></DatePicker>
+            <Editor
+                Text="{Binding EdiorText}"
+                Placeholder="Text..."
+                TextColor=" Black"
+                IsVisible="{Binding ItemVisible}"
+                AutoSize="TextChanges">
 
+            </Editor>
 
             <Button
                 Text="Show"
                 TextColor="Black"
                 IsVisible="{Binding VisibleButtonShow}"
-                Command="{Binding AddItemCommand}">
+                Command="{Binding ShowCommand}">
                 
             </Button>
             <Button
