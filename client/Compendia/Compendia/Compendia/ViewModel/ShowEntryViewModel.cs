@@ -21,6 +21,10 @@ namespace Compendia.ViewModel
 
         private void LoadEntrys()
         {
+
+            // Entrys aus der Datenbank laden 
+
+            // Entrys zu Entry-Liste hinzufügen
             for(int i = 0; i<30; i++)
             {
                 Entrys.Add(new EntryModel
