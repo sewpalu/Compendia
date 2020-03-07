@@ -180,8 +180,8 @@ namespace Compendia.ViewModel
 
         private async void TestDatabase()
         {
-            var tmp = ItemController<Button>.ViewtoDatabase(new Button(), new DBMask("Beispiel"));
-            var item = DatabaseService._ItemRepository.GetObjects();
+            var tmp = await ItemController<Button>.ViewtoDatabase(new Button(), new DBMask("Beispiel"));
+            var item = await DatabaseService._ItemRepository.GetObjectsAsync();
             var type = ItemController<View>.Deserialize(item[0].Itemtype);
 
             /*var mask = new DBMask("Name");

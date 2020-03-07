@@ -6,11 +6,35 @@
              mc:Ignorable="d"
              xmlns:pagemodels="clr-namespace:Compendia.ViewModel"
              x:Class="Compendia.Views.ShowEntryView">
+
+    <ContentPage.BindingContext>
+        <pagemodels:ShowEntryViewModel/>
+    </ContentPage.BindingContext>
+
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Show Entry"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView ItemsSource="{Binding Entrys}"
+                      HasUnevenRows = "true">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell >
+                            <StackLayout Orientation="Vertical">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label 
+                                    Text="{Binding Titel}"
+                                    FontAttributes="Bold" />
+                                <Label 
+                                    Text="{Binding Date}" />
+                             </StackLayout>
+                           
+                                <Label Text="{Binding Text}"
+                                   />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

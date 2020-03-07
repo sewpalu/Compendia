@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
+using System.Threading.Tasks;
 using System.Xml.Serialization;
 using Xamarin.Forms;
 
@@ -21,7 +22,7 @@ namespace Compendia.Model
         }
 
 
-        public static string ViewtoDatabase(T child, DBMask mask)
+        public static async Task<string> ViewtoDatabase(T child, DBMask mask)
         {
             string data;
             string type;
@@ -30,7 +31,7 @@ namespace Compendia.Model
                 {
                     data = JsonConvert.SerializeObject(child);
                     type = JsonConvert.SerializeObject(child.GetType());
-                    var i = DatabaseService._ItemRepository.AddObject(new DbItem(type, data, mask));
+                    var i = await DatabaseService._ItemRepository.AddObjectAsync(new DbItem(type, data, mask));
                 }
                 catch(Exception e)
                 {

@@ -137,7 +137,7 @@ namespace Compendia.Database.Base
             catch (Exception e)
             {
                 Console.WriteLine("AddObject");
-                Console.WriteLine(e);
+                Console.WriteLine(e.ToString());
                 return false;
 
             }

@@ -39,34 +39,36 @@ namespace Compendia.Database
             {
                 base.OnModelCreating(modelBuilder);
 
-                 modelBuilder.Entity<DbLogIn>();
-
+                modelBuilder.Entity<DbLogIn>();
+               
 
                 modelBuilder.Entity<DBMask>()
                     .HasMany(i => i.DbItem)
                     .WithOne(m => m.DbMask)
                     .OnDelete(DeleteBehavior.Cascade);
 
-                 modelBuilder.Entity<DbItem>()
+            modelBuilder.Entity<DBMask>();
+           
+                modelBuilder.Entity<DbItem>()
                     .HasOne(m => m.DbMask)
                     .WithMany(i => i.DbItem)
-                    //.HasForeignKey(k => k.Maskid)
+                    .HasForeignKey(k => k.Maskid)
                     .OnDelete(DeleteBehavior.Cascade);
 
+            modelBuilder.Entity<DbItem>();
+
+            /* Entry titel = new Entry();
+             titel.Placeholder = "Titel";
+             Editor text = new Editor();
 
 
-               /* Entry titel = new Entry();
-                titel.Placeholder = "Titel";
-                Editor text = new Editor();
-                
+              var stdmask = new DBMask(
+             "Standardmaske");
 
-                 var stdmask = new DBMask(
-                "Standardmaske");
+             stdmask.AddItem(titel);
+             stdmask.AddItem(text);
 
-                stdmask.AddItem(titel);
-                stdmask.AddItem(text);
-
-                 modelBuilder.Entity<DBMask>().HasData( stdmask);*/
+              modelBuilder.Entity<DBMask>().HasData( stdmask);*/
 
 
 
