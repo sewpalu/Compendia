@@ -48,23 +48,44 @@ namespace Compendia.Model
             return tmp;
         }
 
-        public static async Task<string> AddEntry(int templateId, string entry)
+        public static async Task<string> AddEntry(string username, string templateId, string entry)
         {
-            string[] parameters = {templateId.ToString(), entry};
-            string[] types = {"templateId", "entry"};
+            string[] parameters = {username,templateId, entry};
+            string[] types = {"userName", "templateUuid", "entryDefinition" };
             string request = JsonHandler.Instance.GetRequestString("addEntry", parameters, types);
             string tmp = await PostHTTPRequestAsync(request);
             return tmp;
         }
 
-        public static async Task<string> getEntries(int templateId, string date)
+        public static async Task<string> getEntries(string username, string templateId, string date)
         {
             // date = 2020-Feb-02 12:34:56
-            string[] parameters = {templateId.ToString(), date};
-            string[] types = {"templateId", "since"};
+            string[] parameters = {username, templateId, date};
+            string[] types = { "userName", "templateUuid", "since"};
             string request = JsonHandler.Instance.GetRequestString("getEntries", parameters, types);
             string tmp = await PostHTTPRequestAsync(request);
             return tmp;
         }
+        public static async Task<string> GetTemplates(string username)
+        {
+            string[] parameters = { username };
+            string[] types = { "userName" };
+
+            var request = JsonHandler.Instance.GetRequestString("getTemplates", parameters, types);
+            string tmp = await PostHTTPRequestAsync(request);
+            return tmp;
+        }
+        public static async Task<string> AddTemplates(string username, string templatename)
+        {
+            string command = "addTemplate";
+            string[] types = { "userName", "isPublicTemplate", "templateName", "templateDefinition" };
+            string[] parameters = { username, "false", templatename,"{}" };
+            var request = JsonHandler.Instance.GetRequestString(command, parameters, types);
+            string tmp = await PostHTTPRequestAsync(request);
+
+            return tmp;
+        }
+            
+        
     }
 }

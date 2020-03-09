@@ -317,6 +317,7 @@ C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Comp
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Core\AppxManifest.xml
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Core\Compendia.UWP.exe
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Compendia.UWP.build.appxrecipe
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Json.Net.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.Bcl.HashCode.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.Data.Sqlite.dll
@@ -338,6 +339,7 @@ C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Comp
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.Extensions.Options.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Newtonsoft.Json.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Rg.Plugins.Popup.UWP.dll
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Rg.Plugins.Popup.UWP.pdb
 C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Rg.Plugins.Popup.dll

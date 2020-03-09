@@ -64,7 +64,10 @@ namespace Compendia.ViewModel
                         var database = DatabaseService._LogInRepository;
                         var result = await database.AddObjectAsync(new DbLogIn(userLogIn, passwordLogIn));
 
-                        // await PushModalAsync(new MainView());
+                        //Database
+                        await Server.GetHTTPResquestAsync();
+                        var response = await Server.AddUserAsync(userLogIn);
+                        Debug.WriteLine(response);
                         await PopModalAsync();
 
                     }

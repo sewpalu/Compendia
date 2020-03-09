@@ -38,7 +38,7 @@
                   IsVisible="{Binding PickerVisibel}"
             ></DatePicker>
             <Editor
-                Text="{Binding EdiorText}"
+                Text="{Binding EditorText}"
                 Placeholder="Text..."
                 TextColor=" Black"
                 IsVisible="{Binding ItemVisible}"
