@@ -5,31 +5,47 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:pagemodels="clr-namespace:Compendia.ViewModel"
-             x:Class="Compendia.Views.EntryCreationView">
+             x:Class="Compendia.Views.EntryCreationView"
+             Title="Eintrag erstellen">
     
     <ContentPage.BindingContext>
         <pagemodels:EntryCreationViewModel/>
     </ContentPage.BindingContext>
-    
+
+    <ContentPage.Resources>
+        <Style
+            x:Key="ButtonStyle"
+            TargetType="Button">
+            <Setter Property="HorizontalOptions" Value="Center"></Setter>
+            <Setter Property="VerticalOptions" Value="Center"></Setter>
+            <Setter Property="CornerRadius" Value="0"></Setter>
+            <Setter Property="Margin" Value="20"></Setter>
+        </Style>
+
+    </ContentPage.Resources>
+
     <ContentPage.Content>
         <StackLayout >
             <Picker
                 Title="Maskenauswahl"
                 ItemsSource="{Binding PickerItemMaske}"
                 SelectedItem="{Binding SelctedPickerItemMask}"
+                Margin="0,0,0,10"
                >
-                <Picker.GestureRecognizers>
-                    <TapGestureRecognizer
-                                 Command="{Binding PickerCommand}"
-                          />
-                </Picker.GestureRecognizers>
+                
             </Picker>
-
+            <BoxView
+                Color="AliceBlue"
+                HeightRequest="1"
+                WidthRequest="100">
+                
+            </BoxView>
           
             <Entry
                 Text="{Binding EntryTitel}"
                 Placeholder="Titel"
-                TextColor="Blue"
+                TextColor="Black"
+                FontSize="Large"
                 IsVisible="{Binding ItemVisible}">
                 
             </Entry>
@@ -41,25 +57,42 @@
                 Text="{Binding EditorText}"
                 Placeholder="Text..."
                 TextColor=" Black"
+                FontSize="Small"
                 IsVisible="{Binding ItemVisible}"
                 AutoSize="TextChanges">
 
             </Editor>
 
+            <BoxView
+                Color="Blue"
+                HeightRequest="1"
+                WidthRequest="100">
+
+            </BoxView>
+
+            <StackLayout Orientation="Horizontal">
             <Button
                 Text="Show"
+                BackgroundColor="White"
+                BorderColor="Black"
+                BorderWidth="1"
                 TextColor="Black"
+                Style="{StaticResource ButtonStyle}"
                 IsVisible="{Binding VisibleButtonShow}"
                 Command="{Binding ShowCommand}">
                 
             </Button>
             <Button
                 Text="Create"
-                TextColor="Black"
+                BackgroundColor="Blue"
+                BorderColor="Blue"
+                TextColor="White"
+                Style="{StaticResource ButtonStyle}"
                 IsVisible="{Binding VisibleButtonCreate}"
                 Command="{Binding CreateCommand}">
 
             </Button>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -6,7 +6,8 @@
              mc:Ignorable="d"
              xmlns:pagemodels="clr-namespace:Compendia.ViewModel"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
-             x:Class="Compendia.Views.MainView">
+             x:Class="Compendia.Views.MainView"
+             Title="Main">
     <ContentPage.BindingContext>
         <pagemodels:MainViewModel/>
     </ContentPage.BindingContext>

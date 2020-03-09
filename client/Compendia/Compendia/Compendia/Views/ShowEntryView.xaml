@@ -5,11 +5,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:pagemodels="clr-namespace:Compendia.ViewModel"
-             x:Class="Compendia.Views.ShowEntryView">
+             x:Class="Compendia.Views.ShowEntryView"
+             Title="Einträge ansehen">
 
     <ContentPage.BindingContext>
         <pagemodels:ShowEntryViewModel/>
     </ContentPage.BindingContext>
+
 
 
     <ContentPage.Content>

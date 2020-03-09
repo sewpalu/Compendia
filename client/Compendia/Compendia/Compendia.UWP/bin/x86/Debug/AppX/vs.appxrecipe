@@ -30,13 +30,17 @@
     <AppXManifest Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-26T15:57:00.211</Modified>
+      <Modified>2020-03-09T14:50:26.086</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Compendia.UWP.exe">
       <PackagePath>entrypoint\Compendia.UWP.exe</PackagePath>
-      <Modified>2020-02-26T15:56:57.664</Modified>
+      <Modified>2020-03-09T13:33:01.201</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\json.net\1.0.18\lib\netstandard2.0\Json.Net.dll">
+      <PackagePath>Json.Net.dll</PackagePath>
+      <Modified>2019-11-19T21:00:52.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\microsoft.bcl.asyncinterfaces\1.1.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
       <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
@@ -121,6 +125,10 @@
     <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\microsoft.extensions.primitives\3.1.1\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll">
       <PackagePath>Microsoft.Extensions.Primitives.dll</PackagePath>
       <Modified>2019-12-14T17:39:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2019-11-08T23:56:44.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\rg.plugins.popup\1.2.0.223\lib\uap10.0\Rg.Plugins.Popup.UWP.dll">
       <PackagePath>Rg.Plugins.Popup.UWP.dll</PackagePath>
@@ -872,7 +880,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia\bin\Debug\netstandard2.0\Compendia.dll">
       <PackagePath>Compendia.dll</PackagePath>
-      <Modified>2020-02-26T15:59:24.886</Modified>
+      <Modified>2020-03-09T14:47:39.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -1023,11 +1031,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-02-26T15:56:56.369</Modified>
+      <Modified>2020-03-09T14:50:24.885</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-02-26T15:56:56.370</Modified>
+      <Modified>2020-03-09T14:50:24.885</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -1059,11 +1067,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-02-10T13:08:03.653</Modified>
+      <Modified>2020-03-09T13:33:03.297</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\debinkli\Documents\DHBW\SE_RA\Compendia\client\Compendia\Compendia\Compendia.UWP\bin\x86\Debug\Core\Compendia.UWP.exe">
       <PackagePath>Compendia.UWP.exe</PackagePath>
-      <Modified>2020-02-26T15:57:00.177</Modified>
+      <Modified>2020-03-09T14:50:26.065</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
