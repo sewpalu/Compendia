@@ -23,7 +23,7 @@ namespace Compendia.ViewModel
 
         private async void LoadEntrysAsync()
         {
-
+            var get = await Server.GetHTTPResquestAsync();
             // Entrys aus der Datenbank laden 
             var templresult = await Server.GetTemplates("testuser");
             JObject templ = JObject.Parse(templresult);
