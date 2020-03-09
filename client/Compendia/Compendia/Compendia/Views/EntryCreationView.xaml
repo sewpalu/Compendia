@@ -34,12 +34,7 @@
                >
                 
             </Picker>
-            <BoxView
-                Color="AliceBlue"
-                HeightRequest="1"
-                WidthRequest="100">
-                
-            </BoxView>
+
           
             <Entry
                 Text="{Binding EntryTitel}"
@@ -63,12 +58,6 @@
 
             </Editor>
 
-            <BoxView
-                Color="Blue"
-                HeightRequest="1"
-                WidthRequest="100">
-
-            </BoxView>
 
             <StackLayout Orientation="Horizontal">
             <Button
